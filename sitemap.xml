@@ -131,6 +131,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-2-les-tableaux/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://joekakone.github.io/algojungle/algorithmique/partie-2-les-tableaux/deuxdimensions/</loc>
          <lastmod>2022-12-26</lastmod>
          <changefreq>daily</changefreq>
@@ -431,96 +436,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/bash/</loc>
-         <lastmod>2022-12-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://joekakone.github.io/algojungle/blog/bash/installer/</loc>
-         <lastmod>2022-12-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://joekakone.github.io/algojungle/blog/bash/outro/</loc>
-         <lastmod>2022-12-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://joekakone.github.io/algojungle/blog/bash/commandes-usuelles/autres-commandes/</loc>
-         <lastmod>2022-12-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://joekakone.github.io/algojungle/blog/bash/commandes-usuelles/consulter-un-fichier/</loc>
-         <lastmod>2022-12-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://joekakone.github.io/algojungle/blog/bash/commandes-usuelles/contenu-d-un-repertoire/</loc>
-         <lastmod>2022-12-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://joekakone.github.io/algojungle/blog/bash/commandes-usuelles/copier-un-fichier/</loc>
-         <lastmod>2022-12-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://joekakone.github.io/algojungle/blog/bash/commandes-usuelles/creer-un-fichier/</loc>
-         <lastmod>2022-12-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://joekakone.github.io/algojungle/blog/bash/commandes-usuelles/creer-un-repertoire/</loc>
-         <lastmod>2022-12-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://joekakone.github.io/algojungle/blog/bash/commandes-usuelles/deplacer-un-fichier/</loc>
-         <lastmod>2022-12-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://joekakone.github.io/algojungle/blog/bash/commandes-usuelles/editer-un-fichier/</loc>
-         <lastmod>2022-12-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://joekakone.github.io/algojungle/blog/bash/commandes-usuelles/se-deplacer/</loc>
-         <lastmod>2022-12-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://joekakone.github.io/algojungle/blog/bash/commandes-usuelles/supprimer-un-fichier/</loc>
-         <lastmod>2022-12-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://joekakone.github.io/algojungle/blog/bash/programmation/affichage/</loc>
-         <lastmod>2022-12-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://joekakone.github.io/algojungle/blog/bash/programmation/boucles/</loc>
-         <lastmod>2022-12-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://joekakone.github.io/algojungle/blog/bash/programmation/choix/</loc>
-         <lastmod>2022-12-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://joekakone.github.io/algojungle/blog/bash/programmation/conditions/</loc>
-         <lastmod>2022-12-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://joekakone.github.io/algojungle/blog/bash/programmation/saisie/</loc>
-         <lastmod>2022-12-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://joekakone.github.io/algojungle/blog/cloud/</loc>
          <lastmod>2022-12-26</lastmod>
          <changefreq>daily</changefreq>
@@ -571,7 +486,102 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/jupyterlab-distant/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://joekakone.github.io/algojungle/blog/devops/bash/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/bash/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/installer/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/outro/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/autres-commandes/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/consulter-un-fichier/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/contenu-d-un-repertoire/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/copier-un-fichier/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/creer-un-fichier/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/creer-un-repertoire/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/deplacer-un-fichier/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/editer-un-fichier/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/se-deplacer/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/supprimer-un-fichier/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/programmation/affichage/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/programmation/boucles/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/programmation/choix/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/programmation/conditions/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/programmation/saisie/</loc>
          <lastmod>2022-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -581,12 +591,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/devops/jupyterlab-distant/</loc>
-         <lastmod>2022-12-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://joekakone.github.io/algojungle/blog/devops/git/git-et-github/</loc>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/git/</loc>
          <lastmod>2022-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -946,7 +951,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-2-fonctions/les%20fonctions-recursives/</loc>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-2-fonctions/les-fonctions-recursives/</loc>
          <lastmod>2022-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1106,11 +1111,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/sqlite3/</loc>
-         <lastmod>2022-12-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://joekakone.github.io/algojungle/programmation/python/fichiers/</loc>
          <lastmod>2022-12-26</lastmod>
          <changefreq>daily</changefreq>
@@ -1206,47 +1206,82 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-bases-de-donnees/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-bases-de-donnees/sqlite3/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-l-oriente-objet/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-l-oriente-objet/heritage/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-les-modules/</loc>
          <lastmod>2022-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-les-modules/les-modules-python/</loc>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-les-modules/module-datetime/</loc>
          <lastmod>2022-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/poo/</loc>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-les-modules/module-math/</loc>
          <lastmod>2022-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/poo/heritage/</loc>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-les-modules/module-os/</loc>
          <lastmod>2022-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/projets/projet-01/</loc>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-les-modules/module-random/</loc>
          <lastmod>2022-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/projets/projet-02/</loc>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-les-modules/module-statistics/</loc>
          <lastmod>2022-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/projets/projet-03/</loc>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-les-modules/module-sys/</loc>
          <lastmod>2022-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/projets/projet-04/</loc>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-projets/projet-01/</loc>
          <lastmod>2022-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/projets/projet-05/</loc>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-projets/projet-02/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-projets/projet-03/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-projets/projet-04/</loc>
+         <lastmod>2022-12-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-projets/projet-05/</loc>
          <lastmod>2022-12-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
