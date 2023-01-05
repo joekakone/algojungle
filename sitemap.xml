@@ -416,6 +416,21 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/pl-pgsql/les-boucles/</loc>
+         <lastmod>2023-01-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/pl-pgsql/les-conditions/</loc>
+         <lastmod>2023-01-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/pl-pgsql/les-fonctions/</loc>
+         <lastmod>2023-01-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://joekakone.github.io/algojungle/analytics/sql/pl-pgsql/les-variables/</loc>
          <lastmod>2023-01-05</lastmod>
          <changefreq>daily</changefreq>

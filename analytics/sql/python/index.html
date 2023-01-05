@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://joekakone.github.io/algojungle/analytics/sql/python/">
       
       
-        <link rel="prev" href="../pl-pgsql/les-variables/">
+        <link rel="prev" href="../pl-pgsql/les-fonctions/">
       
       
         <link rel="next" href="sqlite/">
@@ -3921,6 +3921,12 @@
         
           
         
+          
+        
+          
+        
+          
+        
       
       
         
@@ -3951,6 +3957,48 @@
     <li class="md-nav__item">
       <a href="../pl-pgsql/les-variables/" class="md-nav__link">
         Les variables
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pl-pgsql/les-conditions/" class="md-nav__link">
+        Les conditions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pl-pgsql/les-boucles/" class="md-nav__link">
+        Les boucles
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pl-pgsql/les-fonctions/" class="md-nav__link">
+        Les fonctions
       </a>
     </li>
   
@@ -7128,6 +7176,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#orb-et-orm" class="md-nav__link">
+    ORB et ORM
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#configurer-un-environnement" class="md-nav__link">
     Configurer un environnement
   </a>
@@ -7154,9 +7209,31 @@
 
 
 <h1 id="travailler-avec-sql-sous-python">Travailler avec SQL sous Python</h1>
+<p>En tant que Data Analyst travaillant avec les langages de programmation tels que Python ou R, il est important de savoir interagir directement avec les bases de données. Python propose des ORB et ORM pour interagir avec les bases de données relationnelles.</p>
+<p><img alt="" src="https://www.digitalvidya.com/wp-content/uploads/2018/08/Python-SQL-1.jpg" /></p>
 <p>Les langages de programmation proposent des packages pour interagir avec les bases de données. Python propose plusieurs packages pour interagir avec les bases de données. Dans cette série, je vous montre comment effectuer des requêtes sur SQLite, Postgres et SQL Server.</p>
-<p><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/SQLite370.svg/1200px-SQLite370.svg.png" /></p>
+<h2 id="orb-et-orm">ORB et ORM</h2>
+<p>Un ORM (object-relational mapping) est une interface entre le langage de programmation et la base de données. Il permet au développeur de manipuler les données de la base de données via les objets.</p>
+<ol>
+<li>SQLite3 <a href="https://github.com/joekakone/SQL_Tutorials/blob/master/01_sqlite.ipynb">[Notebook]</a></li>
+<li>Postgres <a href="https://github.com/joekakone/SQL_Tutorials/blob/master/02_postgres.ipynb">[Notebook]</a></li>
+<li>SQL Server <a href="https://github.com/joekakone/SQL_Tutorials/blob/master/03_sqlserver.ipynb">[Notebook]</a></li>
+<li>Pandas <a href="https://github.com/joekakone/SQL_Tutorials/blob/master/04_pandas.ipynb">[Notebook]</a></li>
+</ol>
 <h2 id="configurer-un-environnement">Configurer un environnement</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Création d&#39;un environnement virtuel</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>env
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Activation de l&#39;environnement vrtuel</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nb">source</span><span class="w"> </span>env<span class="se">\S</span>criipts<span class="se">\a</span>ctivate
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># Installation des dépendances</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>pip<span class="w"> </span>install<span class="w"> </span>psycopg2-binary
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>pip<span class="w"> </span>install<span class="w"> </span>pyodbc
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>pip<span class="w"> </span>install<span class="w"> </span>pandas
+</code></pre></div>
+<hr />
+<p><em>Dans les prochaines sections, je vous montre comment interagir avec les bases de données relationnelles avec les ORB dans Python.</em></p>
 
 
   
