@@ -25,7 +25,7 @@
     
     
       
-        <title>Commandes Docker usuelles - Algo Jungle</title>
+        <title>Guide Docker pour un Data Scientist - Algo Jungle</title>
       
     
     
@@ -69,10 +69,10 @@
     
     
     
-	<meta property="og:title" content="Commandes Docker usuelles">
-	<meta property="og:description" content="Joseph Konka - Data Science Specialist">
+	<meta property="og:title" content="Guide Docker pour un Data Scientist">
+	<meta property="og:description" content="Joseph Konka - Data Science Advocate">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="http://algo-jungle.herokuapp.com/">
+	<meta property="og:url" content="https://joekakone.github.io/algojungle/">
 	<meta property="og:image" content="https://joekakone.github.io/static/img/cover.png">
 	<meta property="og:image:width" content="820">
 	<meta property="og:image:height" content="312">
@@ -95,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#construire-une-image" class="md-skip">
+        <a href="#installation" class="md-skip">
           Aller au contenu
         </a>
       
@@ -110,13 +110,16 @@
               </button>
             
             
-  <!-- Add announcement here, including arbitrary HTML -->
-  <a href="https://twitter.com/squidfunk"> For updates follow <strong>@squidfunk</strong> on <span class="twemoji twitter"> 
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+	<!-- Add announcement here, including arbitrary HTML -->
+	<a href="https://twitter.com/squidfunk" style="color: white;"> 
+		Découvrez les dates des prochaines sessions de formation 
+		<span class="twemoji twitter"> 
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
 				<!-- Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.-->
 				<path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
-		</svg> </span> 
-	<strong>Twitter</strong> 
+			</svg> 
+		</span>
+		<strong> Bootcamp - Devenir Data Analyst</strong> 
 	</a> 
 	<script>var content,el=document.querySelector("[data-md-component=announce]");el&&(content=el.querySelector(".md-typeset"),__md_hash(content.innerHTML)===__md_get("__announce")&&(el.hidden=!0))
 	</script> 
@@ -153,7 +156,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Commandes Docker usuelles
+              Guide Docker pour un Data Scientist
             
           </span>
         </div>
@@ -7201,6 +7204,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creation-du-dockerfile" class="md-nav__link">
+    Création du Dockerfile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#construire-une-image" class="md-nav__link">
     Construire une image
   </a>
@@ -7293,7 +7310,7 @@
 	as the main headline.
 	-->
 	
-		<h1 style="margin-bottom: 0px;"><strong><code>Commandes Docker usuelles</code></strong></h1>
+		<h1 style="margin-bottom: 0px;"><strong><code>Guide Docker pour un Data Scientist</code></strong></h1>
 	
 
 	<!-- Markdown content -->
@@ -7328,44 +7345,64 @@
 		
 		<a href="../../../tags/#devops" class="md-tag"> devops </a>
 		
+		<a href="../../../tags/#mlops" class="md-tag"> mlops </a>
+		
 	</nav>
 	
 
-	<p><img alt="" src="https://agilethought.com/wp-content/uploads/2018/05/Docker_logo.png" /></p>
+	<p>Docker est une technologie open source qui permet de déployer des applications dans des conteneurs. En tant que Data Scientist, vous êtes amenés à deployer vos modèles et Docker est une bonne solution.</p>
+<p><img alt="" src="https://agilethought.com/wp-content/uploads/2018/05/Docker_logo.png" /></p>
+<h2 id="installation">Installation</h2>
+<p>Docker est disponible pour le système d'exploitation Linux.</p>
+<h2 id="creation-du-dockerfile">Création du Dockerfile</h2>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Dockerfile</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span>
+<span class="normal"><a href="#__codelineno-0-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c"># syntax=docker/dockerfile:1</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="k">FROM</span><span class="w"> </span><span class="s">node:18-alpine</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="k">COPY</span><span class="w"> </span>.<span class="w"> </span>.
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="k">RUN</span><span class="w"> </span>yarn<span class="w"> </span>install<span class="w"> </span>--production
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;node&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;src/index.js&quot;</span><span class="p">]</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="k">EXPOSE</span><span class="w"> </span><span class="s">3000</span>
+</code></pre></div></td></tr></table></div>
 <h2 id="construire-une-image">Construire une image</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>docker<span class="w"> </span>build<span class="w"> </span>-f<span class="w"> </span>Dockerfile<span class="w"> </span>-t<span class="w"> </span>&lt;nom<span class="w"> </span>de<span class="w"> </span>l’image&gt;<span class="w"> </span>.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker<span class="w"> </span>build<span class="w"> </span>-f<span class="w"> </span>Dockerfile<span class="w"> </span>-t<span class="w"> </span>&lt;nom<span class="w"> </span>de<span class="w"> </span>l’image&gt;<span class="w"> </span>.
 </code></pre></div>
 <h2 id="supprimer-une-image">Supprimer une image</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker<span class="w"> </span>image<span class="w"> </span>rm<span class="w"> </span>&lt;nom<span class="w"> </span>de<span class="w"> </span>l’image&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker<span class="w"> </span>image<span class="w"> </span>rm<span class="w"> </span>&lt;nom<span class="w"> </span>de<span class="w"> </span>l’image&gt;
 </code></pre></div>
 <h2 id="afficher-la-liste-des-images">Afficher la liste des images</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>docker<span class="w"> </span>images
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>docker<span class="w"> </span>images
 </code></pre></div>
 <h2 id="lancer-un-conteneur">Lancer un conteneur</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span><span class="m">8500</span>:8500<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span>--restart<span class="o">=</span>always<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span>--name<span class="w"> </span>&lt;nom<span class="w"> </span>du<span class="w"> </span>conteneur&gt;<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span>-d<span class="w"> </span>&lt;nom<span class="w"> </span>de<span class="w"> </span>l’image&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-p<span class="w"> </span><span class="m">8500</span>:8500<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span>--restart<span class="o">=</span>always<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span>--name<span class="w"> </span>&lt;nom<span class="w"> </span>du<span class="w"> </span>conteneur&gt;<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span>-d<span class="w"> </span>&lt;nom<span class="w"> </span>de<span class="w"> </span>l’image&gt;
 </code></pre></div>
 <h2 id="afficher-la-liste-des-conteneurs">Afficher la liste des conteneurs</h2>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>docker<span class="w"> </span>ps
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>docker<span class="w"> </span>ps<span class="w"> </span>-a
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>docker<span class="w"> </span>ps
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>docker<span class="w"> </span>ps<span class="w"> </span>-a
 </code></pre></div>
 L’option -a permet d’afficher également les conteneurs qui sont arrêtés.</p>
 <h2 id="arreter-un-conteneur">Arrêter un conteneur</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>docker<span class="w"> </span>stop<span class="w"> </span>&lt;nom<span class="w"> </span>du<span class="w"> </span>conteneur&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>docker<span class="w"> </span>stop<span class="w"> </span>&lt;nom<span class="w"> </span>du<span class="w"> </span>conteneur&gt;
 </code></pre></div>
 <h2 id="supprimer-un-conteneur">Supprimer un conteneur</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>docker<span class="w"> </span>rm<span class="w"> </span>&lt;nom<span class="w"> </span>du<span class="w"> </span>conteneur&gt;
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>docker<span class="w"> </span>rm<span class="w"> </span>&lt;nom<span class="w"> </span>du<span class="w"> </span>conteneur&gt;
 </code></pre></div>
 <h2 id="tagger-une-image">Tagger une image</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>docker<span class="w"> </span>image<span class="w"> </span>tag<span class="w"> </span>idermato<span class="w"> </span>&lt;domaine<span class="w"> </span>du<span class="w"> </span>registery&gt;:&lt;port&gt;/&lt;nom<span class="w"> </span>de<span class="w"> </span>l’image&gt;:latest
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>docker<span class="w"> </span>image<span class="w"> </span>tag<span class="w"> </span>idermato<span class="w"> </span>&lt;domaine<span class="w"> </span>du<span class="w"> </span>registery&gt;:&lt;port&gt;/&lt;nom<span class="w"> </span>de<span class="w"> </span>l’image&gt;:latest
 </code></pre></div>
 <h2 id="pousser-une-image-vers-le-registry">Pousser une image vers le registry</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>docker<span class="w"> </span>image<span class="w"> </span>push<span class="w"> </span>&lt;domaine<span class="w"> </span>du<span class="w"> </span>registery&gt;:&lt;port&gt;/&lt;nom<span class="w"> </span>de<span class="w"> </span>l’image&gt;:latest
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>docker<span class="w"> </span>image<span class="w"> </span>push<span class="w"> </span>&lt;domaine<span class="w"> </span>du<span class="w"> </span>registery&gt;:&lt;port&gt;/&lt;nom<span class="w"> </span>de<span class="w"> </span>l’image&gt;:latest
 </code></pre></div>
 <h2 id="recuperer-une-image-depuis-le-registry">Récupérer une image depuis le registry</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>docker<span class="w"> </span>pull<span class="w"> </span>&lt;domaine<span class="w"> </span>du<span class="w"> </span>registery&gt;:&lt;port&gt;/&lt;nom<span class="w"> </span>de<span class="w"> </span>l’image&gt;:latest
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>docker<span class="w"> </span>pull<span class="w"> </span>&lt;domaine<span class="w"> </span>du<span class="w"> </span>registery&gt;:&lt;port&gt;/&lt;nom<span class="w"> </span>de<span class="w"> </span>l’image&gt;:latest
 </code></pre></div>
 <hr />
 <p><em>Si vous souhaitez aller plus loin, je vous recommande ce cours Openclassrooms <a href="">Cours Openclassrooms</a>.</em></p>
@@ -7600,7 +7637,7 @@ L’option -a permet d’afficher également les conteneurs qui sont arrêtés.<
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "announce.dismiss", "navigation.tabs", "navigation.indexes", "content.code.annotate", "navigation.footer", "navigation.top"], "search": "../../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["header.autohide", "announce.dismiss", "navigation.tabs", "navigation.indexes", "content.code.annotate", "navigation.footer", "navigation.top", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
 	<!-- Go to www.addthis.com/dashboard to customize your tools -->
