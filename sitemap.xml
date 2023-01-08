@@ -1,1388 +1,1393 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://joekakone.github.io/algojungle/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/tags.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/tags/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/about/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/about/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/about/contact.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/about/contact/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/about/joseph-konka.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/about/joseph-konka/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/about/mes-presentations.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/about/mes-presentations/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/about/mes-livres/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/about/mes-livres/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/about/mes-livres/livre-01-algorithmique.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/about/mes-livres/livre-01-algorithmique/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/about/mes-livres/livre-02-programmation.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/about/mes-livres/livre-02-programmation/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/about/mes-livres/livre-03-python.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/about/mes-livres/livre-03-python/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/about/mes-livres/livre-04-analyse-de-donnees.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/about/mes-livres/livre-04-analyse-de-donnees/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/about/mes-projets/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/about/mes-projets/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/about/mes-projets/projet-01-iris-explorer.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/about/mes-projets/projet-01-iris-explorer/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/about/mes-projets/projet-02-covid19-tracker.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/about/mes-projets/projet-02-covid19-tracker/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/about/mes-projets/projet-03-deputes-fr.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/about/mes-projets/projet-03-deputes-fr/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/about/mes-projets/projet-04-palmares-ballon-dor.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/about/mes-projets/projet-04-palmares-ballon-dor/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/algorithmique/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/algorithmique/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/algorithmique/outro.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/algorithmique/outro/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-1-les-bases/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-1-les-bases/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-1-les-bases/affichage-et-saisie.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-1-les-bases/affichage-et-saisie/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-1-les-bases/boucles.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-1-les-bases/boucles/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-1-les-bases/choix.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-1-les-bases/choix/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-1-les-bases/conditions.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-1-les-bases/conditions/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-1-les-bases/fonctions-predefnies.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-1-les-bases/fonctions-predefnies/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-1-les-bases/operations.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-1-les-bases/operations/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-1-les-bases/variables.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-1-les-bases/variables/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-2-les-tableaux/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-2-les-tableaux/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-2-les-tableaux/deuxdimensions.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-2-les-tableaux/deuxdimensions/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-2-les-tableaux/multidimensions.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-2-les-tableaux/multidimensions/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-2-les-tableaux/unedimension.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-2-les-tableaux/unedimension/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-3-les-sous-programmes/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-3-les-sous-programmes/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-3-les-sous-programmes/fonctions.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-3-les-sous-programmes/fonctions/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-3-les-sous-programmes/outro.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-3-les-sous-programmes/outro/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-3-les-sous-programmes/procedures.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-3-les-sous-programmes/procedures/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-6-problemes/probleme-1.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-6-problemes/probleme-1/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-6-problemes/probleme-2.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-6-problemes/probleme-2/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-6-problemes/probleme-3.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-6-problemes/probleme-3/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-6-problemes/probleme-4.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/algorithmique/partie-6-problemes/probleme-4/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/outro.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/outro/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/visualisation.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/visualisation/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/workflow.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/workflow/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/powerbi/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/powerbi/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/powerbi/concevoir-un-modele-de-donnees.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/powerbi/concevoir-un-modele-de-donnees/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/powerbi/creer-un-calendrier.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/powerbi/creer-un-calendrier/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/powerbi/installer.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/powerbi/installer/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/powerbi/mettre-en-place-les-mesures.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/powerbi/mettre-en-place-les-mesures/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/powerbi/obtenir-les-donnees.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/powerbi/obtenir-les-donnees/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/powerbi/ressources.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/powerbi/ressources/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/powerbi/transformer-les-donnees.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/powerbi/transformer-les-donnees/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/python/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/python/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/python/graphiques-3d.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/python/graphiques-3d/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/python/installer.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/python/installer/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/python/openclassrooms.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/python/openclassrooms/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/python/simulation-de-loi-de-probabilte.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/python/simulation-de-loi-de-probabilte/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/r/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/r/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/r/installer.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/r/installer/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/r/openclassrooms.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/r/openclassrooms/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/r/bases/chemins.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/r/bases/chemins/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/r/bases/dataframes.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/r/bases/dataframes/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/r/bases/export.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/r/bases/export/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/r/bases/facteurs.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/r/bases/facteurs/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/r/bases/import.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/r/bases/import/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/r/bases/listes.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/r/bases/listes/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/r/bases/matrices.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/r/bases/matrices/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/r/bases/objets.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/r/bases/objets/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/r/bases/vecteurs.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/r/bases/vecteurs/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/r/programmation/boucles.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/r/programmation/boucles/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/r/programmation/conditions.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/r/programmation/conditions/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/r/programmation/fonctions.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/r/programmation/fonctions/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/data-control-language.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/data-control-language/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/data-definition-language.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/data-definition-language/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/data-manipulation-language.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/data-manipulation-language/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/installer-dbeaver.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/installer-dbeaver/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/ressources.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/ressources/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/data-query-language/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/data-query-language/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/data-query-language/agregation.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/data-query-language/agregation/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/data-query-language/algebre.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/data-query-language/algebre/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/data-query-language/filtrage-et-tri.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/data-query-language/filtrage-et-tri/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/data-query-language/jointures.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/data-query-language/jointures/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/data-query-language/les-sous-requetes.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/data-query-language/les-sous-requetes/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/pl-pgsql/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/pl-pgsql/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/pl-pgsql/les-boucles.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/pl-pgsql/les-boucles/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/pl-pgsql/les-conditions.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/pl-pgsql/les-conditions/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/pl-pgsql/les-fonctions.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/pl-pgsql/les-fonctions/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/pl-pgsql/les-variables.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/pl-pgsql/les-variables/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/python/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/python/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/python/pandas.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/python/pandas/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/python/postgres.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/python/postgres/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/python/sqlite.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/python/sqlite/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/python/sqlserver.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/python/sqlserver/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/tableau/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/tableau/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/tableau/01-connexion.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/tableau/01-connexion/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/tableau/02-creation-du-rapport.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/tableau/02-creation-du-rapport/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/tableau/03-partage.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/tableau/03-partage/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/tableau/installer.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/tableau/installer/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/tableau/ressources-tableau.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/analytics/tableau/ressources-tableau/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/cloud/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/cloud/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/data-python/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/data-python/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/data-python/01-numpy.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/data-python/01-numpy/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/data-python/02-pandas.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/data-python/02-pandas/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/data-python/03-matplotlib.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/data-python/03-matplotlib/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/data-python/04-seaborn.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/data-python/04-seaborn/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/data-python/05-statsmodels.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/data-python/05-statsmodels/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/data-python/06-sklearn.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/data-python/06-sklearn/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/data-python/07-tensorflow.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/data-python/07-tensorflow/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/devops/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/devops/jupyterlab-distant.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/jupyterlab-distant/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/bash.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/bash/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/installer.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/installer/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/outro.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/outro/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/autres-commandes.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/autres-commandes/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/consulter-un-fichier.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/consulter-un-fichier/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/contenu-d-un-repertoire.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/contenu-d-un-repertoire/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/copier-un-fichier.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/copier-un-fichier/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/creer-un-fichier.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/creer-un-fichier/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/creer-un-repertoire.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/creer-un-repertoire/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/deplacer-un-fichier.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/deplacer-un-fichier/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/editer-un-fichier.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/editer-un-fichier/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/se-deplacer.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/se-deplacer/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/supprimer-un-fichier.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/commandes-usuelles/supprimer-un-fichier/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/programmation/affichage.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/programmation/affichage/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/programmation/boucles.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/programmation/boucles/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/programmation/choix.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/programmation/choix/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/programmation/conditions.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/programmation/conditions/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/programmation/saisie.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/bash/programmation/saisie/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/devops/docker/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/docker/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/devops/git/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/git/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/informatique/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/devops/serving/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/informatique/post-01-intro.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/informatique/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/informatique/post-02-ordinateur.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/informatique/post-01-intro/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/informatique/post-03-systemes-d-exploitation.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/informatique/post-02-ordinateur/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/informatique/post-04-coder-est-facile.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/informatique/post-03-systemes-d-exploitation/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/informatique/post-05-les-metiers-de-l-informatique.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/informatique/post-04-coder-est-facile/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/la-rubrique-ml/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/informatique/post-05-les-metiers-de-l-informatique/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/la-rubrique-ml/01-le-test-de-turing.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/la-rubrique-ml/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/la-rubrique-ml/02-les-ateliers-de-dartmouth-college.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/la-rubrique-ml/01-le-test-de-turing/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/la-rubrique-ml/03-la-revelation-du-deep-learning.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/la-rubrique-ml/02-les-ateliers-de-dartmouth-college/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/la-rubrique-ml/04-la-nouvelle-ere-du-deep-learning.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/la-rubrique-ml/03-la-revelation-du-deep-learning/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/les-joies-du-c/adopter-jupyterlab.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/la-rubrique-ml/04-la-nouvelle-ere-du-deep-learning/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/les-joies-du-c/applications-du-c.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/les-joies-du-c/adopter-jupyterlab/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/les-joies-du-c/bonnes-pratiques.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/les-joies-du-c/applications-du-c/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/les-joies-du-c/echanger-deux-variables.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/les-joies-du-c/bonnes-pratiques/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/les-joies-du-c/installer-un-ide.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/les-joies-du-c/echanger-deux-variables/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/les-joies-du-c/langage-c.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/les-joies-du-c/installer-un-ide/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/les-joies-du-c/packages-python-essentiels.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/les-joies-du-c/langage-c/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/les-joies-du-c/pourquoi-le-c.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/les-joies-du-c/packages-python-essentiels/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/les-joies-du-c/premier-programme-c.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/les-joies-du-c/pourquoi-le-c/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/les-joies-du-c/python-vs-c-cpp.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/les-joies-du-c/premier-programme-c/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/les-joies-du-c/retirer-les-accents.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/les-joies-du-c/python-vs-c-cpp/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/portraits/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/les-joies-du-c/retirer-les-accents/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/portraits/alan-turing.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/portraits/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/portraits/gerard-berry.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/portraits/alan-turing/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/portraits/guido-van-rossum.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/portraits/gerard-berry/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/blog/portraits/yann-lecun.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/portraits/guido-van-rossum/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/blog/portraits/yann-lecun/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/openclassrooms.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/outro.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/openclassrooms/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/outro/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage/01-le-probleme.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage/02-les-donnees.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage/01-le-probleme/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage/03-le-modele.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage/02-les-donnees/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage/04-la-fonction-de-perte.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage/03-le-modele/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage/05-la-methode-d-optimisation.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage/04-la-fonction-de-perte/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage-non-supervise/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage/05-la-methode-d-optimisation/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage-non-supervise/acp.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage-non-supervise/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage-non-supervise/kmeans.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage-non-supervise/acp/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage-supervise/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage-non-supervise/kmeans/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage-supervise/knn.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage-supervise/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage-supervise/regression-lineaire.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage-supervise/knn/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage-supervise/regression-logistique.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage-supervise/regression-lineaire/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage-supervise/svm.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage-supervise/regression-logistique/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/deep-learning/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/apprentissage-supervise/svm/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/deep-learning/classification.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/deep-learning/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/deep-learning/reseaux-convolutifs.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/deep-learning/classification/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/deep-learning/transfer-learning.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/deep-learning/reseaux-convolutifs/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/projets/projet-01.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/deep-learning/transfer-learning/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/projets/projet-02.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/projets/projet-01/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/projets/projet-03.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/projets/projet-02/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/projets/projet-04.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/projets/projet-03/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/projets/projet-05.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/projets/projet-04/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/tensorflow/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/projets/projet-05/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/tensorflow/installer.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/tensorflow/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/tensorflow/outro.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/tensorflow/installer/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/tensorflow/ressources.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/tensorflow/outro/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/tensorflow/01-neural-network/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/tensorflow/ressources/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/tensorflow/02-image-classification/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/tensorflow/01-neural-network/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/tensorflow/03-natural-language-processing/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/tensorflow/02-image-classification/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/tensorflow/04-time-series-sequences/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/tensorflow/03-natural-language-processing/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/workflow/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/tensorflow/04-time-series-sequences/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/workflow/01-collecter-de-donnees.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/workflow/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/workflow/02-nettoyer-les-donnees.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/workflow/01-collecter-de-donnees/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/workflow/03-explorer-les-donnees.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/workflow/02-nettoyer-les-donnees/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/workflow/04-transformer-les-donnees.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/workflow/03-explorer-les-donnees/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/workflow/05-echantillonner.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/workflow/04-transformer-les-donnees/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/workflow/06-modeliser-les-donnees.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/workflow/05-echantillonner/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/workflow/07-evaluer-le-modele.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/workflow/06-modeliser-les-donnees/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/workflow/08-deployer-le-modele.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/workflow/07-evaluer-le-modele/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/workflow/09-maintenir-le-modele.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/workflow/08-deployer-le-modele/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/workflow/09-maintenir-le-modele/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/installer.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/outro.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/installer/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-1-bases/affichage.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/outro/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-1-bases/lecture-au-clavier.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-1-bases/affichage/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-1-bases/operations.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-1-bases/lecture-au-clavier/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-1-bases/variables-et-constantes.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-1-bases/operations/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-2-fonctions/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-1-bases/variables-et-constantes/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-2-fonctions/les-fonctions-recursives.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-2-fonctions/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-2-fonctions/les-fonctions.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-2-fonctions/les-fonctions-recursives/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-2-fonctions/les-modules.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-2-fonctions/les-fonctions/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-3-tableaux/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-2-fonctions/les-modules/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-3-tableaux/algebre.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-3-tableaux/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-3-tableaux/matrices.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-3-tableaux/algebre/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-3-tableaux/tableaux.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-3-tableaux/matrices/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-4-pointeurs/pointeurs-et-tableaux.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-3-tableaux/tableaux/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-5-structures/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-4-pointeurs/pointeurs-et-tableaux/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-6-chaines-de-caracteres/affichage.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-5-structures/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-6-chaines-de-caracteres/lecture-au-clavier.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-6-chaines-de-caracteres/affichage/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-6-chaines-de-caracteres/operations.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-6-chaines-de-caracteres/lecture-au-clavier/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-6-chaines-de-caracteres/variables-et-constantes.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-6-chaines-de-caracteres/operations/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-7-fichiers/affichage.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-6-chaines-de-caracteres/variables-et-constantes/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-7-fichiers/lecture-au-clavier.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-7-fichiers/affichage/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-7-fichiers/operations.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-7-fichiers/lecture-au-clavier/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-7-fichiers/variables-et-constantes.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-7-fichiers/operations/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-8-problemes/probleme-01.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-7-fichiers/variables-et-constantes/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-8-problemes/probleme-02.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-8-problemes/probleme-01/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-8-problemes/probleme-03.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-8-problemes/probleme-02/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-8-problemes/probleme-04.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-8-problemes/probleme-03/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-8-problemes/probleme-05.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-8-problemes/probleme-04/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-8-problemes/probleme-06.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-8-problemes/probleme-05/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-8-problemes/probleme-07.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-8-problemes/probleme-06/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-8-problemes/probleme-08.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-8-problemes/probleme-07/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-8-problemes/probleme-09.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-8-problemes/probleme-08/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-8-problemes/probleme-10.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-8-problemes/probleme-09/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-8-problemes/probleme-11.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-8-problemes/probleme-10/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/partie-8-problemes/probleme-12.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-8-problemes/probleme-11/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/partie-8-problemes/probleme-12/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/installer.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/openclassrooms.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/installer/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/fichiers/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/openclassrooms/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/fichiers/fichiers-json.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/fichiers/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/fichiers/fichiers-pickle.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/fichiers/fichiers-json/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/fichiers/fichiers-texte.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/fichiers/fichiers-pickle/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-1-les-bases/les-boucles.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/fichiers/fichiers-texte/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-1-les-bases/les-conditions.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-1-les-bases/les-boucles/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-1-les-bases/les-operations-arithmetiques.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-1-les-bases/les-conditions/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-1-les-bases/les-operations-logiques.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-1-les-bases/les-operations-arithmetiques/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-1-les-bases/les-variables.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-1-les-bases/les-operations-logiques/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-2-les-structures-de-donnees/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-1-les-bases/les-variables/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-2-les-structures-de-donnees/dictionnaires.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-2-les-structures-de-donnees/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-2-les-structures-de-donnees/listes.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-2-les-structures-de-donnees/dictionnaires/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-2-les-structures-de-donnees/sets.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-2-les-structures-de-donnees/listes/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-2-les-structures-de-donnees/tuples.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-2-les-structures-de-donnees/sets/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-3-les-fonctions/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-2-les-structures-de-donnees/tuples/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-3-les-fonctions/fonctions-anonymes.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-3-les-fonctions/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-3-les-fonctions/fonctions-recursives.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-3-les-fonctions/fonctions-anonymes/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-6-chaines-de-caracteres/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-3-les-fonctions/fonctions-recursives/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-6-chaines-de-caracteres/code-ascii.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-6-chaines-de-caracteres/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-7-oriente-objet/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-6-chaines-de-caracteres/code-ascii/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-7-oriente-objet/heritage.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-7-oriente-objet/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-les-modules/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-7-oriente-objet/heritage/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-les-modules/module-datetime.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-les-modules/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-les-modules/module-math.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-les-modules/module-datetime/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-les-modules/module-os.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-les-modules/module-math/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-les-modules/module-random.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-les-modules/module-os/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-les-modules/module-statistics.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-les-modules/module-random/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-les-modules/module-sys.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-les-modules/module-statistics/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-projets/projet-01.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-les-modules/module-sys/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-projets/projet-02.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-projets/projet-01/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-projets/projet-03.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-projets/projet-02/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-projets/projet-04.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-projets/projet-03/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-projets/projet-05.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-projets/projet-04/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/programmation/python/tests-unitaires/index.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/partie-x-projets/projet-05/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/tags.html</loc>
-         <lastmod>2023-01-06</lastmod>
+         <loc>https://joekakone.github.io/algojungle/programmation/python/tests-unitaires/</loc>
+         <lastmod>2023-01-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/tags/</loc>
+         <lastmod>2023-01-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
