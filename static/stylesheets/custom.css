@@ -1,0 +1,40 @@
+/* Apply black border to all images  */
+body img {
+    border: 1px solid black;
+}
+
+.no-border {
+    border: none;
+}
+/*
+#home-content {
+    width: 90%;
+    margin: auto;
+}
+
+#home-content .mdx-hero {
+    display: flex; 
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+#home-content img {
+    height: 100%;
+    margin: auto;
+} */
+
+/* Responsive */
+/* @media screen and (max-width: 800px) {
+    #home-content {
+        width: 100%;
+        margin: auto;
+    }
+    #home-content .mdx-hero {s
+        width: 95%;
+        margin: auto;
+    }
+
+    #home-content img {
+        display: none;
+    }
+} */
