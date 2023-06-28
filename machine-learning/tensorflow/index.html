@@ -25,7 +25,7 @@
     
     
       
-        <title>Initiation au Deep Learning avec Tensorflow - Algo Jungle</title>
+        <title>Apprentissage automatique avec TensorFlow - Algo Jungle</title>
       
     
     
@@ -73,7 +73,7 @@
     
     
     
-<meta property="og:title" content="Initiation au Deep Learning avec Tensorflow">
+<meta property="og:title" content="Apprentissage automatique avec TensorFlow">
 
 <meta property="og:description" content="Algo Junle - Data Science Advocate">
 
@@ -103,7 +103,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#initiation-au-deep-learning-avec-tensorflow" class="md-skip">
+        <a href="#apprentissage-automatique-avec-tensorflow" class="md-skip">
           Aller au contenu
         </a>
       
@@ -136,7 +136,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Initiation au Deep Learning avec Tensorflow
+              Apprentissage automatique avec TensorFlow
             
           </span>
         </div>
@@ -8362,6 +8362,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_11_5" id="__nav_11_5_label" tabindex="0">
@@ -8412,6 +8414,20 @@
     <li class="md-nav__item">
       <a href="../../blog/pydata-stack/lire-une-table-web-avec-pandas/" class="md-nav__link">
         Pandas × Beautiful Soup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blog/pydata-stack/create-custom-data-generator/" class="md-nav__link">
+        Créer un générateur de données
       </a>
     </li>
   
@@ -8841,8 +8857,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#de-distbelief-a-tensorflow" class="md-nav__link">
+    De DistBelief à TensorFlow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tensorflow-20" class="md-nav__link">
+    TensorFlow 2.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#lecosysteme-tensorflow" class="md-nav__link">
-    L'écosystème Tensorflow
+    L'écosystème TensorFlow
   </a>
   
 </li>
@@ -8855,8 +8885,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#a-quoi-ressemble-un-code-tensorflow" class="md-nav__link">
+    À quoi ressemble un code TensorFlow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#tensorflow-developer-certificate" class="md-nav__link">
-    Tensorflow Developer Certificate
+    TensorFlow Developer Certificate
   </a>
   
 </li>
@@ -8879,33 +8916,94 @@
 
 
 
-<h1 id="initiation-au-deep-learning-avec-tensorflow">Initiation au Deep Learning avec Tensorflow</h1>
-<p>Tensorflow est un framework de machine learning open-source écrit en Python dédié à l'implémentation des méthodes de machine learning. C'est l'un des frameworks les plus utilisés pour le développement des systèmes d'intelligence artificielle.</p>
+<h1 id="apprentissage-automatique-avec-tensorflow">Apprentissage automatique avec TensorFlow</h1>
+<p>TensorFlow est un framework de machine learning open-source d'apprentissage automatique. C'est l'un des outils les plus utilisés dans le domaine de l'intelligence artificielle.</p>
 <p><img alt="" src="/algojungle/images/tensorflow/covers/tensorflow.png" /></p>
 <!-- ![](/algojungle/images/01-covers/401.png) -->
 
-<h2 id="lecosysteme-tensorflow">L'écosystème Tensorflow</h2>
-<p>Tensorflow est une plateforme de bout en bout dédiée au machine learning. L’écosystème propose également des outils pour la mise en production des modèles dans différents environnements.</p>
+<h2 id="de-distbelief-a-tensorflow">De DistBelief à TensorFlow</h2>
+<p>TensorFlow est l'évolution du framework <strong>DistBelief</strong>, initialement développé par Google Brain en 2011 puis repris par Google. Le 9 novembre 2015, Google a ouvert le code source de TensorFlow sous <a href="https://fr.wikipedia.org/wiki/Licence_Apache">licence Apache</a>. Le code source de TensorFlow est écrit à 64% en C++ mais il propose des interfaces avec les languages Python, R ou encore Julia et JavaScript.</p>
+<h2 id="tensorflow-20">TensorFlow 2.0</h2>
+<p>En Septembre 2019, la version 2.0 de TensorFlow est officellement disponible, c'est une révolution qui permet à tensorFlow d'être compétitif face à la montée de son concurrent PyTorch. Voici quelques unes des changements majeurs:</p>
 <ul>
-<li>tf.data</li>
-<li>Keras</li>
-<li>Tensorboard</li>
-<li>Tensorflow Hub</li>
-<li>Tensorflow Serving</li>
+<li>SavedModel : permet de déployer les modèles sur différentes plateformes</li>
+<li>Eager Execution : La création de session n'est plus nécessaire dans la version 2.0</li>
+<li>Keras : devient l'API haut-niveau de TensorFlow intégré par défaut sous <code>tf.keras</code></li>
+<li>tf.Data : est la nouvelle API pour créer les pipelines de données</li>
+</ul>
+<p>Pour en savoir plus, je renvoie à cet article plus détaillé <a href="https://stackabuse.com/whats-new-in-tensorflow-2/">What's New in Tensorflow 2.0?</a>.</p>
+<h2 id="lecosysteme-tensorflow">L'écosystème TensorFlow</h2>
+<p>TensorFlow est toute une plateforme  dédiée au machine learning. L’écosystème propose des outils pour une gestion de bout en bout de l'ensemble du cycle de développement des modèles.</p>
+<ul>
+<li>tf.data : Pipeline de données</li>
+<li>Keras : Modélisation</li>
+<li>TensorBoard : Suivi et Évaluation</li>
+<li>TensorFlow Hub : Partage des modèles</li>
+<li>TensorFlow Serving : Déploiement des modèles</li>
 </ul>
 <p><img alt="" src="https://devopedia.org/images/article/52/6854.1569908606.png" /></p>
 <h2 id="keras">Keras</h2>
-<p>Keras est un framework Python basé sur Tensorflow. Depuis Keras est intégré par défaut dans Tensorflow. Keras propose une interface haut niveau qui permet de concevoir des modèles complexes.</p>
-<h2 id="tensorflow-developer-certificate">Tensorflow Developer Certificate</h2>
-<p>La cetification Google Tensorflow Developer Certificate est une certification qui permet aux utilisateurs de Tensorflow de mettre en valeur leur expertise du machine learning.</p>
+<p>Keras est un framework open-source d'apprentissage automatique créé par François Chollet, un ingénieur de Google. Keras est écrit en Python et propose une interface haut niveau simple et intuitive à TensorFlow et Theano qui sont utilisés au choix en arrière-plan. Keras est aujourd'hui la principale API de TensorFlow pour la conception et l'entraînement des modèles. Keras est directement intégré dans TensorFlow et n'a pas besoin d'être installé séparément.</p>
+<h2 id="a-quoi-ressemble-un-code-tensorflow">À quoi ressemble un code TensorFlow</h2>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TensorFlow Sample Code</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-0-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-0-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-0-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-0-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-0-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-0-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-0-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-0-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-0-10">10</a></span>
+<span class="normal"><a href="#__codelineno-0-11">11</a></span>
+<span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
+<span class="normal"><a href="#__codelineno-0-14">14</a></span>
+<span class="normal"><a href="#__codelineno-0-15">15</a></span>
+<span class="normal"><a href="#__codelineno-0-16">16</a></span>
+<span class="normal"><a href="#__codelineno-0-17">17</a></span>
+<span class="normal"><a href="#__codelineno-0-18">18</a></span>
+<span class="normal"><a href="#__codelineno-0-19">19</a></span>
+<span class="normal"><a href="#__codelineno-0-20">20</a></span>
+<span class="normal"><a href="#__codelineno-0-21">21</a></span>
+<span class="normal"><a href="#__codelineno-0-22">22</a></span>
+<span class="normal"><a href="#__codelineno-0-23">23</a></span>
+<span class="normal"><a href="#__codelineno-0-24">24</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># Import TensorFlow</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="c1"># Load data</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">),</span> <span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">mnist</span><span class="o">.</span><span class="n">load_data</span><span class="p">()</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="n">x_train</span><span class="p">,</span> <span class="n">x_test</span> <span class="o">=</span> <span class="n">x_train</span> <span class="o">/</span> <span class="mf">255.0</span><span class="p">,</span> <span class="n">x_test</span> <span class="o">/</span> <span class="mf">255.0</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7"></a>
+<a id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="c1"># Design model</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="n">model</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">Sequential</span><span class="p">([</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10"></a>  <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Flatten</span><span class="p">(</span><span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span> <span class="mi">28</span><span class="p">)),</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11"></a>  <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">),</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12"></a>  <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dropout</span><span class="p">(</span><span class="mf">0.2</span><span class="p">),</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a>  <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Dense</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a>  <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">Softmax</span><span class="p">()</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="p">])</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;adam&#39;</span><span class="p">,</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a>              <span class="n">loss</span><span class="o">=</span><span class="n">loss_fn</span><span class="p">,</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18"></a>              <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19"></a>
+<a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="c1"># Train model</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a>
+<a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="c1"># Evaluate model</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24"></a><span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">x_test</span><span class="p">,</span>  <span class="n">y_test</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<h2 id="tensorflow-developer-certificate">TensorFlow Developer Certificate</h2>
+<p>La cetification Google TensorFlow Developer Certificate est une certification qui permet aux utilisateurs de TensorFlow de mettre en valeur leur expertise du machine learning.</p>
+<p><img alt="png" src="https://www.tensorflow.org/static/site-assets/images/marketing/cert/tf_certificate_card_image.png" /></p>
 <ul>
-<li>Neural Networks</li>
-<li>Image Classification (Convolutionnal Neural Networks)</li>
-<li>Natural Language Processing (Recurrent Neural Networks)</li>
-<li>Times Series and Sequences</li>
+<li>Building neural network models using TensorFlow</li>
+<li>Image Classification</li>
+<li>Natural language processing (NLP)</li>
+<li>Times series, sequences and predictions</li>
 </ul>
 <hr />
-<p><em>Pour avoir plus de détails, je vous invite à visiter le site de Tensorflow <a href="https://www.tensorflow.org/">https://www.tensorflow.org/</a> et de Keras <a href="https://keras.io/">https://keras.io/</a>.</em></p>
+<p><em>Pour avoir plus de détails, je vous invite à visiter le site de TensorFlow <a href="https://www.tensorflow.org/">https://www.tensorflow.org/</a> et de Keras <a href="https://keras.io/">https://keras.io/</a>.</em></p>
 
 
   
@@ -9175,6 +9273,9 @@
 <!-- AddThis -->
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6424c38be57ca03f"></script>
+
+<!-- ShareThis -->
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=649bd6c6a6672f0012d186bd&product=sop' async='async'></script>
 
   </body>
 </html>
