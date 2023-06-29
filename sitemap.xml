@@ -286,7 +286,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://joekakone.github.io/algojungle/analytics/powerbi/05-deployer-des-livrables/pbi-report-server/ajouter-une-source-de-donnees/</loc>
+         <lastmod>2023-06-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/analytics/powerbi/05-deployer-des-livrables/pbi-report-server/creer-un-jeu-de-donnees/</loc>
+         <lastmod>2023-06-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://joekakone.github.io/algojungle/analytics/powerbi/05-deployer-des-livrables/pbi-report-server/installer/</loc>
+         <lastmod>2023-06-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/analytics/powerbi/05-deployer-des-livrables/pbi-report-server/publier-un-rapport/</loc>
          <lastmod>2023-06-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
