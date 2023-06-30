@@ -91,17 +91,9 @@
     
     
     
-<meta property="og:title" content="Accueil">
-
-<meta property="og:description" content="Algo Junle - Data Science Advocate">
-
-<meta property="og:type" content="website">
-<meta property="og:url" content="">
-
-<meta property="og:image" content="https://joekakone.github.io/static/img/cover.png">
-
-<meta property="og:image:width" content="1280">
-<meta property="og:image:height" content="720">
+<!-- Bootstrap CSS-->
+<!-- <link rel="stylesheet" href="https://joekakone.github.io/website-utils/static/vendor/bootstrap/css/bootstrap.min.css"> -->
+<!-- <link rel="stylesheet" href="https://joekakone.github.io/website-utils/static/css/custom.css"> -->
 
   </head>
   
@@ -373,154 +365,45 @@
         
       
 
-<!-- Additional styles for landing page -->
-<style>
-  /* Application header should be static for the landing page */
-  .md-header {
-    position: initial;
-  }
-
-  /* Remove spacing, as we cannot hide it completely */
-  .md-main__inner {
-    margin: 0;
-  }
-
-  /* Hide main content for now */
-  .md-content {
-    display: none;
-  }
-
-  /* Hide table of contents */
-  @media screen and (min-width: 60em) {
-    .md-sidebar--secondary {
-      display: none;
-    }
-  }
-
-  /* Hide navigation */
-  @media screen and (min-width: 76.25em) {
-    .md-sidebar--primary {
-      display: none;
-    }
-  }
-
-  /* Custom  */
-  .pad {
-    padding-top: 2cm !important;
-    padding-bottom: 2cm !important;
-  }
-
-  .pad-1 {
-    padding-top: 1cm !important;
-    /* padding-bottom: 2cm !important; */
-  }
-
-  .pad-0 {
-    padding-bottom: 0;
-  }
-
-  .pad-2 {
-    padding-top: 2cm !important;
-    /* padding-bottom: 2cm !important; */
-  }
-
-  .bg-grey {
-    background-color: var(--md-primary-fg-color)
-  }
-
-  .text-white {
-    color: white;
-  }
-
-  .row {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .col {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .start {
-    align-items: flex-start;
-  }
-
-  .between {
-    justify-content: space-between;
-  }
-
-  .mg-0 {
-    margin: 0;
-  }
-
-  .grid {
-    display: grid;
-    grid-template-columns: 650px 650px;
-  }
-
-  .grid-3-1 {
-    display: grid;
-    grid-template-columns: 900px 300px;
-  }
-
-  .mg-auto {
-    margin: auto;
-  }
-
-  .register-link {
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  header img {
-    border: none;
-  }
-/* 
-  section {
-    padding-right: 0.5cm;
-    padding-left: 0.5cm;
-  } */
-</style>
-
-<!-- Hero for landing page -->
-<main class="md-main" data-md-component="main">
-<section class="mdx-container pad">
-  <div class="md-grid md-typeset">
-    <!-- <div class="mdx-hero grid-3-1 between"> -->
-    <div class="mdx-hero row start">
-      <!-- Hero content -->
-      <div class="mdx-hero__content">
-        <h1>Bienvenue sur Algo Jungle</h1>
-        <p>Vous êtes matheux et vous souhaitez faire carrière dans le domaine de l'informatique ? Vous êtes au bon endroit, je suis Joseph Konka, Spécialiste Data Science et je vais vous apprendre les notions de base qu'il vous faut pour débuter votre carrière dans le très passionnant univers de la Data Science. Alors, vous êtes prêts  pour l'aventure ? C'est parti 🚀</p>
-        <div class="pad-1">
-          <a href="algorithmique/" title="Introduction À L'algorithmique"
-            class="md-button md-button--primary">
-            Démarrer
-          </a>
-          <a href="blog/" title="Les dernières nouveautés du blog" class="md-button">
-            Voir le blog
-          </a>
+<div class="home-page">
+  <!-- Hero for landing page -->
+  <section class="mdx-hero__inner">
+    <div class="md-grid md-typeset">
+      <!-- <div class="mdx-hero grid-3-1 between"> -->
+      <div class="mdx-hero row start">
+        <!-- Hero content -->
+        <div class="mdx-hero__content">
+          <h1>Bienvenue sur Algo Jungle</h1>
+          <p>Vous êtes matheux et vous souhaitez faire carrière dans le domaine de l'informatique ? Vous êtes au bon endroit, je suis Joseph Konka, Spécialiste Data Science et je vais vous apprendre les notions de base qu'il vous faut pour débuter votre carrière dans le très passionnant univers de la Data Science. Alors, vous êtes prêts  pour l'aventure ? C'est parti 🚀</p>
+          <div class="pad-1">
+            <a href="algorithmique/" title="Introduction À L'algorithmique"
+              class="md-button md-button--primary">
+              Démarrer
+            </a>
+            <a href="blog/" title="Les dernières nouveautés du blog" class="md-button">
+              Voir le blog
+            </a>
+          </div>
+          <br><br>
+          <p style="text-align: left;"><i>‘‘Le savoir est la seule matière qui s’accroît quand on la partage.’’</i>
+            Socrate</p>
         </div>
-        <br><br>
-        <p style="text-align: left;"><i>‘‘Le savoir est la seule matière qui s’accroît quand on la partage.’’</i>
-          Socrate</p>
-      </div>
 
-      <!-- Hero image -->
-      <div class="mdx-hero__image">
-        <img src="/algojungle/assets/images/illustration.png" alt="" width="1300px" height="1100px" draggable="false"
-          class="no-border">
+        <!-- Hero image -->
+        <div class="mdx-hero__image">
+          <img src="/algojungle/assets/images/illustration.png" alt="" width="1300px" height="1100px" draggable="false"
+            class="no-border">
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- About -->
-<section class="mdx-container pad bg-grey text-white">
-  <div class="md-grid md-typeset">
-    <h1 style="color: white;">À propos</h1>
-    <div class="grid between">
+  <!-- About -->
+  <section class="container">
+    <div class="">
+      <h1 style="color: white;">À propos</h1>
+    </div>
+    <div class="row">
       <div>
         <img src="/algojungle/assets/images/portrait-joseph-konka.png" alt=""
           width="500px" height="500px" class="no-border">
@@ -577,85 +460,84 @@
         </p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Training -->
-<!-- <section class="mdx-container pad">
-  <div class="md-grid md-typeset">
-    <h1 style="margin-bottom: 0;">Formations</h1>
-    <div class="grid between">
-      <div>
-        <h2>Devenir Data Analyst</h2>
-        <p>Le Data Analyst joue un rôle crucial en entreprise, il recueille et analyse les données afin d'aider la prise de décision. 
-          Dans cette formation, vous apprendrez les bases de la statistique descriptive, le langage SQL, Excel, Power BI. les langages Python et Talend.</p>
-        <p>Durée : 3 mois &nbsp; | &nbsp; Tarif : 49.000 FCFA | &nbsp; <a href="#" class="register-link" target="_blank">S'inscrire</a></p>
-      </div>
-      <div>
-        <h2>Devenir Data Scientist</h2>
-        <p>Le Data Scientist exploite les données en utilisant les algorithmes de machine learning. Dans cette
-          formation, vous apprendrez les bases du langage Python, les packages dédiés à la data science. Vous apprendrez
-          également à créer des modèles de machine learning avec Scikit-learn et Tensorflow et comment les mettre en production.</p>
-        <p>Durée : 3 mois &nbsp; | &nbsp; Tarif : 59.000 FCFA | &nbsp; <a href="#" class="register-link" target="_blank">S'inscrire</a></p>
-      </div>
-      <div>
-        <h2>Power BI Bootcamp</h2>
-        <p>Power BI est l'outil de visualisation de données de Microsoft. Power BI permet de créer des rapports à partir
-          de plusieurs sources de données. Dans cette formation, vous apprendrez à préparer les données, à concevoir et développer des modèles de données.</p>
-        <p>Durée : 1 mois &nbsp; | &nbsp; Tarif : 29.000 FCFA | &nbsp; <a href="#" class="register-link" target="_blank">S'inscrire</a></p>
-      </div>
-      <div>
-        <h2>Web Scraping avec Python</h2>
-        <p>Le Web Scraping consiste à extraire des données dans de pages web de façon automatisée. 
-          Dans cette formation, vous apprendrez à faire du scraping de données avec Python. 
-          Vous découvrirez les packages BeautifulSoup, Scrapy, Selenium et Selectolax.
-        </p>
-        <p>Durée : 1 mois &nbsp; | &nbsp; Tarif : 14.900 FCFA | &nbsp; <a href="#" class="register-link" target="_blank">S'inscrire</a></p>
+  <!-- Training -->
+  <section class="mdx-container pad">
+    <div class="md-grid md-typeset">
+      <h1 style="margin-bottom: 0;">Formations</h1>
+      <div class="grid between">
+        <div>
+          <h2>Devenir Data Analyst</h2>
+          <p>Le Data Analyst joue un rôle crucial en entreprise, il recueille et analyse les données afin d'aider la prise de décision. 
+            Dans cette formation, vous apprendrez les bases de la statistique descriptive, le langage SQL, Excel, Power BI. les langages Python et Talend.</p>
+          <p>Durée : 3 mois &nbsp; | &nbsp; Tarif : 49.000 FCFA | &nbsp; <a href="#" class="register-link" target="_blank">S'inscrire</a></p>
+        </div>
+        <div>
+          <h2>Devenir Data Scientist</h2>
+          <p>Le Data Scientist exploite les données en utilisant les algorithmes de machine learning. Dans cette
+            formation, vous apprendrez les bases du langage Python, les packages dédiés à la data science. Vous apprendrez
+            également à créer des modèles de machine learning avec Scikit-learn et Tensorflow et comment les mettre en production.</p>
+          <p>Durée : 3 mois &nbsp; | &nbsp; Tarif : 59.000 FCFA | &nbsp; <a href="#" class="register-link" target="_blank">S'inscrire</a></p>
+        </div>
+        <div>
+          <h2>Power BI Bootcamp</h2>
+          <p>Power BI est l'outil de visualisation de données de Microsoft. Power BI permet de créer des rapports à partir
+            de plusieurs sources de données. Dans cette formation, vous apprendrez à préparer les données, à concevoir et développer des modèles de données.</p>
+          <p>Durée : 1 mois &nbsp; | &nbsp; Tarif : 29.000 FCFA | &nbsp; <a href="#" class="register-link" target="_blank">S'inscrire</a></p>
+        </div>
+        <div>
+          <h2>Web Scraping avec Python</h2>
+          <p>Le Web Scraping consiste à extraire des données dans de pages web de façon automatisée. 
+            Dans cette formation, vous apprendrez à faire du scraping de données avec Python. 
+            Vous découvrirez les packages BeautifulSoup, Scrapy, Selenium et Selectolax.
+          </p>
+          <p>Durée : 1 mois &nbsp; | &nbsp; Tarif : 14.900 FCFA | &nbsp; <a href="#" class="register-link" target="_blank">S'inscrire</a></p>
+        </div>
       </div>
     </div>
-  </div>
-</section> -->
+  </section>
 
-<!-- Events -->
-<!-- <section class="mdx-container pad bg-grey text-white">
-  <div class="md-grid md-typeset">
-    <h1 style="color: white;">Mes événements</h1>
-    <p>Dans le cadre de la vulgarisation autour des sujets Python et Data, j'organise régulièrement des événements en ligne. Je vous invite à me réjoindre. Le savoir est la seule matière qui s’accroît quand on la
-      partage.</p>
-  </div>
-</section> -->
+  <!-- Events -->
+  <section class="mdx-container pad bg-grey text-white">
+    <div class="md-grid md-typeset">
+      <h1 style="color: white;">Mes événements</h1>
+      <p>Dans le cadre de la vulgarisation autour des sujets Python et Data, j'organise régulièrement des événements en ligne. Je vous invite à me réjoindre. Le savoir est la seule matière qui s’accroît quand on la
+        partage.</p>
+    </div>
+  </section>
 
-<!-- Blog -->
-<section class="mdx-container pad">
-  <div class="md-grid md-typeset">
-    <h1 style="margin-bottom: 0;">Mon Blog</h1>
-    <div class="pad-1 grid-3-1 between">
-      <div>
-        <!-- <p>
-          Si vous êtes passionné par l'exploitation des données et que vous souhaitez découvrir comment Python peut être utilisé comme un puissant outil pour analyser, 
-          manipuler et visualiser les données, vous êtes au bon endroit. 
-          Mon blog regorge d'articles approfondis, de tutoriels pratiques et de conseils pertinents pour vous aider à explorer les multiples facettes de Python appliqué à la Data Science. 
-          Préparez-vous à plonger dans un monde de connaissances et d'opportunités infinies.
-        </p> -->
-        <p>
-          Je tiens également un blog sur lequel je publie régulièrement du contenu.
-          Si vous êtes à l'affut des dernières nouveautés Python et Data, je vous invite à jeter un coup d'œil.
-          Vous trouverez des tutoriels, des articles sur les bonnes pratiques, des guides ultimes pour prendre en main
-          les outils entre autres.
-        </p>
-        <br>
-        <a href="blog/" title="Les dernières nouveautés du blog" class="md-button">
-          Voir le blog
-        </a>
-      </div>
-      <div>
-        <img src="https://cdn-icons-png.flaticon.com/512/115/115743.png" alt="" width="200px" height="200px"
-          class="no-border">
+  <!-- Blog -->
+  <section class="mdx-container pad">
+    <div class="md-grid md-typeset">
+      <h1 style="margin-bottom: 0;">Mon Blog</h1>
+      <div class="pad-1 grid-3-1 between">
+        <div>
+          <!-- <p>
+            Si vous êtes passionné par l'exploitation des données et que vous souhaitez découvrir comment Python peut être utilisé comme un puissant outil pour analyser, 
+            manipuler et visualiser les données, vous êtes au bon endroit. 
+            Mon blog regorge d'articles approfondis, de tutoriels pratiques et de conseils pertinents pour vous aider à explorer les multiples facettes de Python appliqué à la Data Science. 
+            Préparez-vous à plonger dans un monde de connaissances et d'opportunités infinies.
+          </p> -->
+          <p>
+            Je tiens également un blog sur lequel je publie régulièrement du contenu.
+            Si vous êtes à l'affut des dernières nouveautés Python et Data, je vous invite à jeter un coup d'œil.
+            Vous trouverez des tutoriels, des articles sur les bonnes pratiques, des guides ultimes pour prendre en main
+            les outils entre autres.
+          </p>
+          <br>
+          <a href="blog/" title="Les dernières nouveautés du blog" class="md-button">
+            Voir le blog
+          </a>
+        </div>
+        <div>
+          <img src="https://cdn-icons-png.flaticon.com/512/115/115743.png" alt="" width="200px" height="200px"
+            class="no-border">
+        </div>
       </div>
     </div>
-  </div>
-</section>
-</main>
+  </section>
+</div>
 
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
