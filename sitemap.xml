@@ -271,6 +271,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://joekakone.github.io/algojungle/analytics/powerbi/05-deployer-des-livrables/creer-un-compte-power-bi/</loc>
+         <lastmod>2023-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://joekakone.github.io/algojungle/analytics/powerbi/05-deployer-des-livrables/idee-de-design/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
@@ -292,6 +297,16 @@
     </url>
     <url>
          <loc>https://joekakone.github.io/algojungle/analytics/powerbi/05-deployer-des-livrables/pbi-report-server/creer-un-jeu-de-donnees/</loc>
+         <lastmod>2023-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/analytics/powerbi/05-deployer-des-livrables/pbi-report-server/creer-un-plan-d-actualisation/</loc>
+         <lastmod>2023-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/analytics/powerbi/05-deployer-des-livrables/pbi-report-server/gerer-les-droits-d-acces/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -677,6 +692,11 @@
     </url>
     <url>
          <loc>https://joekakone.github.io/algojungle/blog/</loc>
+         <lastmod>2023-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/blog/bi-journal/examen-pl-300/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
