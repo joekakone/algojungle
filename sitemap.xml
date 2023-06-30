@@ -571,27 +571,27 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/pl-pgsql/</loc>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/programming/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/pl-pgsql/les-boucles/</loc>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/programming/les-boucles/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/pl-pgsql/les-conditions/</loc>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/programming/les-conditions/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/pl-pgsql/les-fonctions/</loc>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/programming/les-fonctions/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/analytics/sql/pl-pgsql/les-variables/</loc>
+         <loc>https://joekakone.github.io/algojungle/analytics/sql/programming/les-variables/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -881,6 +881,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/deep-learning/</loc>
+         <lastmod>2023-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://joekakone.github.io/algojungle/machine-learning/installer/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
@@ -971,26 +976,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/deep-learning/</loc>
-         <lastmod>2023-06-30</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/deep-learning/classification/</loc>
-         <lastmod>2023-06-30</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/deep-learning/reseaux-convolutifs/</loc>
-         <lastmod>2023-06-30</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://joekakone.github.io/algojungle/machine-learning/deep-learning/transfer-learning/</loc>
-         <lastmod>2023-06-30</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://joekakone.github.io/algojungle/machine-learning/projets/projet-01/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
@@ -1042,6 +1027,16 @@
     </url>
     <url>
          <loc>https://joekakone.github.io/algojungle/machine-learning/tensorflow/02-image-classification/</loc>
+         <lastmod>2023-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/tensorflow/02-image-classification/reseaux-convolutifs/</loc>
+         <lastmod>2023-06-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/machine-learning/tensorflow/02-image-classification/transfer-learning/</loc>
          <lastmod>2023-06-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
