@@ -6827,6 +6827,8 @@
         
           
         
+          
+        
       
       
         
@@ -6869,8 +6871,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../flask/fast-api/" class="md-nav__link">
-        Fast API
+      <a href="../flask/demarrer/" class="md-nav__link">
+        Démarrer avec Flask
       </a>
     </li>
   
@@ -6885,6 +6887,20 @@
     <li class="md-nav__item">
       <a href="../flask/deployer-avec-docker/" class="md-nav__link">
         Déployer avec Docker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../flask/fast-api/" class="md-nav__link">
+        Prendre en main FastAPI
       </a>
     </li>
   
@@ -8916,8 +8932,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#a-quoi-ressemblent-les-conteneurs-docker" class="md-nav__link">
-    À quoi ressemblent les conteneurs Docker
+  <a href="#a-quoi-ca-ressemble" class="md-nav__link">
+    À quoi ça ressemble ?
   </a>
   
 </li>
@@ -8956,24 +8972,17 @@
 <h2 id="installation">Installation</h2>
 <p>Docker est disponible pour le système d'exploitation Linux.</p>
 <h2 id="creation-du-dockerfile">Création du Dockerfile</h2>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Dockerfile</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span>
-<span class="normal"><a href="#__codelineno-0-4">4</a></span>
-<span class="normal"><a href="#__codelineno-0-5">5</a></span>
-<span class="normal"><a href="#__codelineno-0-6">6</a></span>
-<span class="normal"><a href="#__codelineno-0-7">7</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c"># syntax=docker/dockerfile:1</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="k">FROM</span><span class="w"> </span><span class="s">node:18-alpine</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="k">COPY</span><span class="w"> </span>.<span class="w"> </span>.
-<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="k">RUN</span><span class="w"> </span>yarn<span class="w"> </span>install<span class="w"> </span>--production
-<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;node&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;src/index.js&quot;</span><span class="p">]</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="k">EXPOSE</span><span class="w"> </span><span class="s">3000</span>
-</code></pre></div></td></tr></table></div>
-<h2 id="a-quoi-ressemblent-les-conteneurs-docker">À quoi ressemblent les conteneurs Docker</h2>
+<div class="highlight"><span class="filename">Dockerfile</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">FROM</span><span class="w"> </span><span class="s">node:18-alpine</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">COPY</span><span class="w"> </span>.<span class="w"> </span>.
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">RUN</span><span class="w"> </span>yarn<span class="w"> </span>install<span class="w"> </span>--production
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;node&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;src/index.js&quot;</span><span class="p">]</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="k">EXPOSE</span><span class="w"> </span><span class="s">3000</span>
+</code></pre></div>
+<h2 id="a-quoi-ca-ressemble">À quoi ça ressemble ?</h2>
 <p><img alt="" src="/algojungle/images/docker/docker-desktop-container-view.png" /></p>
 <hr />
-<p><em>Si vous souhaitez aller plus loin, je vous recommande ce cours Openclassrooms <a href="">Cours Openclassrooms</a>.</em></p>
+<p><em>Si vous souhaitez aller plus loin, je vous recommande ce cours Openclassrooms <a href="https://openclassrooms.com/fr/courses/2035766-optimisez-votre-deploiement-en-creant-des-conteneurs-avec-docker">Cours Openclassrooms</a>.</em></p>
 
 
   

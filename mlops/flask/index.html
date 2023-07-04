@@ -25,7 +25,7 @@
     
     
       
-        <title>Créer des micro services avec Flask - Algo Jungle</title>
+        <title>Développer des applications web avec Flask - Algo Jungle</title>
       
     
     
@@ -73,7 +73,7 @@
     
     
     
-<meta property="og:title" content="Créer des micro services avec Flask">
+<meta property="og:title" content="Développer des applications web avec Flask">
 
 <meta property="og:description" content="Algo Junle - Data Science Advocate">
 
@@ -103,7 +103,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#creer-des-micro-services-avec-flask" class="md-skip">
+        <a href="#developper-des-applications-web-avec-flask" class="md-skip">
           Aller au contenu
         </a>
       
@@ -136,7 +136,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Créer des micro services avec Flask
+              Développer des applications web avec Flask
             
           </span>
         </div>
@@ -6829,6 +6829,8 @@
         
           
         
+          
+        
       
       
         
@@ -6871,8 +6873,8 @@
   
   
     <li class="md-nav__item">
-      <a href="fast-api/" class="md-nav__link">
-        Fast API
+      <a href="demarrer/" class="md-nav__link">
+        Démarrer avec Flask
       </a>
     </li>
   
@@ -6887,6 +6889,20 @@
     <li class="md-nav__item">
       <a href="deployer-avec-docker/" class="md-nav__link">
         Déployer avec Docker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fast-api/" class="md-nav__link">
+        Prendre en main FastAPI
       </a>
     </li>
   
@@ -8895,22 +8911,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
+  <a href="#microframework" class="md-nav__link">
+    Microframework
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#importation" class="md-nav__link">
-    Importation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#premiere-application" class="md-nav__link">
-    Première application
+  <a href="#a-quoi-ca-ressemble" class="md-nav__link">
+    À quoi ça ressemble ?
   </a>
   
 </li>
@@ -8933,31 +8942,36 @@
 
 
 
-<h1 id="creer-des-micro-services-avec-flask">Créer des micro services avec Flask</h1>
-<p>Flask est un framework Python qui permet de créer des applications web, tout particulièrement des APIs. Flask est très utilisé pour déployer les modèles de machine learning sous forme de services.</p>
+<h1 id="developper-des-applications-web-avec-flask">Développer des applications web avec Flask</h1>
+<p>Flask est un framework Python open-source qui permet de créer des applications web. Flask est très utilisé pour déployer les modèles de machine learning sous forme de services.</p>
 <p><img alt="" src="/algojungle/images/flask/SimpleApp.PNG" /></p>
-<h2 id="installation">Installation</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>Flask
+<p>Flask a été créé par Armin Ronacher en 2013. En 2018, Flask était élu "Framework web le plus populaire" par le Python Developers Survey. En raison de sa légereté elle est très utilisé dans le milieu de la data pour déployer les modèles de machine learning sous forme de services.</p>
+<h2 id="microframework">Microframework</h2>
+<p>On le qualifie souvent de microframework en raison de son caractère léger. En effet, Flask n'implémente que le noyau du serveur web, pas de systèeme d'authentification, pas de gestion de formualires. Toutefois, plusieurs extensions ont été développées autour de Flask, faisant de lui, un framework à part entière. Voici quelques unes:</p>
+<ul>
+<li>Flask-SQLAlchemy</li>
+<li>Flask-Logging</li>
+<li>Flask-Form</li>
+<li>Flask-Bootstrap</li>
+</ul>
+<h2 id="a-quoi-ca-ressemble">À quoi ça ressemble ?</h2>
+<p>Le code d'une application Flask ressemble à ceci (voir le code ci-dessous). En 7 lignes de code, on peut créer une application web avec Flask. Fappelez-vous, Flask est un microframework.</p>
+<div class="highlight"><span class="filename">Flask Sample App</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="ch">#!/usr/bin/env python</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1"># coding : utf-8</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">jsonify</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="k">def</span> <span class="nf">home</span><span class="p">():</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="n">message</span><span class="o">=</span><span class="s1">&#39;Hello, World!&#39;</span><span class="p">)</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">host</span><span class="o">=</span><span class="s2">&quot;0.0.0.0&quot;</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">5000</span><span class="p">)</span>
 </code></pre></div>
-<h2 id="importation">Importation</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span> <span class="nn">flask</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
-</code></pre></div>
-<h2 id="premiere-application">Première application</h2>
-<div class="highlight"><span class="filename">Simple App</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="ch">#!/usr/bin/env python</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1"># coding : utf-8</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="k">def</span> <span class="nf">home</span><span class="p">():</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;message&quot;</span> <span class="p">:</span> <span class="s2">&quot;Hello world !&quot;</span><span class="p">}</span>
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
-<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">debug</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</code></pre></div>
+<hr />
+<p><em>Dans la suite de la formation, vous apprendrez comment créer une API avec le framework Flask.</em></p>
 
 
   

@@ -15,17 +15,17 @@
         <link rel="canonical" href="https://joekakone.github.io/algojungle/mlops/flask/fast-api/">
       
       
-        <link rel="prev" href="../installer/">
+        <link rel="prev" href="../deployer-avec-docker/">
       
       
-        <link rel="next" href="../deployer-avec-docker/">
+        <link rel="next" href="../ressources/">
       
       <link rel="icon" href="/algojungle/assets/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.16">
     
     
       
-        <title>Fast API - Algo Jungle</title>
+        <title>Prendre en main FastAPI - Algo Jungle</title>
       
     
     
@@ -73,7 +73,7 @@
     
     
     
-<meta property="og:title" content="Fast API">
+<meta property="og:title" content="Prendre en main FastAPI">
 
 <meta property="og:description" content="Algo Junle - Data Science Advocate">
 
@@ -103,7 +103,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#creer-des-micro-services-avec-flask" class="md-skip">
+        <a href="#prendre-en-main-fastapi" class="md-skip">
           Aller au contenu
         </a>
       
@@ -136,7 +136,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Fast API
+              Prendre en main FastAPI
             
           </span>
         </div>
@@ -6829,6 +6829,8 @@
         
           
         
+          
+        
       
       
         
@@ -6869,6 +6871,34 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../demarrer/" class="md-nav__link">
+        Démarrer avec Flask
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deployer-avec-docker/" class="md-nav__link">
+        Déployer avec Docker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -6881,12 +6911,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Fast API
+          Prendre en main FastAPI
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Fast API
+        Prendre en main FastAPI
       </a>
       
         
@@ -6929,20 +6959,6 @@
   
 </nav>
       
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../deployer-avec-docker/" class="md-nav__link">
-        Déployer avec Docker
-      </a>
     </li>
   
 
@@ -8988,16 +9004,17 @@
 
 
 
-<h1 id="creer-des-micro-services-avec-flask">Créer des micro services avec Flask</h1>
-<p>Flask est un framework Python qui permet de créer des applications web, tout particulièrement des APIs. Flask est très utilisé pour déployer les modèles de machine learning sous forme de services.</p>
+<h1 id="prendre-en-main-fastapi">Prendre en main FastAPI</h1>
+<p>FastAPI est un framework Python qui permet également de créer des applications web. Il est le devenu le concurrent sérieux de Flask. Dans cette section, je vous montre créer une API avec FastAPI.</p>
 <p><img alt="" src="/algojungle/images/flask/SimpleApp.PNG" /></p>
 <h2 id="installation">Installation</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>Flask
-</code></pre></div>
+<p>Tout comme Flask, FastAPI n'est pas un package par défaut, il faut donc l'installer.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>fastapi
+</code></pre></div></p>
 <h2 id="importation">Importation</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span> <span class="nn">flask</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span> <span class="nn">fastapi</span>
 </code></pre></div>
+<p>La synthaxe de FastAPI est assez similaire à celle de Flask.</p>
 <h2 id="premiere-application">Première application</h2>
 <div class="highlight"><span class="filename">Simple App</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="ch">#!/usr/bin/env python</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="c1"># coding : utf-8</span>
@@ -9042,7 +9059,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../installer/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Installer Flask" rel="prev">
+          <a href="../deployer-avec-docker/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Déployer avec Docker" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -9051,20 +9068,20 @@
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Installer Flask
+                Déployer avec Docker
               </div>
             </div>
           </a>
         
         
           
-          <a href="../deployer-avec-docker/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Déployer avec Docker" rel="next">
+          <a href="../ressources/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Ressources" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Déployer avec Docker
+                Ressources
               </div>
             </div>
             <div class="md-footer__button md-icon">
