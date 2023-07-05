@@ -2175,6 +2175,8 @@
         
           
         
+          
+        
       
       
         
@@ -2261,6 +2263,20 @@
     <li class="md-nav__item">
       <a href="../python/partie-1-les-bases/les-boucles/" class="md-nav__link">
         Les boucles
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python/partie-1-les-bases/break-continue/" class="md-nav__link">
+        Break & Continue
       </a>
     </li>
   
@@ -6524,12 +6540,20 @@
             
           
         
+          
+        
+          
+        
       
       
         
         
         <div class="md-nav__link md-nav__link--index ">
           <a href="../machine-learning/tensorflow/03-natural-language-processing/">Natural Language Processing</a>
+          
+            <label for="__nav_9_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
           
         </div>
       
@@ -6540,6 +6564,34 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../machine-learning/tensorflow/03-natural-language-processing/classification-de-texte/" class="md-nav__link">
+        Classification de texte
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../machine-learning/tensorflow/03-natural-language-processing/generation-de-texte/" class="md-nav__link">
+        Génération de texte
+      </a>
+    </li>
+  
+
             
           
         </ul>
@@ -7783,6 +7835,8 @@
         
           
         
+          
+        
       
       
         
@@ -7841,6 +7895,20 @@
     <li class="md-nav__item">
       <a href="../mlops/cloud/gcp/" class="md-nav__link">
         Google Cloud Platform
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mlops/cloud/ovh/" class="md-nav__link">
+        OVH
       </a>
     </li>
   
@@ -8909,6 +8977,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#algorithmes-et-structures-de-donnees" class="md-nav__link">
+    Algorithmes et Structures de données
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#des-origines-mathematiques" class="md-nav__link">
     Des origines mathématiques
   </a>
@@ -8916,43 +8991,23 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#les-idees-dabord" class="md-nav__link">
-    Les idées d'abord
+  <a href="#lalgorithme-dabord" class="md-nav__link">
+    L'algorithme d'abord
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#lalgo-puis-le-code" class="md-nav__link">
-    L'algo puis le code
+  <a href="#lalgorithme-de-laddition" class="md-nav__link">
+    L'algorithme de l'addition
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#quelques-algorithmes-populaires" class="md-nav__link">
-    Quelques algorithmes populaires
+  <a href="#lalgorithme-deuclide" class="md-nav__link">
+    L’algorithme d’Euclide
   </a>
-  
-    <nav class="md-nav" aria-label="Quelques algorithmes populaires">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-lalgorithme-daddition" class="md-nav__link">
-    1. L'algorithme d'addition
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-lalgorithme-deuclide" class="md-nav__link">
-    2. L’algorithme d’Euclide
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -8971,12 +9026,18 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#2-faire-cuire-du-riz" class="md-nav__link">
-    2. Faire cuire du riz
-  </a>
+      </ul>
+    </nav>
   
 </li>
+      
+        <li class="md-nav__item">
+  <a href="#algorithme-et-cuisine" class="md-nav__link">
+    Algorithme et Cuisine
+  </a>
+  
+    <nav class="md-nav" aria-label="Algorithme et Cuisine">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#3-se-deplacer" class="md-nav__link">
@@ -9023,22 +9084,23 @@
 
 
 <h1 id="introduction-a-lalgorithmique">Introduction à l'algorithmique</h1>
-<p>L'algorithmique est le socle du dévéloppement informatique.</p>
+<p>Tout bon développeur doit maîtriser les bases de l'algorithmique et cela vaut pour les professionnels de la Data. L'algorithmique et les structures de données consituent le socle du dévéloppement informatique et donc un <strong>MUST HAVE</strong> dans votre parcours Python et Data.</p>
 <p><img alt="" src="/algojungle/images/01-covers/100.png" /></p>
-<!-- ![](../images/Euclide.jpg) -->
-
+<p>L'algorithmique est une discipline à part entière, elle est enseignée à partir du lycée dans les pays occidentaux. Malheureusement, elle n'est enseignée qu'à partir de l'université en Afrique et seulement dans quelques filières telles que l'informatique, les mathématiques ou encore la physique. C'est l'une des défaillances de nos systèmes éducatifs dépassés.</p>
+<h2 id="algorithmes-et-structures-de-donnees">Algorithmes et Structures de données</h2>
+<p>L'algorithmique couvre deux sujets à savoir les algorithmes et les strutures de données. Les algorithmes décrivents les méthodes de résolution de problèmes tandis que les structures de données définssent la représentation des données.</p>
 <p>Qu'est-ce que l'algorithmique ? Pourquoi est-elle si importante ? Comment construit t-on un algorihtme ? Si cela vous intéresse alors allons-y, je vous explique tout 🚀.</p>
 <h2 id="des-origines-mathematiques">Des origines mathématiques</h2>
-<p>Le mot «algorithme» vient du nom du mathématicien arabe d'Al-Khwârizmî du IXe siècle. Vous l'aurez compris, l'lagorithmique vient des mathématiques. Les mathématiciens proposent des méthodes de résolution sous forme d'algorithme. Les choses ont bien évolué depuis avec le dévéloppement de l'informatique. Aujoud'hui, l'algorithmique se situe en écharpe entre les mathématiques et l'informatique. Les algoithmes sont de plus en plus exécutés par l'ordinateur via les programmes informatiques mais ils peuvent être exécutés par des humains, il faut attendre l'avènement de l'ordinateur pour voir naître les programmes qui permettent de faire. La cryptographie est une belle illustration du chevauchent entre les mathématiques et l'informatique. Autant il s'agit d'analyse, d'arithmétique, il s'agit également d'informatique et de sécurisation des communications.</p>
-<h2 id="les-idees-dabord">Les idées d'abord</h2>
+<p>L'algorithmique a des origines mathématiques. En effet, le mot «algorithme» vient du nom du mathématicien arabe d'Al-Khwârizmî du IXe siècle. Les mathématiciens proposent des méthodes de résolution sous forme d'algorithme. Les choses ont bien évolué depuis avec le dévéloppement de l'informatique. Aujoud'hui, l'algorithmique se situe en écharpe entre les mathématiques et l'informatique. Les algoithmes sont de plus en plus exécutés par l'ordinateur via les programmes informatiques mais ils peuvent être exécutés par des humains, il faut attendre l'avènement de l'ordinateur pour voir naître les programmes qui permettent de faire. La cryptographie est une belle illustration du chevauchent entre les mathématiques et l'informatique. Autant il s'agit d'analyse, d'arithmétique, il s'agit également d'informatique et de sécurisation des communications.</p>
+<h2 id="lalgorithme-dabord">L'algorithme d'abord</h2>
 <p>Dans la vie réelle, lorsque nous voulons résoudre un problème, nous l'analysons, nous identifions les resources nécessaires à la résolution, puis nous élaborons un plan qui utlise les ressources afin de résoudre le problème. Une fois le plan bien établi, nous passons à sa mise en oœvre. Dans le monde du dévéloppement informatique, les besoins des utilisateurs constituent les problèmes auxquels le dévéloppeur doit apporter des solutions et pour ce faire, les algorithmes sont au cœur du développement informatique, un développeur ne devrait pas s'attaquer au codage sans définir au préalable ainsi que les structures de données adaptées pour manipuler les données. C'est un travail de modélisation qui fera du codage une simple tâche de traduction. Le développement informatique repose essentiellement sur l'algorithmique. Une étape de modélisation algorithmqiue devrait toujours et systématiquement précéder le codage. En tant qu'étudiant en mathématiques, je pense que maîtriser la modélisation algorithmique fera de vous un bien meilleur développeur (programmeur), meilleur que les étudiants en informatique. L'algorithmique est le terrain parfait pour appliquer le raisonnement mathématique.</p>
-<h2 id="lalgo-puis-le-code">L'algo puis le code</h2>
-<p>Un développeur ne devrait pas s'attaquer au codage sans définir au préalable la méthode de résolution ainsi que les structures de données adaptées pour manipuler les données. C'est un travail de modélisation qui fera du codage une simple tâche de traduction. La notion d'algorithme peut vous sembler étrangère et pourtant les algorithmes sont constamment présents autour de vous. Vous les utilisez tous les jours, vous en concevez d'ailleurs. Tout au long de cette formation, nous passerons en revue les notions de base de l'algorithmique. Dans la réalité, on shcématise l'algorithme sur du papier voire même dans la tête.</p>
-<h2 id="quelques-algorithmes-populaires">Quelques algorithmes populaires</h2>
-<h3 id="1-lalgorithme-daddition">1. L'algorithme d'addition</h3>
-<p>Si jusqu'ici, la notion d'algorithme vous semble toujours étrangère, voici un algorithme qui vous connaissez très bien, l'algorithme d'addition de deux nombres entiers naturels. Rappelez-vous, c'est l'une des premières notions que l'on apprend au cours primaires. L'instituteur décrit les différentes étapes à suivre pour additionner deux nombres.</p>
-<h3 id="2-lalgorithme-deuclide">2. L’algorithme d’Euclide</h3>
-<p>L'algorithme d'Euclide est l'un des algorithmes les plus populaires. Pour rappel, cet algorithme permet de déterminer le PGCD de deux nombres entiers (le cours de mathématiques de la cinquième). On l'utilise pour vérifier si deux nombres sont premiers entre eux. En effet, lorsque deux nombres sont premiers entre eux leur PGCD est égal à 1.</p>
+<p>Un développeur ne devrait pas s'attaquer au codage sans définir au préalable la méthode de résolution ainsi que les structures de données adaptées pour manipuler les données. C'est un travail de modélisation qui fera du codage une simple tâche de traduction. La notion d'algorithme peut vous sembler étrangère et pourtant les algorithmes sont constamment présents autour de vous. Vous les utilisez tous les jours, vous en concevez d'ailleurs.</p>
+<p>Dans la réalité, on shcématise l'algorithme sur du papier voire même dans la tête.</p>
+<h2 id="lalgorithme-de-laddition">L'algorithme de l'addition</h2>
+<p>L'algorithme de l'addition est le tout premier algorithme que nous apprenons à l'école primaire. Bien-sûr, l'instituteur . Si jusqu'ici, la notion d'algorithme vous semble toujours étrangère, voici un algorithme qui vous connaissez très bien, l'algorithme d'addition de deux nombres entiers naturels. Rappelez-vous, c'est l'une des premières notions que l'on apprend au cours primaires. L'instituteur décrit les différentes étapes à suivre pour additionner deux nombres.</p>
+<h2 id="lalgorithme-deuclide">L’algorithme d’Euclide</h2>
+<p>L'algorithme d'Euclide est l'un des algorithmes les plus populaires. Pour rappel, cet algorithme permet de déterminer le PGCD de deux nombres entiers (le cours de mathématiques de la cinquième). On l'utilise pour vérifier si deux nombres sont premiers entre eux. En effet, lorsque deux nombres sont premiers entre eux leur PGCD est égal à 1.
+<img alt="" src="/algojungle/images/Euclide.jpg" /></p>
 <h2 id="les-algorithmes-de-notre-quotidien">Les algorithmes de notre quotidien</h2>
 <p>Essayons de comprendre ce que c'est qu'un algorithme avec des tâches courantes de la vie.</p>
 <h3 id="1-shabiller">1. S'habiller</h3>
@@ -9054,8 +9116,9 @@
 <li>Mettre la ceinture</li>
 </ol>
 <p>Cette serie d'actions est bien et bel un algorithme. Il s'agit d'actions effectuées dans un ordre précis.</p>
-<h3 id="2-faire-cuire-du-riz">2. Faire cuire du riz</h3>
-<p>Les recettes de cuisine sont également de parfaits exemples d’algorithmes. Pour cuisiner aiun plat, le cuisinier doit suivre des étapes bien précises et ce dans un certain ordre, nous y reviendrons.</p>
+<h2 id="algorithme-et-cuisine">Algorithme et Cuisine</h2>
+<p>Les recettes de cuisine sont également de parfaits exemples d’algorithmes. Pour cuisiner un plat, le cuisinier doit suivre des étapes bien précises et ce dans un certain ordre, nous y reviendrons. D'une part, la recette représente l'algorithme et d'autre part les ingrédients et le plat final représentent respectivement les entrées et la sortie de l'algorithme.</p>
+<p><img alt="" src="https://2.bp.blogspot.com/-NJFWnVZo0QQ/UuJ4xXu6B2I/AAAAAAAAFNs/3mW6Gl-jnXg/s1600/recette+cr%C3%AApes+algorithme.png" /></p>
 <ol>
 <li>Mettre la marmite au feu</li>
 <li>Verser une quantité X d'eau</li>
@@ -9083,23 +9146,30 @@
 </ol>
 <p>Dans tous ces trois exemples, il y a un objectif précis au bout des actions, un problème à résoudre ou encore un besoin à satisfaire.</p>
 <h2 id="a-quoi-ressemble-un-algorithme">À quoi ressemble un algorithme ?</h2>
-<div class="highlight"><pre><span></span><code>ALGORITHME SaisirNom
-VAR nom : chaîne de caractères
-    n, i: entiers
-DÉBUT
-    AFFICHER(“Saisir votre nom :”)
-    SAISIR(nom)
-    AFFICHER(“Bonjour”, nom)
-
-    n &lt;- 5
-    POUR i&lt;-1 JQA n FAIRE
-        AFFICHER(i)
-    FPOUR
-FIN
+<p><div class="highlight"><span class="filename">Example d'algorithme</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ALGORITHME SaisirNom
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>VAR nom : chaîne de caractères
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    n, i: entiers
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>DÉBUT
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    AFFICHER(&quot;Saisir votre nom :&quot;)
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    SAISIR(nom)
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    AFFICHER(&quot;Bonjour&quot;, nom)
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    n &lt;- 5
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    POUR i&lt;-1 JQA n FAIRE
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        AFFICHER(i)
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    FPOUR
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>FIN
 </code></pre></div>
-<p>C'est ce format de pseudo-code que j'adopterai tout au long de la formation. Cette synthaxe est assez proche du code ce qui vous facilitera le passage aux langages de programmation.</p>
+C'est ce format de pseudo-code que j'adopterai tout au long de la formation. Cette synthaxe est assez proche du code ce qui vous facilitera le passage aux langages de programmation.</p>
 <h2 id="le-programme-de-la-formation">Le programme de la formation</h2>
-<p>Cette formation est un véritable voyage au pays des algorithmes, elle est à la portée de tous.. Elle est organisée en quatre parties, dans la première partie, j'introduis les définitions et les notions de base de l'algorithmique. La deuxième partie est consacrée aux tableaux. La troisième partie est une introduction à la modularité, je montre comment découper les problèmes en de petits problèmes avec les procédures et les fonctions. Enfin, dans la quatrième et dernière partie, je vous parlerai des structures de données qui sont un sujet essentiel en algorithmique.</p>
+<p>Cette formation est un véritable voyage au pays des algorithmes et des structures de données. Elle est organisée en cinq (5) parties, dans la première partie, j'introduis les définitions et les notions de base de l'algorithmique. La deuxième partie est consacrée aux tableaux. La troisième partie est une introduction à la modularité, je montre comment découper les problèmes en de petits problèmes avec les procédures et les fonctions. Enfin, dans la quatrième et dernière partie, je vous parlerai des structures de données qui sont un sujet essentiel en algorithmique.</p>
+<ul>
+<li>Les bases</li>
+<li>Les tableaux</li>
+<li>Procédures et Fonctions</li>
+<li>Les structures de données</li>
+<li>Les fichiers</li>
+</ul>
 <hr />
 <p><em>Aucun outil n'est nécessaire pour concevoir des algorithmes si ce n'est du papier et de quoi écrire. L'algorithmique consiste essentiellement en la réflexion. Vous êtes prêts, je vous donne rendez-vous dans la première partie !</em></p>
 
@@ -9146,13 +9216,13 @@ FIN
         
         
           
-          <a href="partie-1-les-bases/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Qu&#39;est-ce qu&#39;un algorithme ?" rel="next">
+          <a href="partie-1-les-bases/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Les bases de l&#39;algorithmique" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Qu'est-ce qu'un algorithme ?
+                Les bases de l'algorithmique
               </div>
             </div>
             <div class="md-footer__button md-icon">
