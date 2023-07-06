@@ -8,6 +8,12 @@ body img {
     border: none;
 }
 
+/* Justify text */
+article p {
+  text-align: justify;
+};
+
+
 /* Bootstrap */
 .home-page .container {
     width:100%;
