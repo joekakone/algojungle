@@ -3368,6 +3368,20 @@
         
           
         
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
       
       
         
@@ -3416,63 +3430,6 @@
     </li>
   
 
-            
-          
-            
-              
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-      
-      
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6_4" >
-      
-      
-        
-          
-            
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-      
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../../python/">Data & Python</a>
-          
-            <label for="__nav_5_6_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
-      
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_6_4_label" aria-expanded="false">
-        <label class="md-nav__title" for="__nav_5_6_4">
-          <span class="md-nav__icon md-icon"></span>
-          Data & Python
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
             
           
             
@@ -3582,13 +3539,6 @@
       <a href="../../../python/08-statsmodels/" class="md-nav__link">
         Statsmodels
       </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -5177,9 +5127,40 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Créer des colonnes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Créer des colonnes
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ajouter-de-nouvelles-colonnes" class="md-nav__link">
+    Ajouter de nouvelles colonnes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -8091,6 +8072,8 @@
         
           
         
+          
+        
       
       
         
@@ -8950,6 +8933,90 @@
   
   
   
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_9" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_11_9" id="__nav_11_9_label" tabindex="0">
+          Fiches métiers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_11_9">
+          <span class="md-nav__icon md-icon"></span>
+          Fiches métiers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blog/fiches-metiers/developpeur-python/" class="md-nav__link">
+        Alan Turing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blog/fiches-metiers/data-analyst/" class="md-nav__link">
+        Guido van Rossum
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blog/fiches-metiers/data-scientist/" class="md-nav__link">
+        Gérard Berry
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../../../tags/" class="md-nav__link">
         Tags
@@ -9082,6 +9149,21 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ajouter-de-nouvelles-colonnes" class="md-nav__link">
+    Ajouter de nouvelles colonnes
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -9099,8 +9181,32 @@
 
 
 <h1 id="creer-des-colonnes-personnalisees">Créer des colonnes personnalisées</h1>
-<p>La création d'une table de dates personnalisée est une étape importante dans la conception du modèle de données dans Power BI. Dans cet article, je vous montre comment en créer une.</p>
+<p>Afin d'enrichir les données pour l'analyse ou la visualisation, il peut être nécessaire de créer des colonnes supplémentaires dans les tables.</p>
 <p><img alt="" src="/algojungle/images/powerbi/covers/create-columns.png" /></p>
+<p>Vous vous demandez peut-être si c'est le bon endroit pour créer les colonnes. En réalité on a le choix, on peut aussi bien créer les colonnes dans la vue Données que dans l'éditeur Power Query. Toutefois on peut faire une distinction, les colonnes créées ici dans la vue Données rentrent dans le cadre de l'analyse des données tandis que dans Power Query, il s'agit plus de transformation de données. En d'autres termes, ici on crée des colonnes dans le cadre de l'analayse ou la visualisation données à effectuer.</p>
+<p>Rendez-vous sur la vue <strong>Donnnées</strong> puis sélectionnez <strong>Outils de table</strong> dans le menu</p>
+<p><img alt="" src="/algojungle/images/powerbi/02-data-modeling/create-column-tab.png" /></p>
+<p>Cliquez sur le bouton <strong>Nouvelle colonne</strong></p>
+<p><img alt="" src="/algojungle/images/powerbi/02-data-modeling/create-column-formula-fied.png" /></p>
+<h2 id="ajouter-de-nouvelles-colonnes">Ajouter de nouvelles colonnes</h2>
+<table>
+<thead>
+<tr>
+<th>Colonne</th>
+<th>Formule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mois</td>
+<td><code>Mois = FORMAT('calendar'[Date], "yyyy-mm")</code></td>
+</tr>
+<tr>
+<td>Année</td>
+<td><code>Année = FORMAT('calendar'[Date], "yyyy")</code></td>
+</tr>
+</tbody>
+</table>
 <hr />
 <p><em>Bravo, votre table de dates est prête pour l'utilisation. Cette étape est très importante et vous le comprendrez par la suite. Vous l'aurez compris, vous pouvez rajouter autant de détails que vous voulez.</em></p>
 
