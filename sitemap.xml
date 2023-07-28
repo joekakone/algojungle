@@ -201,6 +201,26 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://joekakone.github.io/algojungle/analytics/excel/les-graphiques/</loc>
+         <lastmod>2023-07-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/analytics/excel/les-tableaux-croises-dynamqiues/</loc>
+         <lastmod>2023-07-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/analytics/excel/les-tableaux/</loc>
+         <lastmod>2023-07-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/analytics/excel/obtenir-des-donnees/</loc>
+         <lastmod>2023-07-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://joekakone.github.io/algojungle/analytics/knime/</loc>
          <lastmod>2023-07-28</lastmod>
          <changefreq>daily</changefreq>
