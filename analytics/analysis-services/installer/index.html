@@ -103,7 +103,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#installer-analysis-services" class="md-skip">
+        <a href="#installer-sql-server-analysis-services" class="md-skip">
           Aller au contenu
         </a>
       
@@ -3369,7 +3369,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#installer-analysis-services_1" class="md-nav__link">
+  <a href="#installer-analysis-services" class="md-nav__link">
     Installer Analysis Services
   </a>
   
@@ -9391,7 +9391,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#installer-analysis-services_1" class="md-nav__link">
+  <a href="#installer-analysis-services" class="md-nav__link">
     Installer Analysis Services
   </a>
   
@@ -9422,12 +9422,43 @@
 
 
 
-<h1 id="installer-analysis-services">Installer Analysis Services</h1>
+<h1 id="installer-sql-server-analysis-services">Installer SQL Server Analysis Services</h1>
 <p><img alt="" src="/algojungle/images/analysis-services/covers/install-sql-server-analysis-services.png" /></p>
-<p><img alt="" src="https://www.data-transitionnumerique.com/wp-content/uploads/2020/06/DICING-OLAP-1024x427.png" /></p>
 <h2 id="installer-sql-server">Installer SQL Server</h2>
-<h2 id="installer-analysis-services_1">Installer Analysis Services</h2>
+<p>SQL Server est une dépendance, elle hébergerera la datamart de données qui va alimenter le cube. Attention, vous avez besoin de la version Developer, la version Express n'est pas compatible. Si vous l'avez déjà installé alors vous pouvez passer cette étape, sinon suivez <a href="/algojungle/analytics/sql/installer-sqlserver/#installer-microsoft-sql-server">ce tutoriel</a> pour effectuer l'installation.</p>
+<h2 id="installer-analysis-services">Installer Analysis Services</h2>
+<p>Pour installer Analysis Services, rendez-vous dans le centre d'installation SQL Server. Recherchez depuis la barre de recherche et lancez<br>
+<img alt="" src="/algojungle/images/analysis-services/installer/install-analysis-services-01.png" /></p>
+<p>Cliquez sur le bouton <strong>Installation</strong> à droite<br>
+<img alt="" src="/algojungle/images/analysis-services/installer/install-analysis-services-02.png" /></p>
+<p>Cliquez sur le bouton <strong>Nouvelle installation autonomne de SQL Server ou ajout de fonctionnalités à une installation existante</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/installer/install-analysis-services-03.png" /></p>
+<p>Parcourez l'explorateur de fichiers <code>C:\SQL2022\Developer_FRA</code> puis cliquez sur le bouton <strong>OK</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/installer/install-analysis-services-04.png" /></p>
+<p>Cliquez sur le bouton <strong>Suivant</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/installer/install-analysis-services-05.png" /></p>
+<p>Cliquez sur le bouton <strong>Suivant</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/installer/install-analysis-services-06.png" /></p>
+<p>Sélectionnez l'option <strong>Ajouter des fonctionnalités à une instance existante de SQL Server</strong>  puis cliquez sur le bouton <strong>Suivant</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/installer/install-analysis-services-07.png" /></p>
+<p>Passez et cliquez sur le bouton <strong>Suivant</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/installer/install-analysis-services-08.png" /></p>
+<p>Cliquez sur le bouton <strong>Suivant</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/installer/install-analysis-services-09.png" /></p>
+<p>Cliquez sur le bouton <strong>Suivant</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/installer/install-analysis-services-10.png" /></p>
+<p>Cliquez sur le bouton <strong>Suivant</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/installer/install-analysis-services-11.png" /></p>
+<p>Cliquez sur le bouton <strong>Installer</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/installer/install-analysis-services-12.png" /></p>
+<p><br>
+<img alt="" src="/algojungle/images/analysis-services/installer/install-analysis-services-13.png" /></p>
+<p>L'installation est terminée, cliquez sur le bouton <strong>Fermer</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/installer/install-analysis-services-14.png" /></p>
 <h2 id="installer-visual-studio">Installer Visual Studio</h2>
+<p>Rendez-vous à la page de téléechargement <a href="https://visualstudio.microsoft.com/fr/downloads/">https://visualstudio.microsoft.com/fr/downloads/</a><br>
+<img alt="" src="/algojungle/images/analysis-services/installer/download-visual-studio.png" /></p>
+<p>Une fois le téléchargement terminé, rendez-vous dans votre dossier de téléchargement</p>
 <hr />
 <p><em>L'environnement de développement est prêt, rendez-vous dans la prochaine section pour découvrir comment préparer les données dans les SQL Server.</em></p>
 
