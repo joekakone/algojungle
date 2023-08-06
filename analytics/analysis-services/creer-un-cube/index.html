@@ -103,7 +103,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#creer-un-cube-analysis-services" class="md-skip">
+        <a href="#creer-un-cube-multidimensionnel" class="md-skip">
           Aller au contenu
         </a>
       
@@ -3134,7 +3134,7 @@
   
     <li class="md-nav__item">
       <a href="../../visualisation/" class="md-nav__link">
-        Les graphiques
+        Visualisation de données
       </a>
     </li>
   
@@ -3390,8 +3390,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creer-un-projet" class="md-nav__link">
-    Créer un projet
+  <a href="#creer-un-projet-multidimensionnel" class="md-nav__link">
+    Créer un projet multidimensionnel
   </a>
   
 </li>
@@ -5459,11 +5459,7 @@
           
         
           
-            
-          
         
-          
-            
           
         
       
@@ -5522,8 +5518,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../powerbi/03-visualiser-les-donnees/" class="md-nav__link">
-        Les diagrammes en secteurs
+      <a href="../../powerbi/03-visualiser-les-donnees/les-tableaux-et-matrices/" class="md-nav__link">
+        Les matrices
       </a>
     </li>
   
@@ -5536,8 +5532,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../powerbi/03-visualiser-les-donnees/" class="md-nav__link">
-        Les diagrammes à barre
+      <a href="../../powerbi/03-visualiser-les-donnees/les-sparklines/" class="md-nav__link">
+        Les sparklines
       </a>
     </li>
   
@@ -5570,12 +5566,18 @@
             
           
         
+          
+        
       
       
         
         
         <div class="md-nav__link md-nav__link--index ">
           <a href="../../powerbi/04-analyser-les-donnees/">Analyser les données</a>
+          
+            <label for="__nav_7_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
           
         </div>
       
@@ -5586,6 +5588,20 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../powerbi/04-analyser-les-donnees/ajouter-une-ligne-de-reference/" class="md-nav__link">
+        Lignes de référence
+      </a>
+    </li>
+  
+
             
           
         </ul>
@@ -9387,8 +9403,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creer-un-projet" class="md-nav__link">
-    Créer un projet
+  <a href="#creer-un-projet-multidimensionnel" class="md-nav__link">
+    Créer un projet multidimensionnel
   </a>
   
 </li>
@@ -9432,14 +9448,38 @@
 
 
 
-<h1 id="creer-un-cube-analysis-services">Créer un cube Analysis Services</h1>
+<h1 id="creer-un-cube-multidimensionnel">Créer un cube multidimensionnel</h1>
 <p><img alt="" src="/algojungle/images/analysis-services/covers/create-a-multidimensional-cube.png" /></p>
-<p><img alt="" src="https://www.data-transitionnumerique.com/wp-content/uploads/2020/06/DICING-OLAP-1024x427.png" /></p>
-<h2 id="creer-un-projet">Créer un projet</h2>
-<p>Dans Visual Studio</p>
+<h2 id="creer-un-projet-multidimensionnel">Créer un projet multidimensionnel</h2>
+<p>Dans le menu Démarrer, recherchez Visual Studio et lancez. Ensuite sélectionnez <strong>Créer un projet</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-01.png" /></p>
+<p><img alt="" src="/algojungle/images/analysis-services/cube/create-cube-02.png" /></p>
+<p><img alt="" src="/algojungle/images/analysis-services/cube/create-cube-03.png" /></p>
+<p><img alt="" src="/algojungle/images/analysis-services/cube/create-cube-04.png" /></p>
 <h2 id="ajouter-une-source-de-donnees">Ajouter une source de données</h2>
+<p>Dans l'onglet Explorateur de solutions, faites clique-droit sur <strong>Sources de données</strong> puis sélectionnez <strong>Nouvelle source de données</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-05.png" /></p>
+<p>Cliquez sur le bouton <strong>Next</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-06.png" /></p>
+<p>Sélectionnez l'option <strong>Create a data source based on an existing or new connection</strong> puis cliquez sur le bouton <strong>Nouveau</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-07.png" /></p>
+<p>Un message vous indique le fournisseur n'est pas pris en compte. Cliquez sur le bouton <strong>OK</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-08.png" /></p>
+<p><img alt="" src="/algojungle/images/analysis-services/cube/create-cube-09.png" /></p>
+<p><img alt="" src="/algojungle/images/analysis-services/cube/create-cube-10.png" /></p>
+<p><img alt="" src="/algojungle/images/analysis-services/cube/create-cube-11.png" /></p>
+<p>Cliquez sur le bouton <strong>Tester la connexion</strong> puis le bouton <strong>OK</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-12.png" /></p>
+<p>Cliquez sur le bouton <strong>Next</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-13.png" /></p>
+<p>Sélectionnez l'option <strong>Utiliser le compte de service</strong> puis cliquez sur le bouton <strong>Finish</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-14.png" /></p>
+<p>Cliquez sur le bouton <strong>Finish</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-15.png" /></p>
 <h2 id="creer-une-vue-de-source-de-donnees">Créer une vue de source de données</h2>
 <h2 id="creer-un-cube">Créer un cube</h2>
+<hr />
+<p><em>Bravo ! Vous venez de créer votre premier cube mutidimensionnel avec Analysis Services. Dans la prochaine section, nous verrons comment manipuler les données du cube dans Excel.</em></p>
 
 
   

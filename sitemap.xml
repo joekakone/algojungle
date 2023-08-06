@@ -316,7 +316,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://joekakone.github.io/algojungle/analytics/powerbi/03-visualiser-les-donnees/les-sparklines/</loc>
+         <lastmod>2023-08-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/analytics/powerbi/03-visualiser-les-donnees/les-tableaux-et-matrices/</loc>
+         <lastmod>2023-08-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://joekakone.github.io/algojungle/analytics/powerbi/04-analyser-les-donnees/</loc>
+         <lastmod>2023-08-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/analytics/powerbi/04-analyser-les-donnees/ajouter-une-ligne-de-reference/</loc>
          <lastmod>2023-08-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
