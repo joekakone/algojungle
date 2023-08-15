@@ -18,14 +18,14 @@
         <link rel="prev" href="../flask/ressources/">
       
       
-        <link rel="next" href="deployer-avec-docker/">
+        <link rel="next" href="installer/">
       
       <link rel="icon" href="/algojungle/assets/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.16">
     
     
       
-        <title>Créer une interface web avec Gradio - Algo Jungle</title>
+        <title>Création d'interfaces web utilisateur avec Gradio - Algo Jungle</title>
       
     
     
@@ -73,7 +73,7 @@
     
     
     
-<meta property="og:title" content="Créer une interface web avec Gradio">
+<meta property="og:title" content="Création d'interfaces web utilisateur avec Gradio">
 
 <meta property="og:description" content="Algo Junle - Data Science Advocate">
 
@@ -103,7 +103,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#creer-une-interface-web-avec-gradio" class="md-skip">
+        <a href="#creation-dinterfaces-web-utilisateur-avec-gradio" class="md-skip">
           Aller au contenu
         </a>
       
@@ -136,7 +136,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Créer une interface web avec Gradio
+              Création d'interfaces web utilisateur avec Gradio
             
           </span>
         </div>
@@ -7267,6 +7267,10 @@
         
           
         
+          
+        
+          
+        
       
       
         
@@ -7287,6 +7291,34 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="installer/" class="md-nav__link">
+        Installer Gradio
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="demarrer/" class="md-nav__link">
+        Démarrer avec Gradio
+      </a>
+    </li>
+  
+
             
           
             
@@ -9348,97 +9380,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
+  <a href="#gradio-en-production" class="md-nav__link">
+    Gradio en production
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#premiere-application" class="md-nav__link">
-    Première application
-  </a>
-  
-    <nav class="md-nav" aria-label="Première application">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creer-la-fonction-de-traitement" class="md-nav__link">
-    Créer la fonction de traitement
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#definir-les-entrees-et-les-sorties" class="md-nav__link">
-    Définir les entrées et les sorties
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lancer-lapplication" class="md-nav__link">
-    Lancer l'application
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#le-code-complet" class="md-nav__link">
-    Le code complet
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#image-black-white-converter" class="md-nav__link">
-    Image Black &amp; White Converter
-  </a>
-  
-    <nav class="md-nav" aria-label="Image Black & White Converter">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creer-la-fonction-de-traitement_1" class="md-nav__link">
-    Créer la fonction de traitement
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#definir-les-entrees-et-les-sorties_1" class="md-nav__link">
-    Définir les entrées et les sorties
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lancer-lapplication_1" class="md-nav__link">
-    Lancer l'application
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#le-code-complet_1" class="md-nav__link">
-    Le code complet
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#modele-de-classification-dimage" class="md-nav__link">
-    Modèle de classification d'image
+  <a href="#a-quoi-ca-ressemble" class="md-nav__link">
+    À quoi ça ressemble ?
   </a>
   
 </li>
@@ -9461,10 +9411,11 @@
 
 
 
-<h1 id="creer-une-interface-web-avec-gradio">Créer une interface web avec Gradio</h1>
-<p>Gradio est un package Python qui permet de créer des interfaces web pour les modèles de machine learning.</p>
-<p><img alt="" src="/algojungle/images/gradio/gradio-interface-cover.png" /></p>
+<h1 id="creation-dinterfaces-web-utilisateur-avec-gradio">Création d'interfaces web utilisateur avec Gradio</h1>
+<p>Gradio est un package Python open source qui permet de créer des interfaces web utilisateur pour les modèles de machine learning. Gradio est low-code permet de créer sans avoir </p>
+<p><img alt="" src="/algojungle/images/gradio/covers/gradio.png" /></p>
 <p>Gradio vous permet de créer rapidement des composants d'interface utilisateur personnalisables autour de vos modèles TensorFlow ou PyTorch, ou même des fonctions Python arbitraires. Mélangez et associez les composants pour prendre en charge toute combinaison d'entrées et de sorties.....</p>
+<p>Le développeur n'a pas besoin d'écrire du code HTML, CSS ou JavaScript.</p>
 <h2 id="les-composants-de-gradio">Les composants de Gradio</h2>
 <p>Une application Gradio est composée de trois composantes</p>
 <ul>
@@ -9473,102 +9424,12 @@
 <li>des sorties</li>
 </ul>
 <p>Le fonctionnement de Gradio est relativement simplement, on fournit des entrées qui vont être traitées par la fonction de traitement et retourner des sorties.</p>
-<h2 id="installation">Installation</h2>
-<p>Gradio peut être installé depuis le répertoire PyPi.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>gradio
-</code></pre></div></p>
-<h2 id="premiere-application">Première application</h2>
-<p><img alt="" src="/algojungle/images/gradio/greet-app.png" /></p>
-<p>Créer un fichier <code>app.py</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span> <span class="nn">gradio</span> <span class="k">as</span> <span class="nn">gr</span>
-</code></pre></div>
-<h3 id="creer-la-fonction-de-traitement">Créer la fonction de traitement</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Hello </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> !&quot;</span>
-</code></pre></div>
-<h3 id="definir-les-entrees-et-les-sorties">Définir les entrées et les sorties</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">input_name</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">Textbox</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Name&quot;</span><span class="p">)</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">output_msg</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">Textbox</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Message&quot;</span><span class="p">)</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">app</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">Interface</span><span class="p">(</span><span class="n">fn</span><span class="o">=</span><span class="n">greet</span><span class="p">,</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>                   <span class="n">inputs</span><span class="o">=</span><span class="n">input_name</span><span class="p">,</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>                   <span class="n">outputs</span><span class="o">=</span><span class="n">output_msg</span><span class="p">,</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>                   <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Greeting App&quot;</span><span class="p">,</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>                   <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Enter your name to get a greeting message&quot;</span><span class="p">)</span>
-</code></pre></div>
-<h3 id="lancer-lapplication">Lancer l'application</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">app</span><span class="o">.</span><span class="n">launch</span><span class="p">()</span>
-</code></pre></div>
-<h3 id="le-code-complet">Le code complet</h3>
-<div class="highlight"><span class="filename">app_greet.py</span><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span> <span class="nn">gradio</span> <span class="k">as</span> <span class="nn">gr</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
-<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Hello </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> !&quot;</span>
-<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
-<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>
-<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="n">input_name</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">Textbox</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Name&quot;</span><span class="p">)</span>
-<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="n">output_msg</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">Textbox</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Message&quot;</span><span class="p">)</span>
-<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
-<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="n">app</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">Interface</span><span class="p">(</span><span class="n">fn</span><span class="o">=</span><span class="n">greet</span><span class="p">,</span>
-<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>                   <span class="n">inputs</span><span class="o">=</span><span class="n">input_name</span><span class="p">,</span>
-<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>                   <span class="n">outputs</span><span class="o">=</span><span class="n">output_msg</span><span class="p">,</span>
-<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>                   <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Greeting App&quot;</span><span class="p">,</span>
-<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>                   <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Enter your name to get a greeting message&quot;</span><span class="p">)</span>
-<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>
-<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="n">app</span><span class="o">.</span><span class="n">launch</span><span class="p">()</span>
-</code></pre></div>
-<h2 id="image-black-white-converter">Image Black &amp; White Converter</h2>
-<p><img alt="" src="/algojungle/images/gradio/black-white-converter.png" /></p>
-<p>Créer un fichier <code>app.py</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">import</span> <span class="nn">gradio</span> <span class="k">as</span> <span class="nn">gr</span>
-</code></pre></div>
-<h3 id="creer-la-fonction-de-traitement_1">Créer la fonction de traitement</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">def</span> <span class="nf">greet</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Hello </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> !&quot;</span>
-</code></pre></div>
-<h3 id="definir-les-entrees-et-les-sorties_1">Définir les entrées et les sorties</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">input_name</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">Textbox</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Name&quot;</span><span class="p">)</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">output_msg</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">Textbox</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s2">&quot;Message&quot;</span><span class="p">)</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">app</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">Interface</span><span class="p">(</span><span class="n">fn</span><span class="o">=</span><span class="n">greet</span><span class="p">,</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>                   <span class="n">inputs</span><span class="o">=</span><span class="n">input_name</span><span class="p">,</span>
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>                   <span class="n">outputs</span><span class="o">=</span><span class="n">output_msg</span><span class="p">,</span>
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>                   <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Greeting App&quot;</span><span class="p">,</span>
-<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>                   <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Enter your name to get a greeting message&quot;</span><span class="p">)</span>
-</code></pre></div>
-<h3 id="lancer-lapplication_1">Lancer l'application</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">app</span><span class="o">.</span><span class="n">launch</span><span class="p">()</span>
-</code></pre></div>
-<h3 id="le-code-complet_1">Le code complet</h3>
-<div class="highlight"><span class="filename">app_greet.py</span><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># Packages</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="kn">import</span> <span class="nn">gradio</span> <span class="k">as</span> <span class="nn">gr</span>
-<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
-<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>
-<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>
-<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="c1"># Serving Function</span>
-<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="k">def</span> <span class="nf">convert_image</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
-<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>    <span class="n">pil_image</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">fromarray</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
-<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>    <span class="n">pil_image</span> <span class="o">=</span> <span class="n">pil_image</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="s2">&quot;L&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>    <span class="k">return</span> <span class="n">pil_image</span>
-<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>
-<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>
-<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="c1"># Setup interface</span>
-<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a><span class="n">input_image</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">Image</span><span class="p">()</span>
-<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="n">output_image</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">Image</span><span class="p">()</span>
-<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a><span class="n">app</span> <span class="o">=</span> <span class="n">gr</span><span class="o">.</span><span class="n">Interface</span><span class="p">(</span><span class="n">fn</span><span class="o">=</span><span class="n">convert_image</span><span class="p">,</span> 
-<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a>                   <span class="n">inputs</span><span class="o">=</span><span class="n">input_image</span><span class="p">,</span> 
-<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a>                   <span class="n">outputs</span><span class="o">=</span><span class="n">output_image</span><span class="p">,</span>
-<a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a>                   <span class="n">title</span><span class="o">=</span><span class="s2">&quot;Image Black &amp; White Converter&quot;</span><span class="p">,</span>
-<a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a>                   <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Simple tool to convert any image in Black &amp; White&quot;</span><span class="p">)</span>
-<a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a>
-<a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a><span class="c1"># Launch</span>
-<a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a><span class="n">app</span><span class="o">.</span><span class="n">launch</span><span class="p">()</span>
-</code></pre></div>
-<h2 id="modele-de-classification-dimage">Modèle de classification d'image</h2>
-<p>Créons à pésent une interface pour un modèle de classification d'image</p>
+<h2 id="gradio-en-production">Gradio en production</h2>
+<p>Gradio offre une solution de partage .</p>
+<h2 id="a-quoi-ca-ressemble">À quoi ça ressemble ?</h2>
+<p><img alt="" src="/algojungle/images/gradio/gradio-interface-cover.png" /></p>
 <hr />
-<p><em>Pour en savoir plus, merci de consulter la documentation de Gradio ici <a href="https://gradio.app/">https://gradio.app/</a>.</em></p>
+<p><em>Rendez-vous dans prochaine section pour installer Gradio. Pour en savoir plus sur Gradio, merci de consulter la documentation officielle de Gradio ici <a href="https://gradio.app/">https://gradio.app/</a>.</em></p>
 
 
   
@@ -9613,13 +9474,13 @@
         
         
           
-          <a href="deployer-avec-docker/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Déployer avec Docker" rel="next">
+          <a href="installer/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Installer Gradio" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Déployer avec Docker
+                Installer Gradio
               </div>
             </div>
             <div class="md-footer__button md-icon">

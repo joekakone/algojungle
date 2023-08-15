@@ -7209,8 +7209,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    
+  <a href="#flask-sqlalchemy" class="md-nav__link">
+    Flask SQLAlchemy
   </a>
   
 </li>
@@ -7218,6 +7218,13 @@
         <li class="md-nav__item">
   <a href="#initialiser-la-base-de-donnees" class="md-nav__link">
     Initialiser la base de données
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ajouter-des-enregistrements" class="md-nav__link">
+    Ajouter des enregistrements
   </a>
   
 </li>
@@ -7315,6 +7322,10 @@
         
           
         
+          
+        
+          
+        
       
       
         
@@ -7335,6 +7346,34 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gradio/installer/" class="md-nav__link">
+        Installer Gradio
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../gradio/demarrer/" class="md-nav__link">
+        Démarrer avec Gradio
+      </a>
+    </li>
+  
+
             
           
             
@@ -9389,8 +9428,8 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    
+  <a href="#flask-sqlalchemy" class="md-nav__link">
+    Flask SQLAlchemy
   </a>
   
 </li>
@@ -9398,6 +9437,13 @@
         <li class="md-nav__item">
   <a href="#initialiser-la-base-de-donnees" class="md-nav__link">
     Initialiser la base de données
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ajouter-des-enregistrements" class="md-nav__link">
+    Ajouter des enregistrements
   </a>
   
 </li>
@@ -9421,8 +9467,10 @@
 
 
 <h1 id="ajouter-une-base-de-donnees">Ajouter une base de données</h1>
-<p><img alt="" src="/algojungle/images/flask/project/app-home.png" /></p>
-<h2 id="_1"></h2>
+<p>Afin de stocker les données de l'application, nous allons ajouter une base de données.</p>
+<p><img alt="" src="/algojungle/images/flask/covers/add-database.png" /></p>
+<h2 id="flask-sqlalchemy">Flask SQLAlchemy</h2>
+<p>SQLAlchemy est un ORM Python qui permet d'interagir avec les bases de donnnées. Flask-SQLAlchemy est une extension 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">app</span> <span class="kn">import</span> <span class="n">db</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">class</span> <span class="nc">Url</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
@@ -9433,7 +9481,7 @@
 <a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">long_url</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">255</span><span class="p">))</span>
 <a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">short_url</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">String</span><span class="p">(</span><span class="mi">50</span><span class="p">))</span>
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="n">created_date</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">Column</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">Date</span><span class="p">)</span>
-</code></pre></div>
+</code></pre></div></p>
 <h2 id="initialiser-la-base-de-donnees">Initialiser la base de données</h2>
 <p>Créer un fichier <code>init_db.py</code> à la racine du projet
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span> <span class="nn">app</span> <span class="kn">import</span> <span class="n">app</span><span class="p">,</span> <span class="n">db</span>
@@ -9444,6 +9492,27 @@
 <p>Exécutez le fichier depuis le terminal
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python<span class="w"> </span>init_db.py
 </code></pre></div></p>
+<h2 id="ajouter-des-enregistrements">Ajouter des enregistrements</h2>
+<p>Maintenant que la base de données est créée, nous allons ajouter des données.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">app</span> <span class="kn">import</span> <span class="n">app</span><span class="p">,</span> <span class="n">db</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="o">&gt;&gt;&gt;</span> 
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="c1"># Create URL item in database</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">url</span> <span class="o">=</span> <span class="n">Url</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Joseph Konka&quot;</span><span class="p">,</span> <span class="n">long_url</span><span class="o">=</span><span class="s2">&quot;http://josephkonka.com/&quot;</span><span class="p">,</span> <span class="n">created_date</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">())</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="o">&gt;&gt;&gt;</span> 
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="o">&gt;&gt;&gt;</span> <span class="c1"># Create the short URL</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">output_url</span> <span class="o">=</span> <span class="n">transform_url</span><span class="p">(</span><span class="n">url</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">url</span><span class="o">.</span><span class="n">short_url</span> <span class="o">=</span> <span class="n">output_url</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">db</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">commit</span><span class="p">()</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="o">&gt;&gt;&gt;</span>
+</code></pre></div></p>
+<p>Exécutez le fichier depuis le terminal
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>python<span class="w"> </span>init_db.py
+</code></pre></div></p>
+<hr />
+<p><em>Dans la prochaines section, nous apprendrons comment créer des vues.</em></p>
 
 
   

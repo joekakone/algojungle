@@ -3411,6 +3411,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#creer-une-dimension" class="md-nav__link">
+    Créer une dimension
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#creer-un-cube" class="md-nav__link">
     Créer un cube
   </a>
@@ -7329,6 +7336,10 @@
         
           
         
+          
+        
+          
+        
       
       
         
@@ -7349,6 +7360,34 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mlops/gradio/installer/" class="md-nav__link">
+        Installer Gradio
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mlops/gradio/demarrer/" class="md-nav__link">
+        Démarrer avec Gradio
+      </a>
+    </li>
+  
+
             
           
             
@@ -9424,6 +9463,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#creer-une-dimension" class="md-nav__link">
+    Créer une dimension
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#creer-un-cube" class="md-nav__link">
     Créer un cube
   </a>
@@ -9450,12 +9496,16 @@
 
 <h1 id="creer-un-cube-multidimensionnel">Créer un cube multidimensionnel</h1>
 <p><img alt="" src="/algojungle/images/analysis-services/covers/create-a-multidimensional-cube.png" /></p>
+<p>Pour notre premier cube de données, nous allons construire un cube qui permet d'analyser les données des ventes suivant plusieurs axes <code>Date</code>, <code>Client</code>, <code>Produit</code> et <code>Géographie</code>.</p>
 <h2 id="creer-un-projet-multidimensionnel">Créer un projet multidimensionnel</h2>
 <p>Dans le menu Démarrer, recherchez Visual Studio et lancez. Ensuite sélectionnez <strong>Créer un projet</strong><br>
 <img alt="" src="/algojungle/images/analysis-services/cube/create-cube-01.png" /></p>
-<p><img alt="" src="/algojungle/images/analysis-services/cube/create-cube-02.png" /></p>
-<p><img alt="" src="/algojungle/images/analysis-services/cube/create-cube-03.png" /></p>
-<p><img alt="" src="/algojungle/images/analysis-services/cube/create-cube-04.png" /></p>
+<p>Cliquez sur le bouton <strong>Projet Multidimensionnel Analysis Services</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-02.png" /></p>
+<p>Cliquez sur le bouton <strong>Projet Multidimensionnel Analysis Services</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-03.png" /></p>
+<p>Cliquez sur le bouton <strong>Projet Multidimensionnel Analysis Services</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-04.png" /></p>
 <h2 id="ajouter-une-source-de-donnees">Ajouter une source de données</h2>
 <p>Dans l'onglet Explorateur de solutions, faites clique-droit sur <strong>Sources de données</strong> puis sélectionnez <strong>Nouvelle source de données</strong><br>
 <img alt="" src="/algojungle/images/analysis-services/cube/create-cube-05.png" /></p>
@@ -9477,11 +9527,56 @@
 <p>Cliquez sur le bouton <strong>Finish</strong><br>
 <img alt="" src="/algojungle/images/analysis-services/cube/create-cube-15.png" /></p>
 <h2 id="creer-une-vue-de-source-de-donnees">Créer une vue de source de données</h2>
-<p>Dans le menu Démarrer, recherchez Visual Studio et lancez. Ensuite sélectionnez <strong>Créer un projet</strong><br>
+<p>Dans l'onglet Explorateur de solutions, faites clique-droit sur <strong>Vues des sources de données</strong> puis sélectionnez <strong>Nouvelle vue des sources de données</strong><br>
 <img alt="" src="/algojungle/images/analysis-services/cube/create-data-source-view-01.png" /></p>
-<p><img alt="" src="/algojungle/images/analysis-services/cube/create-data-source-view-02.png" /></p>
-<p><img alt="" src="/algojungle/images/analysis-services/cube/create-data-source-view-03.png" /></p>
-<p><img alt="" src="/algojungle/images/analysis-services/cube/create-data-source-view-04.png" /></p>
+<p>Cliquez sur le bouton <strong>Next</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-data-source-view-02.png" /></p>
+<p>Sélectionnez la source de données <strong>Adventure Works DW2022</strong> puis cliquez sur le bouton <strong>Next</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-data-source-view-03.png" /></p>
+<p>À gauche, on retrouve la liste des tables<br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-data-source-view-04.png" /></p>
+<p>Cliquez sur la table <strong>DimCustomer</strong> et cliquez sur le bouton <strong><code>&gt;</code></strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-data-source-view-05.png" /></p>
+<p>La table <strong>DimCustomer</strong> passe à droite<br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-data-source-view-06.png" /></p>
+<p>Maintenez le bouton <strong>CTL</strong> et sélectionnez les tables <strong>DimDate</strong>, <strong>DimGeography</strong>, <strong>DimProduct</strong> et <strong>FactInternetSales</strong> puis cliquez sur le bouton <strong><code>&gt;</code></strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-data-source-view-07.png" /></p>
+<p>Les tables sont bien sélectionnées, cliquez sur le bouton <strong>Next</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-data-source-view-08.png" /></p>
+<p>Cliquez sur le bouton <strong>Terminer</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-data-source-view-09.png" /></p>
+<p>La nouvelle vue de source de données s'affiche dans l'exploratur<br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-data-source-view-10.png" /></p>
+<h2 id="creer-une-dimension">Créer une dimension</h2>
+<p>Dans l'onglet Explorateur de solutions, faites clique-droit sur <strong>Dimensions</strong> puis sélectionnez <strong>Nouvelle dimension</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-dimension-01.png" /></p>
+<p>Cliquez sur le bouton <strong>Next</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-dimension-02.png" /></p>
+<p>Sélectionnez l'option <strong>Utiliser une tables</strong> puis cliquez sur le bouton <strong>Next</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-dimension-03.png" /></p>
+<p>Cliquez sur le bouton <strong>Next</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-dimension-04.png" /></p>
+<p>Cochez les colonnes suivantes pour les sélectionner</p>
+<ul>
+<li>DataKey</li>
+<li>FullDateAlternateKey</li>
+<li>Day Number Of Week</li>
+<li>Day Number Of Month</li>
+<li>Day Number Of Year</li>
+<li>English Month Name</li>
+<li>Month Number Of Year</li>
+<li>Calendar Quarter</li>
+<li>Calendar Year</li>
+<li>Calendar Semester</li>
+</ul>
+<p>Une fois l'ensemble des colonnes sélectionnées, cliquez sur le bouton <strong>Next</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-dimension-05.png" /></p>
+<p>Cliquez sur le bouton <strong>Terminer</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-dimension-06.png" /></p>
+<p>Cliquez sur le bouton <strong>Terminer</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-dimension-07.png" /></p>
+<p>Cliquez sur le bouton <strong>Terminer</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-dimension-08.png" /></p>
 <h2 id="creer-un-cube">Créer un cube</h2>
 <hr />
 <p><em>Bravo ! Vous venez de créer votre premier cube mutidimensionnel avec Analysis Services. Dans la prochaine section, nous verrons comment manipuler les données du cube dans Excel.</em></p>
