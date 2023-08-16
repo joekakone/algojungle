@@ -3424,6 +3424,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ajouter-des-attributs-aux-dimensions" class="md-nav__link">
+    Ajouter des attributs aux dimensions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployer-le-cube" class="md-nav__link">
+    Déployer le cube
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -7174,6 +7188,8 @@
         
           
         
+          
+        
       
       
         
@@ -7259,7 +7275,21 @@
   
     <li class="md-nav__item">
       <a href="../../../mlops/flask/creer-des-vues/" class="md-nav__link">
-        Ajouter une base de données
+        Créer des vues
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mlops/flask/creer-une-api-pour-scikit-learn/" class="md-nav__link">
+        Créer une API pour Scikit-learn
       </a>
     </li>
   
@@ -9476,6 +9506,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ajouter-des-attributs-aux-dimensions" class="md-nav__link">
+    Ajouter des attributs aux dimensions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployer-le-cube" class="md-nav__link">
+    Déployer le cube
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -9499,33 +9543,33 @@
 <p>Pour notre premier cube de données, nous allons construire un cube qui permet d'analyser les données des ventes suivant plusieurs axes <code>Date</code>, <code>Client</code>, <code>Produit</code> et <code>Géographie</code>.</p>
 <h2 id="creer-un-projet-multidimensionnel">Créer un projet multidimensionnel</h2>
 <p>Dans le menu Démarrer, recherchez Visual Studio et lancez. Ensuite sélectionnez <strong>Créer un projet</strong><br>
-<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-01.png" /></p>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-project-01.png" /></p>
 <p>Cliquez sur le bouton <strong>Projet Multidimensionnel Analysis Services</strong><br>
-<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-02.png" /></p>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-project-02.png" /></p>
 <p>Cliquez sur le bouton <strong>Projet Multidimensionnel Analysis Services</strong><br>
-<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-03.png" /></p>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-project-03.png" /></p>
 <p>Cliquez sur le bouton <strong>Projet Multidimensionnel Analysis Services</strong><br>
-<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-04.png" /></p>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-project-04.png" /></p>
 <h2 id="ajouter-une-source-de-donnees">Ajouter une source de données</h2>
 <p>Dans l'onglet Explorateur de solutions, faites clique-droit sur <strong>Sources de données</strong> puis sélectionnez <strong>Nouvelle source de données</strong><br>
-<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-05.png" /></p>
+<img alt="" src="/algojungle/images/analysis-services/cube/add-data-source-01.png" /></p>
 <p>Cliquez sur le bouton <strong>Next</strong><br>
-<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-06.png" /></p>
+<img alt="" src="/algojungle/images/analysis-services/cube/add-data-source-02.png" /></p>
 <p>Sélectionnez l'option <strong>Create a data source based on an existing or new connection</strong> puis cliquez sur le bouton <strong>Nouveau</strong><br>
-<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-07.png" /></p>
+<img alt="" src="/algojungle/images/analysis-services/cube/add-data-source-03.png" /></p>
 <p>Un message vous indique le fournisseur n'est pas pris en compte. Cliquez sur le bouton <strong>OK</strong><br>
-<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-08.png" /></p>
-<p><img alt="" src="/algojungle/images/analysis-services/cube/create-cube-09.png" /></p>
-<p><img alt="" src="/algojungle/images/analysis-services/cube/create-cube-10.png" /></p>
-<p><img alt="" src="/algojungle/images/analysis-services/cube/create-cube-11.png" /></p>
+<img alt="" src="/algojungle/images/analysis-services/cube/add-data-source-04.png" /></p>
+<p><img alt="" src="/algojungle/images/analysis-services/cube/add-data-source-05.png" /></p>
+<p><img alt="" src="/algojungle/images/analysis-services/cube/add-data-source-06.png" /></p>
+<p><img alt="" src="/algojungle/images/analysis-services/cube/add-data-source-07.png" /></p>
 <p>Cliquez sur le bouton <strong>Tester la connexion</strong> puis le bouton <strong>OK</strong><br>
-<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-12.png" /></p>
+<img alt="" src="/algojungle/images/analysis-services/cube/add-data-source-08.png" /></p>
 <p>Cliquez sur le bouton <strong>Next</strong><br>
-<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-13.png" /></p>
+<img alt="" src="/algojungle/images/analysis-services/cube/add-data-source-09.png" /></p>
 <p>Sélectionnez l'option <strong>Utiliser le compte de service</strong> puis cliquez sur le bouton <strong>Finish</strong><br>
-<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-14.png" /></p>
+<img alt="" src="/algojungle/images/analysis-services/cube/add-data-source-10.png" /></p>
 <p>Cliquez sur le bouton <strong>Finish</strong><br>
-<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-15.png" /></p>
+<img alt="" src="/algojungle/images/analysis-services/cube/add-data-source-11.png" /></p>
 <h2 id="creer-une-vue-de-source-de-donnees">Créer une vue de source de données</h2>
 <p>Dans l'onglet Explorateur de solutions, faites clique-droit sur <strong>Vues des sources de données</strong> puis sélectionnez <strong>Nouvelle vue des sources de données</strong><br>
 <img alt="" src="/algojungle/images/analysis-services/cube/create-data-source-view-01.png" /></p>
@@ -9561,8 +9605,10 @@
 <li>DataKey</li>
 <li>FullDateAlternateKey</li>
 <li>Day Number Of Week</li>
+<li>English Day Name Of Week</li>
 <li>Day Number Of Month</li>
 <li>Day Number Of Year</li>
+<li>Week Number Of Year</li>
 <li>English Month Name</li>
 <li>Month Number Of Year</li>
 <li>Calendar Quarter</li>
@@ -9571,13 +9617,61 @@
 </ul>
 <p>Une fois l'ensemble des colonnes sélectionnées, cliquez sur le bouton <strong>Next</strong><br>
 <img alt="" src="/algojungle/images/analysis-services/cube/create-dimension-05.png" /></p>
-<p>Cliquez sur le bouton <strong>Terminer</strong><br>
-<img alt="" src="/algojungle/images/analysis-services/cube/create-dimension-06.png" /></p>
-<p>Cliquez sur le bouton <strong>Terminer</strong><br>
+<p>Dans la colonne <strong>Type d'attribut</strong>, modifiez les types d'attribut des colonnes suivantes</p>
+<ul>
+<li>FullDateAlternateKey : <code>Date &gt; Calendrier &gt; Date</code></li>
+<li>Day Number Of Week : <code>Date &gt; Calendrier &gt; Date</code></li>
+<li>English Day Name Of Week : <code>Date &gt; Calendrier &gt; Date</code></li>
+<li>Day Number Of Month : <code>Date &gt; Calendrier &gt; Date</code></li>
+<li>Day Number Of Year : <code>Date &gt; Calendrier &gt; Date</code></li>
+<li>Week Number Of Year : <code>Date &gt; Calendrier &gt; Date</code></li>
+<li>English Month Name : <code>Date &gt; Calendrier &gt; Date</code></li>
+<li>Month Number Of Year : <code>Date &gt; Calendrier &gt; Date</code></li>
+<li>Calendar Quarter : <code>Date &gt; Calendrier &gt; Date</code></li>
+<li>Calendar Year : <code>Date &gt; Calendrier &gt; Date</code></li>
+<li>Calendar Semester : <code>Date &gt; Calendrier &gt; Date</code></li>
+</ul>
+<p><img alt="" src="/algojungle/images/analysis-services/cube/create-dimension-06.png" /></p>
+<p>Tous les types d'attribut sont définis, cliquez sur le bouton <strong>Next</strong><br>
 <img alt="" src="/algojungle/images/analysis-services/cube/create-dimension-07.png" /></p>
-<p>Cliquez sur le bouton <strong>Terminer</strong><br>
+<p>Cliquez sur le bouton <strong>Terminer</strong> pour finaliser la création de la dimension<br>
 <img alt="" src="/algojungle/images/analysis-services/cube/create-dimension-08.png" /></p>
+<p>Un nouvel onglet est ouvert dans le canva <strong>Terminer</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-dimension-09.png" /></p>
 <h2 id="creer-un-cube">Créer un cube</h2>
+<p>Dans l'onglet Explorateur de solutions, faites clique-droit sur <strong>Cubes</strong> puis sélectionnez <strong>Nouveau cube</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-01.png" /></p>
+<p>Cliquez sur le bouton <strong>Next</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-02.png" /></p>
+<p>Sélectionnez l'option <strong>Utiliser des tables</strong> puis cliquez sur le bouton <strong>Next</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-03.png" /></p>
+<p>Cliquez sur le bouton <strong>Suggérer</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-04.png" /></p>
+<p>La table <strong><code>FactInternetSales</code></strong> devrait être sélectionnée, cliquez sur le bouton <strong>Next</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-05.png" /></p>
+<p>Toutes les colonnes de la table <strong><code>FactInternetSales</code></strong> sont sélectionnées par défaut, nous allons désélectionner celles qui ne sont pas des mesures à savoir <strong><code>Promotion Key</code></strong>, <strong><code>Currency Key</code></strong>, <strong><code>Sales Territory Key</code></strong> et <strong><code>Revision Number</code></strong>.<br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-06.png" /></p>
+<p>Une fois les colonnes désélectionnées, cliquez sur le bouton <strong>Next</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-07.png" /></p>
+<p>La dimension <strong><code>Dim Date</code></strong> devrait être sélectionnée, cliquez sur le bouton <strong>Next</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-08.png" /></p>
+<p>Désélectionnez la table <strong><code>FactInternetSales</code></strong> puis cliquez sur le bouton <strong>Next</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-09.png" /></p>
+<p>Cliquez sur le bouton <strong>Terminer</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-10.png" /></p>
+<p>Vous reconnaissez le schéma en étoile avec la table de faits au centre et les tables de dimensions<br>
+<img alt="" src="/algojungle/images/analysis-services/cube/create-cube-11.png" /></p>
+<h2 id="ajouter-des-attributs-aux-dimensions">Ajouter des attributs aux dimensions</h2>
+<p>À droite, dans la section <strong>Explorateur de solutions</strong>, deux dimensions <strong><code>Dim Customer.dim</code></strong> et <strong><code>Dim Product.dim</code></strong>. Nous allons les modifier afin d'ajouter des attributs de dimension.
+Dans l'onglet Explorateur de solutions, faites clique-droit sur <strong>Cubes</strong> puis sélectionnez <strong>Nouveau cube</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/add-attributes-01.png" /></p>
+<p>Cliquez sur le bouton <strong>Next</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/add-attributes-02.png" /></p>
+<p>Cliquez sur le bouton <strong>Next</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/add-attributes-03.png" /></p>
+<p>Cliquez sur le bouton <strong>Next</strong><br>
+<img alt="" src="/algojungle/images/analysis-services/cube/add-attributes-04.png" /></p>
+<h2 id="deployer-le-cube">Déployer le cube</h2>
 <hr />
 <p><em>Bravo ! Vous venez de créer votre premier cube mutidimensionnel avec Analysis Services. Dans la prochaine section, nous verrons comment manipuler les données du cube dans Excel.</em></p>
 
