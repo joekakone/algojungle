@@ -5257,6 +5257,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#entrer-des-donnees" class="md-nav__link">
+    Entrer des données
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#a-partir-dun-fichier-csv" class="md-nav__link">
     À partir d'un fichier CSV
   </a>
@@ -8904,17 +8911,21 @@
         
           
         
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_11_6" id="__nav_11_6_label" tabindex="0">
-          BI Journal
+          Power BI Tips
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_6_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_11_6">
           <span class="md-nav__icon md-icon"></span>
-          BI Journal
+          Power BI Tips
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -8924,8 +8935,36 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../blog/bi-journal/examen-pl-300/" class="md-nav__link">
-        Prpéparer l'examen PL-300
+      <a href="../../../../blog/powerbi-tips/examen-pl-300/" class="md-nav__link">
+        Préparer l'examen PL-300
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blog/powerbi-tips/block-last-date/" class="md-nav__link">
+        Bloquer la dernière date
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../blog/powerbi-tips/create-dynamic-title/" class="md-nav__link">
+        Créer un titre dynamique
       </a>
     </li>
   
@@ -9458,6 +9497,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#entrer-des-donnees" class="md-nav__link">
+    Entrer des données
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#a-partir-dun-fichier-csv" class="md-nav__link">
     À partir d'un fichier CSV
   </a>
@@ -9497,19 +9543,31 @@
 
 
 <h1 id="obtenir-les-donnees-dans-power-bi">Obtenir les données dans Power BI</h1>
-<p>La conception d'un rapport dans Power BI commence par la connexion aux sources de données. Pas de données, Pas de rapport.</p>
+<p>Comme dit précédemment La conception d'un rapport dans Power BI commence par la connexion aux sources de données. Pas de données, Pas de rapport.</p>
 <p><img alt="" src="/algojungle/images/powerbi/covers/get-data.png" /></p>
 <p>Comme vu en introduction, la première étape 9du flux de travail dans Power BI est la connexion aux sources de données.</p>
 <h2 id="les-connecteurs-power-query">Les connecteurs Power Query</h2>
 <p>Power BI dispose de plus de 150 connecteurs pour récupérer des données à partir de différentes sources, allant de simples fichiers plats aux bases de données en passant par le cloud.</p>
 <ul>
-<li>Fichiers</li>
-<li>Bases de données</li>
+<li>Fichiers (Excel, CSV, TXT, etc.)</li>
+<li>Bases de données (SQL Server, Postgres, MySQL, etc.)</li>
 <li>Power Platform</li>
 <li>Azure</li>
 <li>Services en ligne</li>
 </ul>
-<p>Ci-dessous la procédure pour obtenir des données à partir fichiers CSV et des bases de données SQL Server.</p>
+<p>À gauche dans la section <strong>Données</strong>, Power BI vous invite à obtenir des données et ce que nous allons voir dans cette section, comment obtenir des données à partir fichiers CSV et des bases de données SQL Server.<br>
+<img alt="" src="/algojungle/images/powerbi/01-data-preparation/powerbi-blank-canvas.png" /></p>
+<h2 id="entrer-des-donnees">Entrer des données</h2>
+<p>Power BI permet d'ajouter une table de données en saisissant directement les données dans un tableau. Pour ce faire, en haut dans le ruban, dans le menu <strong>Accueil</strong>, cliquez sur le bouton <strong>Entrer des données</strong><br>
+<img alt="" src="/algojungle/images/powerbi/01-data-preparation/enter-data-01.png" /></p>
+<p><br>
+<img alt="" src="/algojungle/images/powerbi/01-data-preparation/enter-data-02.png" /></p>
+<p><br>
+<img alt="" src="/algojungle/images/powerbi/01-data-preparation/enter-data-03.png" /></p>
+<p><br>
+<img alt="" src="/algojungle/images/powerbi/01-data-preparation/enter-data-04.png" /></p>
+<p><br>
+<img alt="" src="/algojungle/images/powerbi/01-data-preparation/enter-data-05.png" /></p>
 <h2 id="a-partir-dun-fichier-csv">À partir d'un fichier CSV</h2>
 <p>Cliquez sur le bouton <strong>Obtenir les données</strong>, un assistant s'ouvre énumérant les différentes sources de données prise en charge.</p>
 <p><img alt="" src="/algojungle/images/powerbi/power-bi-get-data-csv-01.png" /></p>
@@ -9533,11 +9591,12 @@
 <p>Cliquez sur <strong>Charger</strong> pour importer les données, Power BI importe les données de la table (voir à droite de l'écran).</p>
 <p><img alt="" src="/algojungle/images/powerbi/power-bi-get-data-sql-server-06.png" /></p>
 <h2 id="une-requete-vide">Une requête vide</h2>
-<p>Il est possible de partir d'une requête vide et d'écrire le code M soi-même.
+<p>Il est possible de partir d'une requête vide et d'écrire le code M soi-même.</p>
+<p>Cliquez sur le bouton <strong>Éditeur avancé</strong> puis collez le code suivant dans l'éditeur
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>let
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    Source = PostgreSQL.Database(&quot;127.0.0.1&quot;, &quot;store_database&quot;, [HierarchicalNavigation=true]),
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    sandbox = Source{[Schema=&quot;public&quot;]}[Data],
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    Sales = sandbox{[Name=&quot;Sales&quot;]}[Data]
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    public = Source{[Schema=&quot;public&quot;]}[Data],
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    Sales = public{[Name=&quot;Sales&quot;]}[Data]
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>in
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    Sales
 </code></pre></div></p>
