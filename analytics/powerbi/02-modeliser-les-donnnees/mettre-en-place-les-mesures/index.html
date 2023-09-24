@@ -9603,15 +9603,19 @@
 <p>La fonction <strong>COUNTNOBLANCK</strong> permet de compter le nombre d'occurrences dans une colonnes, les valeurs vides exclues.
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Total Cnt = COUNTNOBLANCK(table[transaction_id])
 </code></pre></div></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>calendar = CALENDAR(MIN(hotel_bookings[reservation_status_date]), MAX(hotel_bookings[reservation_status_date]))
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Total Bookings = COUNTROWS(hotel_bookings)
+</code></pre></div>
 <p>La fonction <strong>DISTINCTCOUNTNOBLANCK</strong> permet d'effectuer un comptage sans doublons
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Total Clients = DISTINCTCOUNTNOBLANCK(table[client_id])
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Total Clients = DISTINCTCOUNTNOBLANCK(table[client_id])
 </code></pre></div></p>
 <h2 id="sommer-les-montants-et-les-quantites">Sommer les montants et les quantités</h2>
 <p>Systématiquement pour les données numériques, il faut créer des mesures pour la somme
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Montant total = SUM(table[montant])
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Montant total = SUM(table[montant])
 </code></pre></div>
 On fait pareil pour les quantités
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Quantité totale = SUM(table[quantite])
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Quantité totale = SUM(table[quantite])
 </code></pre></div></p>
 <p>Une fois les mesures créés, vous pouvez masquer les champs des tables qui ne seront pas utilisés dans les visualisations. Pour cela, faites clique-droit sur champ et sélectionnez <strong>Masquer</strong>.</p>
 <hr />
