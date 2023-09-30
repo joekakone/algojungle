@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Vous êtes matheux et vous souhaitez faire carrière dans le domaine de l'informatique ? Vous êtes au bon endroit, je suis Joseph Konka, Spécialiste Data Science et je vais vous apprendre les notions de base qu'il vous faut pour débuter votre carrière dans le très passionnant univers de la Data Science. Alors, vous êtes prêts  pour l'aventure ? C'est parti 🚀">
+        <meta name="description" content="Dans ce nouveau tutoriel Power BI,  je vous montre comment bloquer votre filtre de dates sur la dernière date de données de manière dynamique. ">
       
       
         <meta name="author" content="Joseph Konka">
@@ -15,17 +15,17 @@
         <link rel="canonical" href="https://joekakone.github.io/algojungle/blog/powerbi-tips/block-last-date/">
       
       
-        <link rel="prev" href="../examen-pl-300/">
+        <link rel="prev" href="../create-dynamic-title/">
       
       
-        <link rel="next" href="../create-dynamic-title/">
+        <link rel="next" href="../create-dynamic-measure/">
       
       <link rel="icon" href="/algojungle/assets/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.16">
     
     
       
-        <title>Bloquer la dernière date - Algo Jungle</title>
+        <title>Bloquer la dernière date de données - Algo Jungle</title>
       
     
     
@@ -80,7 +80,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="blog/powerbi-tips/block-last-date/">
 
-<meta property="og:image" content="https://joekakone.github.io/static/img/cover.png">
+<meta property="og:image" content="/algojungle/images/powerbi/covers/powerbi.png">
 
 <meta property="og:image:width" content="1280">
 <meta property="og:image:height" content="720">
@@ -101,6 +101,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#contexte" class="md-skip">
+          Aller au contenu
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -131,7 +136,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Bloquer la dernière date
+              Bloquer la dernière date de données
             
           </span>
         </div>
@@ -8897,6 +8902,8 @@
         
           
         
+          
+        
       
       
         
@@ -8937,6 +8944,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../create-dynamic-title/" class="md-nav__link">
+        Créer un titre dynamique
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -8946,9 +8967,80 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Bloquer la dernière date
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Bloquer la dernière date
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contexte" class="md-nav__link">
+    Contexte
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jeu-de-donnees" class="md-nav__link">
+    Jeu de données
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creer-une-table-de-dates" class="md-nav__link">
+    Créer une table de dates 📅
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calculer-la-derniere-de-donnees" class="md-nav__link">
+    Calculer la dernière de données
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creer-une-colonne-de-date-corrigee" class="md-nav__link">
+    Créer une colonne de date corrigée
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mettre-en-place-le-filtre-de-dates" class="md-nav__link">
+    Mettre en place le filtre de dates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#afficher-la-dernere-date-des-donnees" class="md-nav__link">
+    Afficher la dernère date des données
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -8961,7 +9053,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../create-dynamic-title/" class="md-nav__link">
+      <a href="../create-dynamic-measure/" class="md-nav__link">
         Créer un titre dynamique
       </a>
     </li>
@@ -9495,6 +9587,63 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contexte" class="md-nav__link">
+    Contexte
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jeu-de-donnees" class="md-nav__link">
+    Jeu de données
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creer-une-table-de-dates" class="md-nav__link">
+    Créer une table de dates 📅
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calculer-la-derniere-de-donnees" class="md-nav__link">
+    Calculer la dernière de données
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creer-une-colonne-de-date-corrigee" class="md-nav__link">
+    Créer une colonne de date corrigée
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mettre-en-place-le-filtre-de-dates" class="md-nav__link">
+    Mettre en place le filtre de dates
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#afficher-la-dernere-date-des-donnees" class="md-nav__link">
+    Afficher la dernère date des données
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -9505,23 +9654,151 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-                  
-  
+  <!-- Content -->
+
+	<!-- Edit button -->
+	
+
+	<!--
+	Hack: check whether the content contains a h1 headline. If it
+	doesn't, the page title (or respectively site name) is used
+	as the main headline.
+	-->
+	
+		<h1 style="margin-bottom: 0px;">Bloquer la dernière date de données</h1>
+	
+	<br>
+
+	<!-- Markdown content -->
+	<aside class="mdx-author">
+		<p>
+		<img class="no-border" src="https://avatars.githubusercontent.com/joekakone" alt="@joekakone">
+		</p>
+		<p>
+		<span> 
+		<b>Joseph Konka</b> · <a href="https://github.com/joekakone">@joekakone</a>
+		</span>
+		<span>
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar2" viewBox="0 0 16 16">
+			<path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H2z"/>
+			<path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V4z"/>
+			</svg> 03/03/2022 ·
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+			<path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+			<path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+			</svg> 3 min read
+		</span>
+		</p>
+	</aside>
+
+	<!-- Tags -->
+	
+	<nav class="md-tags" >
+		
+		<a href="/algojungle/tags/#powerbi" class="md-tag"> powerbi </a>
+		
+		<a href="/algojungle/tags/#ux" class="md-tag"> ux </a>
+		
+		<a href="/algojungle/tags/#dates" class="md-tag"> dates </a>
+		
+	</nav>
+	
+
+	<!-- description -->
+	
+	<p>Dans ce nouveau tutoriel Power BI,  je vous montre comment bloquer votre filtre de dates sur la dernière date de données de manière dynamique. </p>
+	
+
+	<!-- Cover Image -->
+	
+	<p>
+		<img alt="" src="/algojungle/images/powerbi/covers/powerbi.png">
+	</p>
+	
+
+	<h2 id="contexte">Contexte</h2>
+<p>Dans Power BI lorsque vous enregistrer un rapport les filtres gardent. Le problème c'est que lorsque de nouvelles sont ajoutées on aimerait bien que la dernière date de données soit sélectionné par défaut.</p>
+<p>Vous avec conçu un rapport qui reporte les ventes journalières. </p>
+<h2 id="jeu-de-donnees">Jeu de données</h2>
+<p>Dans le cadre de ce tutoriel nous allons utiliser le jeu de données Superstore. Vous trouverez deux fichiers.</p>
+<h2 id="creer-une-table-de-dates">Créer une table de dates 📅</h2>
+<p>La première chose à faire est de créer une table de dates. Pour cela, </p>
+<ol>
+<li>Rendez-vous dans le menu, . Dans la barre de formule, insérer la formule ci-dessous.
+<div class="highlight"><span class="filename">Table de dates</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>calendar = CALENDAR(MIN(myTable[date]), MAX(myTable[date]))
+</code></pre></div></li>
+</ol>
+<h2 id="calculer-la-derniere-de-donnees">Calculer la dernière de données</h2>
+<div class="highlight"><span class="filename">Mesure Dernière Date</span><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Dernière Date = CALCULATE(
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    MAX(&#39;calendar&#39;[Date]),
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    ALL(&#39;calendar&#39;)
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>)
+</code></pre></div>
+<h2 id="creer-une-colonne-de-date-corrigee">Créer une colonne de date corrigée</h2>
+<p>L'astuce consiste à répliquer toutes les dates
+<div class="highlight"><span class="filename">Colonne Date Corrigée</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>`Date Corrigée = IF(
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    &#39;calendar&#39;[Date] = &#39;calendar&#39;[Dernière Date], 
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    &quot;Last Day&quot;, 
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    &quot;&quot; &amp; FORMAT(&#39;calendar&#39;[Date], &quot;yyyy-MM-dd&quot;)
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>)
+</code></pre></div></p>
+<h2 id="mettre-en-place-le-filtre-de-dates">Mettre en place le filtre de dates</h2>
+<p>Ajouter un segment</p>
+<p>Ajouter la colonne <code>Date Corrigée</code></p>
+<p>Convertissez en liste déroulante</p>
+<p>Configurez la sélection simple</p>
+<h2 id="afficher-la-dernere-date-des-donnees">Afficher la dernère date des données</h2>
+<p>Il faut ajouter un message qui indique la dernière date de l'historique de données.
+<div class="highlight"><span class="filename">Mesure Dernière mise à jour</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Dernière mise à jour = 
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>&quot;Dernière mise à jour : &quot; &amp; 
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>FORMAT ( 
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    &#39;calendar&#39;[Dernière Date], 
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    &quot;dd-MM-yyyy&quot; 
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>)
+</code></pre></div></p>
+<p>À présent nous allons ajouter de nouvelles données puis rafraîchir le rapport pour vérifier si tout marche. Pour cela</p>
+<ol>
+<li>Dans le fichier Excel A copiez et collez les données du fichier Excel B.</li>
+<li>Enregistrez le fichier A</li>
+<li>Revenez dans le rapport et faites Actualiser</li>
+</ol>
+<p>Vérifiez bien que le message change et acffiche la nouvelle dernière date.</p>
+<hr />
+<p><em>Dans ce tutoriel, nous avons vu comment bloquer le segment de dates sur la dernière date de données.</em></p>
+
+	<!-- Last update of source file -->
+	
+		
+	
+
+	<!-- <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="joseph-koami-konka" data-version="v1" style="width: 100%;"></div> -->
+
+	<h2>Partagez sur les réseaux sociaux</h2>
+	<!-- ShareThis BEGIN -->
+	<div class="sharethis-inline-share-buttons"></div>
+	<!-- ShareThis END -->
+
+	<!-- Giscus - generated by https://giscus.app -->
+	<h2 id="__comments">Commentaires</h2>
+	<script src="https://giscus.app/client.js"
+		data-repo="joekakone/Departement-De-Maths"
+		data-repo-id="MDEwOlJlcG9zaXRvcnkzMzY4MjEwNTY="
+		data-category="General"
+		data-category-id="DIC_kwDOFBN7QM4CORj9"
+		data-mapping="pathname"
+		data-reactions-enabled="1"
+		data-emit-metadata="0"
+		data-input-position="bottom"
+		data-theme="dark"
+		data-lang="fr"
+		crossorigin="anonymous"
+		async>
+	</script>
+
+	<!-- LinkedIn -->
+	<!-- <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script> -->
 
 
-
-
-  <h1>Bloquer la dernière date</h1>
-
-
-
-
-  
-
-
-
-
-                
               </article>
             </div>
           
@@ -9542,7 +9819,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../examen-pl-300/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Préparer l&#39;examen PL-300" rel="prev">
+          <a href="../create-dynamic-title/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Créer un titre dynamique" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -9551,14 +9828,14 @@
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Préparer l'examen PL-300
+                Créer un titre dynamique
               </div>
             </div>
           </a>
         
         
           
-          <a href="../create-dynamic-title/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Créer un titre dynamique" rel="next">
+          <a href="../create-dynamic-measure/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Créer un titre dynamique" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
