@@ -6512,7 +6512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../sql/python/sqlite/" class="md-nav__link">
+      <a href="../../../sql/python/1-sqlite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6532,7 +6532,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../sql/python/postgres/" class="md-nav__link">
+      <a href="../../../sql/python/2-postgres/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6552,7 +6552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../sql/python/sqlserver/" class="md-nav__link">
+      <a href="../../../sql/python/3-sqlserver/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6572,7 +6572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../sql/python/pandas/" class="md-nav__link">
+      <a href="../../../sql/python/4-pandas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6592,7 +6592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../sql/python/db-analytics-tools/" class="md-nav__link">
+      <a href="../../../sql/python/5-db-analytics-tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -12449,7 +12449,7 @@
 
 
 <h1 id="obtenir-les-donnees-dans-power-bi">Obtenir les données dans Power BI</h1>
-<p>Comme dit précédemment La conception d'un rapport dans Power BI commence par la connexion aux sources de données. Pas de données, Pas de rapport.</p>
+<p>La conception d'un rapport dans Power BI commence par la connexion aux sources de données. Dans cette section, </p>
 <p><img alt="" src="/algojungle/images/powerbi/covers/get-data.png" /></p>
 <p>Comme vu en introduction, la première étape 9du flux de travail dans Power BI est la connexion aux sources de données.</p>
 <h2 id="les-connecteurs-power-query">Les connecteurs Power Query</h2>
@@ -12457,10 +12457,12 @@
 <ul>
 <li>Fichiers (Excel, CSV, TXT, etc.)</li>
 <li>Bases de données (SQL Server, Postgres, MySQL, etc.)</li>
+<li>Microsoft Fabric (récement ajouté)</li>
 <li>Power Platform</li>
 <li>Azure</li>
 <li>Services en ligne</li>
 </ul>
+<p><img alt="" src="https://i.stack.imgur.com/wmudC.png" /></p>
 <p>À gauche dans la section <strong>Données</strong>, Power BI vous invite à obtenir des données et ce que nous allons voir dans cette section, comment obtenir des données à partir fichiers CSV et des bases de données SQL Server.<br>
 <img alt="" src="/algojungle/images/powerbi/01-data-preparation/powerbi-blank-canvas.png" /></p>
 <h2 id="entrer-des-donnees">Entrer des données</h2>
@@ -12513,15 +12515,36 @@
 <img alt="" src="/algojungle/images/powerbi/01-data-preparation/power-bi-get-data-sql-server-06.png" /></p>
 <h2 id="a-partir-dune-requete-vide">À partir d'une requête vide</h2>
 <p>Il est possible de partir d'une requête vide et d'écrire du code M personnalisé.</p>
-<p>Cliquez sur le bouton <strong>Éditeur avancé</strong> puis collez le code suivant dans l'éditeur
+<p><img alt="" src="/algojungle/images/powerbi/01-data-preparation/empty-query-01.png" /></p>
+<p><img alt="" src="/algojungle/images/powerbi/01-data-preparation/empty-query-02.png" /></p>
+<p>Cliquez sur le bouton <strong>Éditeur avancé</strong> puis collez le code suivant dans l'éditeur<br>
+<img alt="" src="/algojungle/images/powerbi/01-data-preparation/empty-query-03.png" /></p>
+<p>Par défaut, le code ci-dessous s'affiche dans l'éditeur de code M
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>let
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    Source = PostgreSQL.Database(&quot;127.0.0.1&quot;, &quot;store_database&quot;, [HierarchicalNavigation=true]),
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    public = Source{[Schema=&quot;public&quot;]}[Data],
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    Sales = public{[Name=&quot;Sales&quot;]}[Data]
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>in
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    Sales
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    Source = &quot;&quot;
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>in
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    Source
 </code></pre></div></p>
-<p>Vous pouvez à présent utiliser ces données pour alimenter vos visuels.</p>
+<p>Copiez et collez le code ci-dessous puis adaptez. Ensuite cliquez sur le bouton <strong>OK</strong>.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>let
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    Source = PostgreSQL.Database(&quot;127.0.0.1&quot;, &quot;store_database&quot;, [HierarchicalNavigation=true]),
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    public = Source{[Schema=&quot;public&quot;]}[Data],
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    Sales = public{[Name=&quot;Sales&quot;]}[Data]
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>in
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    Sales
+</code></pre></div></p>
+<p><img alt="" src="/algojungle/images/powerbi/01-data-preparation/empty-query-04.png" /></p>
+<p>Cliquez sur le bouton <strong>Modifier les informations d'identification</strong><br>
+<img alt="" src="/algojungle/images/powerbi/01-data-preparation/empty-query-05.png" /></p>
+<p><br>
+<img alt="" src="/algojungle/images/powerbi/01-data-preparation/empty-query-06.png" /></p>
+<p><br>
+<img alt="" src="/algojungle/images/powerbi/01-data-preparation/empty-query-07.png" /></p>
+<p>Sélectionnez l'option <strong>Importer</strong> puis cliquez sur le bouton <strong>OK</strong>.<br>
+<img alt="" src="/algojungle/images/powerbi/01-data-preparation/empty-query-08.png" /></p>
+<p>La table est bien chargée<br>
+<img alt="" src="/algojungle/images/powerbi/01-data-preparation/empty-query-09.png" /></p>
+<p>🚀 Vous pouvez à présent utiliser ces données pour alimenter vos visuels.</p>
 <hr />
 <p><em>Il existes bien d'autres connecteurs de sources de données que vous pouvez tester vous-mêmes. Pour aller plus loin, je vous recommande cette lecture <a href="https://docs.microsoft.com/fr-fr/learn/modules/get-data/">Obtenir des données dans Power BI</a> de MS Learn.</em></p>
 

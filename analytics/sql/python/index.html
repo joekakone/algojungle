@@ -18,7 +18,7 @@
         <link rel="prev" href="../programming/les-fonctions/">
       
       
-        <link rel="next" href="sqlite/">
+        <link rel="next" href="1-sqlite/">
       
       
       <link rel="icon" href="/algojungle/assets/favicon.png">
@@ -6516,7 +6516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sqlite/" class="md-nav__link">
+      <a href="1-sqlite/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6536,7 +6536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="postgres/" class="md-nav__link">
+      <a href="2-postgres/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6556,7 +6556,7 @@
   
   
     <li class="md-nav__item">
-      <a href="sqlserver/" class="md-nav__link">
+      <a href="3-sqlserver/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6576,7 +6576,7 @@
   
   
     <li class="md-nav__item">
-      <a href="pandas/" class="md-nav__link">
+      <a href="4-pandas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6596,7 +6596,7 @@
   
   
     <li class="md-nav__item">
-      <a href="db-analytics-tools/" class="md-nav__link">
+      <a href="5-db-analytics-tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -12346,12 +12346,45 @@
 <p>Les langages de programmation proposent des packages pour interagir avec les bases de données. Python propose plusieurs packages pour interagir avec les bases de données. Dans cette série, je vous montre comment effectuer des requêtes sur SQLite, Postgres et SQL Server.</p>
 <h2 id="orb-et-orm">ORB et ORM</h2>
 <p>Un ORM (object-relational mapping) est une interface entre le langage de programmation et la base de données. Il permet au développeur de manipuler les données de la base de données via les objets.</p>
-<ol>
-<li>SQLite3 <a href="https://github.com/joekakone/SQL_Tutorials/blob/master/01_sqlite.ipynb">[Notebook]</a></li>
-<li>Postgres <a href="https://github.com/joekakone/SQL_Tutorials/blob/master/02_postgres.ipynb">[Notebook]</a></li>
-<li>SQL Server <a href="https://github.com/joekakone/SQL_Tutorials/blob/master/03_sqlserver.ipynb">[Notebook]</a></li>
-<li>Pandas <a href="https://github.com/joekakone/SQL_Tutorials/blob/master/04_pandas.ipynb">[Notebook]</a></li>
-</ol>
+<!-- 1. SQLite3 [[Notebook]](https://github.com/joekakone/SQL_Tutorials/blob/master/01_sqlite.ipynb)
+2. Postgres [[Notebook]](https://github.com/joekakone/SQL_Tutorials/blob/master/02_postgres.ipynb)
+3. SQL Server [[Notebook]](https://github.com/joekakone/SQL_Tutorials/blob/master/03_sqlserver.ipynb)
+4. Pandas [[Notebook]](https://github.com/joekakone/SQL_Tutorials/blob/master/04_pandas.ipynb)
+5. Pandas [[Notebook]](https://github.com/joekakone/SQL_Tutorials/blob/master/04_pandas.ipynb) -->
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Link</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>SQLite3</td>
+    <td><a href="https://github.com/joekakone/SQL_Tutorials/blob/master/01_sqlite.ipynb">[Notebook]</a></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Postgres</td>
+    <td><a href="https://github.com/joekakone/SQL_Tutorials/blob/master/02_postgres.ipynb">[Notebook]</a></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>SQL Server</td>
+    <td><a href="https://github.com/joekakone/SQL_Tutorials/blob/master/03_sqlserver.ipynb">[Notebook]</a></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Pandas</td>
+    <td><a href="https://github.com/joekakone/SQL_Tutorials/blob/master/04_pandas.ipynb">[Notebook]</a></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Pandas</td>
+    <td><a href="https://github.com/joekakone/SQL_Tutorials/blob/master/04_pandas.ipynb">[Notebook]</a></td>
+  </tr>
+</table>
+
 <h2 id="configurer-un-environnement">Configurer un environnement</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Création d&#39;un environnement virtuel</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>env
@@ -12412,7 +12445,7 @@
         
         
           
-          <a href="sqlite/" class="md-footer__link md-footer__link--next" aria-label="Suivant: SQLite3">
+          <a href="1-sqlite/" class="md-footer__link md-footer__link--next" aria-label="Suivant: SQLite3">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant

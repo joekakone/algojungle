@@ -12,13 +12,13 @@
         <meta name="author" content="Joseph Konka">
       
       
-        <link rel="canonical" href="https://joekakone.github.io/algojungle/analytics/sql/python/sqlite/">
+        <link rel="canonical" href="https://joekakone.github.io/algojungle/analytics/sql/python/4-pandas/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../3-sqlserver/">
       
       
-        <link rel="next" href="../postgres/">
+        <link rel="next" href="../5-db-analytics-tools/">
       
       
       <link rel="icon" href="/algojungle/assets/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>SQLite3 - Algo Jungle</title>
+        <title>Pandas - Algo Jungle</title>
       
     
     
@@ -75,12 +75,12 @@
     
     
     
-<meta property="og:title" content="SQLite3">
+<meta property="og:title" content="Pandas">
 
 <meta property="og:description" content="Algo Junle - Data Science Advocate">
 
 <meta property="og:type" content="website">
-<meta property="og:url" content="analytics/sql/python/sqlite/">
+<meta property="og:url" content="analytics/sql/python/4-pandas/">
 
 <meta property="og:image" content="https://joekakone.github.io/static/img/cover.png">
 
@@ -105,7 +105,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#interaction-python-sqlite3" class="md-skip">
+        <a href="#recuperation-de-donnees-avec-pandas" class="md-skip">
           Aller au contenu
         </a>
       
@@ -139,7 +139,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              SQLite3
+              Pandas
             
           </span>
         </div>
@@ -6514,6 +6514,66 @@
                 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../1-sqlite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SQLite3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-postgres/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Postgres
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3-sqlserver/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SQLServer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -6529,7 +6589,7 @@
           
   
   <span class="md-ellipsis">
-    SQLite3
+    Pandas
   </span>
   
 
@@ -6540,7 +6600,7 @@
         
   
   <span class="md-ellipsis">
-    SQLite3
+    Pandas
   </span>
   
 
@@ -6611,67 +6671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../postgres/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Postgres
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../sqlserver/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    SQLServer
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pandas/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Pandas
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../db-analytics-tools/" class="md-nav__link">
+      <a href="../5-db-analytics-tools/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -12434,9 +12434,8 @@
                   
 
 
-<h1 id="interaction-python-sqlite3">Interaction Python &amp; SQLite3</h1>
-<p>SQLite est le système de gestion de bases de données relationnelles orienté fichier. Nous verrons connecter se connecter à une base de donnée SQLite et effectuer les opérations CRUD.</p>
-<p><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/SQLite370.svg/1200px-SQLite370.svg.png" /></p>
+<h1 id="recuperation-de-donnees-avec-pandas">Récupération de données avec Pandas</h1>
+<p><img alt="" src="https://miro.medium.com/max/1080/1*_oSOImPmBFeKj8vqE4FCkQ.jpeg" /></p>
 <p>Je vous propose de manipuler les bases de données avec le packages SQLite3. Il est natif dans Python et il est facile à utiliser.</p>
 <h2 id="creer-une-table">Créer une table</h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="ch">#!/usr/bin/python</span>
@@ -12580,7 +12579,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Travailler avec SQL sous Python">
+          <a href="../3-sqlserver/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: SQLServer">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -12590,20 +12589,20 @@
                 Précédent
               </span>
               <div class="md-ellipsis">
-                Travailler avec SQL sous Python
+                SQLServer
               </div>
             </div>
           </a>
         
         
           
-          <a href="../postgres/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Postgres">
+          <a href="../5-db-analytics-tools/" class="md-footer__link md-footer__link--next" aria-label="Suivant: DB Analytics Tools">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Postgres
+                DB Analytics Tools
               </div>
             </div>
             <div class="md-footer__button md-icon">
