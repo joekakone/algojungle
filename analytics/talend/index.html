@@ -26,7 +26,7 @@
     
     
       
-        <title>Prise en main de Talend Open Studio - Algo Jungle</title>
+        <title>Intégration de données avec Talend Open Studio - Algo Jungle</title>
       
     
     
@@ -75,7 +75,7 @@
     
     
     
-<meta property="og:title" content="Prise en main de Talend Open Studio">
+<meta property="og:title" content="Intégration de données avec Talend Open Studio">
 
 <meta property="og:description" content="Algo Junle - Learn Python and Data for free">
 
@@ -105,7 +105,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#prise-en-main-de-talend-open-studio" class="md-skip">
+        <a href="#integration-de-donnees-avec-talend-open-studio" class="md-skip">
           Aller au contenu
         </a>
       
@@ -139,7 +139,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Prise en main de Talend Open Studio
+              Intégration de données avec Talend Open Studio
             
           </span>
         </div>
@@ -12426,6 +12426,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#talend-data-integration-certified-developer" class="md-nav__link">
+    Talend Data Integration Certified Developer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#cas-pratiques" class="md-nav__link">
     Cas pratiques
   </a>
@@ -12447,34 +12454,94 @@
                   
 
 
-<h1 id="prise-en-main-de-talend-open-studio">Prise en main de Talend Open Studio</h1>
-<p>Talend Open Studio for Data Integration est un outil open source d'intégration de données et d'ETL. C'est l'un des outils les plus utilisés dans le monde de la Business Intelligence.</p>
-<p><img alt="png" src="/algojungle/images/talend/covers/talend.png" /></p>
-<!-- ![png](https://res.cloudinary.com/talend/image/upload/q_auto,w_1028,h_652/products/spot/spot-product-relevant-accessible-data_r0toik.webp) -->
-
+<h1 id="integration-de-donnees-avec-talend-open-studio">Intégration de données avec Talend Open Studio</h1>
+<p>Talend Open Studio for Data Integration est un outil open source d'intégration de données et d'ETL. C'est l'un des outils les plus utilisés dans le monde de la Business Intelligence, il fait partie des compétences MUST HAVE. Dans cette formation, vous apprendrez les notions de base d'ETL et de l'orchestration des flux de données avec Talend.</p>
+<p><img alt="" src="/algojungle/images/talend/covers/talend.png" /></p>
 <h2 id="integration-de-donnees">Intégration de données</h2>
 <p>Talend Open Studio propose plusieurs connecteurs pour récupérer des données depuis des sources variées tels que des fichiers, des bases de données, des services en ligne.</p>
 <p><img alt="" src="https://res.cloudinary.com/hevo/image/upload/f_auto,q_auto/v1671446949/hevo-learn/data-integration-graphic-.png?_i=AA" /></p>
 <h2 id="extract-transform-load">Extract Transform Load</h2>
 <p><img alt="" src="https://www.krasamo.com/wp-content/uploads/group-7@3x-9.png" /></p>
 <h2 id="extension-java">Extension Java</h2>
-<p>Talend offre la possibilité d'écrire des scripts Java à travers le composant tJava. Cela permet de faire les actions suivantes :</p>
+<p>Talend offre la possibilité d'écrire des scripts Java à travers le composant <strong>tJava</strong>. Cela permet de faire les actions suivantes :</p>
 <ul>
 <li>modifier les variables </li>
 <li>afficher des messages</li>
 <li>créer des variables personnelles</li>
 </ul>
 <h2 id="les-dates">Les dates</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">TalendDate</span><span class="p">.</span><span class="na">formatDate</span><span class="p">(</span><span class="s">&quot;yyyyMMdd&quot;</span><span class="p">,</span><span class="n">TalendDate</span><span class="p">.</span><span class="na">addDate</span><span class="p">(</span><span class="n">TalendDate</span><span class="p">.</span><span class="na">getCurrentDate</span><span class="p">(),</span><span class="o">-</span><span class="p">(</span><span class="n">Integer</span><span class="p">)</span><span class="n">globalMap</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="s">&quot;tLoop_1_CURRENT_VALUE&quot;</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="s">&quot;dd&quot;</span><span class="p">))</span><span class="w"> </span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">TalendDate</span><span class="p">.</span><span class="na">formatDate</span><span class="p">(</span><span class="s">&quot;yyyyMMdd&quot;</span><span class="p">,</span><span class="n">TalendDate</span><span class="p">.</span><span class="na">addDate</span><span class="p">(</span><span class="n">TalendDate</span><span class="p">.</span><span class="na">getCurrentDate</span><span class="p">(),</span><span class="o">-</span><span class="p">(</span><span class="n">Integer</span><span class="p">)</span><span class="n">globalMap</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="s">&quot;tLoop_1_CURRENT_VALUE&quot;</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="s">&quot;dd&quot;</span><span class="p">))</span>
-</code></pre></div>
+<p>Talend dispose de plusieurs fonctions pour mainipuler les dates à travers la classe <code>TalendDate</code></p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Functionn</th>
+<th>Description</th>
+<th>Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>TalendDate.getCurrentDate</td>
+<td>Retourne le timestamp actuel</td>
+<td>-</td>
+</tr>
+<tr>
+<td>2</td>
+<td>TalendDate.addDate</td>
+<td>retourne</td>
+<td>(java.util.Date date, int field, int amount)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>TalendDate.diffDate</td>
+<td>calcule la différence entre deux dates</td>
+<td>(java.util.Date startDate, java.util.Date endDate, String pattern)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>TalendDate.parseDate</td>
+<td>convertit une chaîne de caractères en date</td>
+<td>(String pattern, String date)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>TalendDate.formatDate</td>
+<td>convertit une date en chaîne de caractères</td>
+<td>(String pattern, java.util.Date date)</td>
+</tr>
+</tbody>
+</table>
+<!-- ```java
+TalendDate.formatDate("yyyyMMdd",TalendDate.addDate(TalendDate.getCurrentDate(),-(Integer)globalMap.get("tLoop_1_CURRENT_VALUE")+1,"dd")) 
+```
+
+
+```java
+TalendDate.formatDate("yyyyMMdd",TalendDate.addDate(TalendDate.getCurrentDate(),-(Integer)globalMap.get("tLoop_1_CURRENT_VALUE")+1,"dd"))
+``` -->
+
+<h2 id="talend-data-integration-certified-developer">Talend Data Integration Certified Developer</h2>
+<p>Talend Data Integration Certified Developer est une certification qui permet </p>
+<ul>
+<li>Getting started with data integration</li>
+<li>Working with files</li>
+<li>Joining and filtering data</li>
+<li>Using context variables</li>
+<li>Error handling</li>
+<li>Working with databases</li>
+<li>Orchestrating Jobs</li>
+<li>Deploying Jobs</li>
+<li>Project management</li>
+<li>Debugging</li>
+</ul>
 <h2 id="cas-pratiques">Cas pratiques</h2>
 <p><strong>Cas Pratique 1</strong><br>
-Créer un job Talend qui récupère des données de transactions&lt;br
+Créer un job Talend qui récupère des données de transactions<br>
 <img alt="" src="/algojungle/images/powerbi/report-project-1.png" /></p>
 <p><strong>Cas Pratique 2</strong><br>
-Créer un&lt;br
+Créer un job qui intègre les données de la Covid19 à partir d'une source GitHub<br>
 <img alt="" src="/algojungle/images/powerbi/report-project-1.png" /></p>
 <hr />
 <p><em>Vous êtes prêts ? Rendez-vous dans la prochaine section pour installer Talend Open Studio.</em></p>
