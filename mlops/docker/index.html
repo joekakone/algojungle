@@ -4021,6 +4021,8 @@
       
         
       
+        
+      
     
     
     
@@ -4114,6 +4116,8 @@
       
         
           
+        
+      
         
       
         
@@ -4281,6 +4285,26 @@
   
   <span class="md-ellipsis">
     Obtenir des données
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analytics/excel/creer-un-modele-de-donnees/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Créer un modèle de données
   </span>
   
 
@@ -5892,11 +5916,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../analytics/talend/creer-un-job/" class="md-nav__link">
+      <a href="../../analytics/talend/creer-une-connexion-de-base-de-donnees/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Créer un job
+    Créer une connexion de BD
   </span>
   
 
@@ -5912,11 +5936,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../../analytics/talend/creer-une-connexion-de-base-de-donnees/" class="md-nav__link">
+      <a href="../../analytics/talend/creer-un-job/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Créer une connexion de BD
+    Créer un job
   </span>
   
 
@@ -6057,6 +6081,132 @@
   
     <li class="md-nav__item">
       <a href="../../analytics/knime/ressources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ressources
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_11" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../analytics/sas/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    SAS Studio
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_11" id="__nav_5_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_11">
+            <span class="md-nav__icon md-icon"></span>
+            SAS Studio
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analytics/sas/creer-un-compte-sas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Créer un compte SAS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analytics/sas/importer-des-donnees/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Importer des données
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analytics/sas/ressources.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -12522,8 +12672,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#creation-du-dockerfile" class="md-nav__link">
-    Création du Dockerfile
+  <a href="#exemple-de-dockerfile" class="md-nav__link">
+    Exemple de Dockerfile
   </a>
   
 </li>
@@ -12565,13 +12715,19 @@
 <p><img alt="" src="https://agilethought.com/wp-content/uploads/2018/05/Docker_logo.png" /></p>
 <h2 id="installation">Installation</h2>
 <p>Docker est disponible pour le système d'exploitation Linux.</p>
-<h2 id="creation-du-dockerfile">Création du Dockerfile</h2>
-<div class="highlight"><span class="filename">Dockerfile</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">FROM</span><span class="w"> </span><span class="s">node:18-alpine</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">COPY</span><span class="w"> </span>.<span class="w"> </span>.
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">RUN</span><span class="w"> </span>yarn<span class="w"> </span>install<span class="w"> </span>--production
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;node&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;src/index.js&quot;</span><span class="p">]</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="k">EXPOSE</span><span class="w"> </span><span class="s">3000</span>
+<h2 id="exemple-de-dockerfile">Exemple de Dockerfile</h2>
+<div class="highlight"><span class="filename">Dockerfile for Flask Application</span><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">FROM</span><span class="w"> </span><span class="s">python:3-buster</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">COPY</span><span class="w"> </span>.<span class="w"> </span>/app
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">WORKDIR</span><span class="w"> </span><span class="s">/app</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="k">RUN</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="o">&amp;&amp;</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="k">EXPOSE</span><span class="w"> </span><span class="s">5000</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;python&quot;</span><span class="p">,</span><span class="err"> </span><span class="s2">&quot;app.py&quot;</span><span class="p">]</span>
 </code></pre></div>
 <h2 id="a-quoi-ca-ressemble">À quoi ça ressemble ?</h2>
 <p><img alt="" src="/algojungle/images/docker/docker-desktop-container-view.png" /></p>
