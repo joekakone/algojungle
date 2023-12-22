@@ -104,6 +104,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#creer-un-environnement-virtuel" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -4962,6 +4967,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    PySpark
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -4971,6 +4987,37 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creer-un-environnement-virtuel" class="md-nav__link">
+    Créer un environnement virtuel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installer-pyspark" class="md-nav__link">
+    Installer PySpark
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -12740,6 +12787,28 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creer-un-environnement-virtuel" class="md-nav__link">
+    Créer un environnement virtuel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installer-pyspark" class="md-nav__link">
+    Installer PySpark
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -12782,7 +12851,19 @@
 	</p>
 	
 
-	<p><em>Pour avoir plus de détails, merci de consulter la documentation officielle <a href="https://numpy.org/">Numpy Docs</a></em></p>
+	<h2 id="creer-un-environnement-virtuel">Créer un environnement virtuel</h2>
+<p>Lancez <strong>Anaconda Prompt</strong> et faites la commande suivante:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>conda<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>spark
+</code></pre></div>
+Cette commande va créer une environnement virtuel avec le nom <strong>spark</strong>, tapez y pour confirmer la création.</p>
+<p>Une fois l'environnement virtuel créé, il faut l'activer avec la commande suivante.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>conda<span class="w"> </span>activate<span class="w"> </span>spark
+</code></pre></div></p>
+<h2 id="installer-pyspark">Installer PySpark</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pip<span class="w"> </span>install<span class="w"> </span>pyspark
+</code></pre></div>
+<hr />
+<p><em>Pour avoir plus de détails, merci de consulter la documentation officielle <a href="https://numpy.org/">Numpy Docs</a></em></p>
 
 	<!-- Last update of source file -->
 	
