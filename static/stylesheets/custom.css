@@ -198,3 +198,32 @@ article p {
         display: none;
     }
 } */
+
+
+
+/* Add this CSS at the end of your existing styles or in a separate stylesheet */
+
+/* For screens with a maximum width of 600 pixels */
+@media screen and (max-width: 600px) {
+  .mdx-hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mdx-hero__content {
+    text-align: center;
+  }
+
+  .mdx-hero__image {
+    margin-top: 20px;
+  }
+
+  .mdx-container.pad.bg-grey.text-white img {
+    width: 100%; /* Make images responsive within this section */
+    height: auto;
+  }
+
+  /* You can add more styles for smaller screens if needed */
+}
+
+/* For larger screens, you can keep your existing styles */
