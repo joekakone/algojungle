@@ -104,6 +104,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#problematique" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -12014,6 +12019,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Trier les éléments d'un filtre
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -12023,6 +12039,30 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problematique" class="md-nav__link">
+    Problématique
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -12740,6 +12780,21 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problematique" class="md-nav__link">
+    Problématique
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -12816,8 +12871,12 @@
 	</p>
 	
 
-	<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Titre Curve = &quot;Trend &quot; &amp; SELECTEDVALUE(Dynamique[Measure]) &amp; &quot; par mois&quot;
+	<h2 id="problematique">Problématique</h2>
+<p>Power BI applique par défaut un tri alphabétique aux données qualitatives et un tri croissant pour les données numériques. Bien souvent pour les données qualitatives, l'ordre alphabétique Ce Dans la vue <strong>Données</strong>, Power BI propose<br></p>
+<p>Par exemple, un champ <strong>Taille</strong> contient les modalités suivantes, Petit, Moyen et Grand. Power BI va les trier comme ceci Grand, Moyen et Petit.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Titre Curve = &quot;Trend &quot; &amp; SELECTEDVALUE(Dynamique[Measure]) &amp; &quot; par mois&quot;
 </code></pre></div>
+<p>Rendez-vous dans l'onglet <strong>Données</strong></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Titre Map = SELECTEDVALUE(
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="na">Dynamique[Measure]</span><span class="p">)</span><span class="w"> </span>&amp; 
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="s">&quot; par région (&quot;</span><span class="w"> </span>&amp; 
