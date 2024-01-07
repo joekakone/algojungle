@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Spark est une plateforme open-source de traitement de données volumineuses. Au fil des années, Spark s'est imposé comme l'outil de prédilection pour l'ingénierie de données. Dans ce guide ultime,  vous présente PySpark, l'API Python de Spark.">
+        <meta name="description" content="Spark est une plateforme open-source de traitement de données volumineuses. Au fil des années, Spark s'est imposé comme l'outil de référence pour l'ingénierie de données. Dans ce guide ultime,  vous présente PySpark, l'API Python de Spark.">
       
       
         <meta name="author" content="Joseph Konka">
@@ -82,7 +82,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="analytics/python/pyspark/">
 
-<meta property="og:image" content="/algojungle/images/python-data-stack/covers/python-data-stack-numpy.png">
+<meta property="og:image" content="/algojungle/images/python-data-stack/covers/python-data-stack-pyspark.png">
 
 <meta property="og:image:width" content="1280">
 <meta property="og:image:height" content="720">
@@ -5037,6 +5037,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#installer-winutilsexe" class="md-nav__link">
+    Installer Winutils.exe
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#demarrer-spark" class="md-nav__link">
     Démarrer Spark
   </a>
@@ -5100,8 +5107,50 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#sources-de-donnees-externes" class="md-nav__link">
+    Sources de données externes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#importer-un-fichier-csv" class="md-nav__link">
     Importer un fichier CSV
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#afficher-le-schema" class="md-nav__link">
+    Afficher le schéma
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exporter-vers-un-fichier-csv" class="md-nav__link">
+    Exporter vers un fichier CSV
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exorter-vers-un-fichier-parquet" class="md-nav__link">
+    Exorter vers un fichier Parquet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fermer-la-session-spark" class="md-nav__link">
+    Fermer la session Spark
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    Références
   </a>
   
 </li>
@@ -12920,6 +12969,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#installer-winutilsexe" class="md-nav__link">
+    Installer Winutils.exe
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#demarrer-spark" class="md-nav__link">
     Démarrer Spark
   </a>
@@ -12983,8 +13039,50 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#sources-de-donnees-externes" class="md-nav__link">
+    Sources de données externes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#importer-un-fichier-csv" class="md-nav__link">
     Importer un fichier CSV
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#afficher-le-schema" class="md-nav__link">
+    Afficher le schéma
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exporter-vers-un-fichier-csv" class="md-nav__link">
+    Exporter vers un fichier CSV
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exorter-vers-un-fichier-parquet" class="md-nav__link">
+    Exorter vers un fichier Parquet
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fermer-la-session-spark" class="md-nav__link">
+    Fermer la session Spark
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    Références
   </a>
   
 </li>
@@ -13023,13 +13121,13 @@
 
 	<!-- description -->
 	
-	<p>Spark est une plateforme open-source de traitement de données volumineuses. Au fil des années, Spark s'est imposé comme l'outil de prédilection pour l'ingénierie de données. Dans ce guide ultime,  vous présente PySpark, l'API Python de Spark.</p>
+	<p>Spark est une plateforme open-source de traitement de données volumineuses. Au fil des années, Spark s'est imposé comme l'outil de référence pour l'ingénierie de données. Dans ce guide ultime,  vous présente PySpark, l'API Python de Spark.</p>
 	
 
 	<!-- Cover Image -->
 	
 	<p>
-		<img alt="" src="/algojungle/images/python-data-stack/covers/python-data-stack-numpy.png">
+		<img alt="" src="/algojungle/images/python-data-stack/covers/python-data-stack-pyspark.png">
 	</p>
 	
 
@@ -13049,70 +13147,74 @@
 <li>Python</li>
 <li>R</li>
 </ul>
-<p>Ce guide couvre uniquement Python.</p>
+<p>Ce guide ultime couvre spécifiquement l'API Python de Spark à savoir PySpark.</p>
 <h2 id="pyspark">PySpark</h2>
-<p>PySpark est la bibliothèque Python pour travailler avec Spark.</p>
+<p>PySpark est l'API Python pour Apache Spark. Il vous permet d'effectuer un traitement de données à grande échelle en temps réel dans un environnement distribué à l'aide de Python. Il propose également un shell PySpark pour analyser vos données de manière interactive.</p>
+<p><img alt="" src="https://user-images.githubusercontent.com/6477701/83474582-4ddd0900-a4c7-11ea-9e98-41d39b6f4940.png" /></p>
 <h2 id="installer-java">Installer Java</h2>
-<p>Java est une dépendance, elle hébergerera la datamart de données qui va alimenter le cube. Si vous l'avez déjà installé alors vous pouvez passer cette étape, sinon suivez <a href="/algojungle/analytics/talend/installer/#installer-java">ce tutoriel</a> pour effectuer l'installation.</p>
+<p>Apache Spark étant dévelopée en Java, nous devons installer Java. Si vous l'avez déjà installé alors vous pouvez passer cette étape, sinon suivez <a href="/algojungle/analytics/talend/installer/#installer-java">ce tutoriel</a> pour effectuer l'installation.</p>
 <h2 id="installer-apache-spark">Installer Apache Spark</h2>
 <p>Rendez-vous à la page de télechargement <a href="https://spark.apache.org/downloads.html">Download Apache Spark™</a><br>
-<img alt="" src="/algojungle/images/spark/install/downalod-spark-01.png" /></p>
+<img alt="" src="/algojungle/images/python-data-stack/spark/install/downalod-spark-01.png" /></p>
 <p>Vous serez redirigé vers cette page, cliquez sur le lien pour lancer le téléchargement<br>
-<img alt="" src="/algojungle/images/spark/install/downalod-spark-02.png" /></p>
+<img alt="" src="/algojungle/images/python-data-stack/spark/install/downalod-spark-02.png" /></p>
 <p>Une fois le téléchargement terminé, rendez-vous dans le dossier de téléchargement<br>
-<img alt="" src="/algojungle/images/spark/install/install-spark-01.png" /></p>
+<img alt="" src="/algojungle/images/python-data-stack/spark/install/install-spark-01.png" /></p>
 <p>Faites clique-droit sur l'archive puis choisissez l'option <strong>Extraire</strong><br>
-<img alt="" src="/algojungle/images/spark/install/install-spark-02.png" /></p>
+<img alt="" src="/algojungle/images/python-data-stack/spark/install/install-spark-02.png" /></p>
 <p>Je vous propose de déplacer le dossier <code>spark-3.5.0-bin-hadoop3</code> dans un autre dossier. Moi je le mets dans mon dossier personnel <code>C:\Users\Administrateur\spark-3.5.0-bin-hadoop3</code>.<br>
-<img alt="" src="/algojungle/images/spark/install/install-spark-03.png" /></p>
+<img alt="" src="/algojungle/images/python-data-stack/spark/install/install-spark-03.png" /></p>
 <h2 id="configurer-les-variables">Configurer les variables</h2>
 <p>À présent nous allons créer certaines variables d'environnement. Dans la barre de recherche, tapez <strong>Variables d'environnement</strong><br>
-<img alt="" src="/algojungle/images/spark/install/define-env-variables-01.png" /></p>
+<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-01.png" /></p>
 <p>Sélectionnez <strong>Variables d'environnement</strong><br>
-<img alt="" src="/algojungle/images/spark/install/define-env-variables-02.png" /></p>
+<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-02.png" /></p>
 <p>Sélecionnez la variable <strong>Path</strong> et cliquez sur le bouton <strong>Modifier</strong><br>
-<img alt="" src="/algojungle/images/spark/install/define-env-variables-03.png" /></p>
+<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-03.png" /></p>
 <p>Cliquez ensuite sur le bouton <strong>Parcourir</strong> à gauche<br>
-<img alt="" src="/algojungle/images/spark/install/define-env-variables-04.png" /></p>
+<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-04.png" /></p>
 <p>Allez au dossier de Spark et sélection le sous-dossier <code>bin</code> puis cliquez sur le bouton <strong>OK</strong><br>
-<img alt="" src="/algojungle/images/spark/install/define-env-variables-05.png" /></p>
+<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-05.png" /></p>
 <p>Parfait ! La nouvelle variable est ajoutée. Cliquez sur le bouton <strong>OK</strong> pour valider<br>
-<img alt="" src="/algojungle/images/spark/install/define-env-variables-06.png" /></p>
+<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-06.png" /></p>
 <p>Dans la section <strong>Variable systèmes</strong>, cliquez sur le bouton <strong>Nouvelle</strong><br>
-<img alt="" src="/algojungle/images/spark/install/define-env-variables-07.png" /></p>
+<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-07.png" /></p>
 <p>Entrez <code>SPARK_HOME</code> dans le champ <strong>Variable systèmes</strong>, cliquez sur le bouton <strong>Nouvelle</strong><br>
-<img alt="" src="/algojungle/images/spark/install/define-env-variables-08.png" /></p>
+<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-08.png" /></p>
 <p>Dans la section <strong>Variable systèmes</strong>, cliquez sur le bouton <strong>Nouvelle</strong><br>
-<img alt="" src="/algojungle/images/spark/install/define-env-variables-09.png" /></p>
+<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-09.png" /></p>
 <p>Dans la section <strong>Variable systèmes</strong>, cliquez sur le bouton <strong>Nouvelle</strong><br>
-<img alt="" src="/algojungle/images/spark/install/define-env-variables-10.png" /></p>
+<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-10.png" /></p>
 <p>Dans la section <strong>Variable systèmes</strong>, cliquez sur le bouton <strong>Nouvelle</strong><br>
-<img alt="" src="/algojungle/images/spark/install/define-env-variables-11.png" /></p>
+<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-11.png" /></p>
 <p>Dans la section <strong>Variable systèmes</strong>, cliquez sur le bouton <strong>Nouvelle</strong><br>
-<img alt="" src="/algojungle/images/spark/install/define-env-variables-12.png" /></p>
+<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-12.png" /></p>
 <p>Cliquez sur le bouton <strong>OK</strong><br>
-<img alt="" src="/algojungle/images/spark/install/define-env-variables-13.png" /></p>
+<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-13.png" /></p>
 <p>Cliquez une dernière dernière fois sur le bouton <strong>OK</strong><br>
-<img alt="" src="/algojungle/images/spark/install/define-env-variables-14.png" /></p>
+<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-14.png" /></p>
+<h2 id="installer-winutilsexe">Installer Winutils.exe</h2>
+<p>Rendez-vous sur le repo <a href="https://github.com/steveloughran/winutils/blob/master/hadoop-3.0.0/bin/winutils.exe"></a><br>
+<img alt="" src="/algojungle/images/python-data-stack/spark/install/download-winutils-01.png" /></p>
 <h2 id="demarrer-spark">Démarrer Spark</h2>
 <p>Ouvrez le terminal et lancez la commande suivante <code>pyspark</code><br>
-<img alt="" src="/algojungle/images/spark/install/start-spark-01.png" /></p>
+<img alt="" src="/algojungle/images/python-data-stack/spark/install/start-spark-01.png" /></p>
 <p>Ouvrez le navigateur et rendez-vous à cette adresse <a href="http://host.docker.internal:4040">http://host.docker.internal:4040</a><br>
-<img alt="" src="/algojungle/images/spark/install/start-spark-02.png" /></p>
-<p>Sélecionnez la variable <strong>Path</strong> et cliquez sur le bouton <strong>Modifier</strong><br>
-<img alt="" src="/algojungle/images/spark/install/define-env-variables-03.png" /></p>
+<img alt="" src="/algojungle/images/python-data-stack/spark/install/start-spark-02.png" /></p>
+<p>Parfait ! Le moteur Spark est opérationnel sur votre machine, il ne nous reste plus qu'à installer le package PySpark pour</p>
 <h2 id="creer-un-environnement-virtuel">Créer un environnement virtuel</h2>
 <p>Lancez <strong>Anaconda Prompt</strong> et faites la commande suivante:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>conda<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>spark
 </code></pre></div>
 Cette commande va créer une environnement virtuel avec le nom <strong>spark</strong>, tapez y pour confirmer la création.</p>
-<p><img alt="" src="/algojungle/images/spark/install/install-pyspark-01.png" /></p>
+<p><img alt="" src="/algojungle/images/python-data-stack/spark/install/install-pyspark-01.png" /></p>
 <p>Une fois l'environnement virtuel créé, il faut l'activer avec la commande suivante.
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>conda<span class="w"> </span>activate<span class="w"> </span>spark
 </code></pre></div></p>
 <h2 id="installer-pyspark">Installer PySpark</h2>
+<p>PySpark peut-être installé depuis le gestionnaire de packages Pypi. Pour cela tapez la commande suivante
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pip<span class="w"> </span>install<span class="w"> </span>pyspark
-</code></pre></div>
+</code></pre></div></p>
 <h2 id="installer-jupyterlab">Installer JupyterLab</h2>
 <p>Les notebooks offrent un environnement interactif idéal pour travail avec PySpark.
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pip<span class="w"> </span>install<span class="w"> </span>jupyterlab
@@ -13167,11 +13269,78 @@ Nous allons créer le dataframe à partir du dataset
 <a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>|127|    Product5|       Category2| 64.78|       7|
 <a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>+---+------------+----------------+------+--------+
 </code></pre></div></p>
+<h2 id="sources-de-donnees-externes">Sources de données externes</h2>
+<p>Spark peut lire des données depuis des sources externes tels que les fichiers CSV, JSON, Parquet ou encore HDFS.</p>
 <h2 id="importer-un-fichier-csv">Importer un fichier CSV</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="n">csv</span><span class="p">(</span><span class="s2">&quot;chemin/vers/le/fichier.csv&quot;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">inferSchema</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<p>Récupérez le <a href="https://github.com/joekakone/datasets/blob/master/datasets/StudentsPerformance.csv">dataset StudentsPerformance.csv ici</a>.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">import</span> <span class="nn">urllib</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="n">URL</span> <span class="o">=</span> <span class="s2">&quot;https://raw.githubusercontent.com/joekakone/datasets/master/datasets/StudentsPerformance.csv&quot;</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="n">FILENAME</span> <span class="o">=</span> <span class="s2">&quot;StudentsPerformance.csv&quot;</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlretrieve</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">URL</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">FILENAME</span><span class="p">)</span>
 </code></pre></div>
-<hr />
-<p><em>Pour avoir plus de détails, merci de consulter la documentation officielle <a href="https://spark.apache.org/docs/latest/index.html">Apache Spark Docs</a></em></p>
+<div class="highlight"><span class="filename">Output</span><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>(&#39;StudentsPerformance.csv&#39;, &lt;http.client.HTTPMessage at 0x2b8b93d6c50&gt;)
+</code></pre></div></p>
+<p>Le fichier <code>StudentsPerformance.csv</code> est téléchargé, on peut le lire avec la fonction <code>spark.read.csv</code>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="n">csv</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">FILENAME</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">inferSchema</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="n">df</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Output</span><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>+------+--------------+---------------------------+------------+-----------------------+----------+-------------+-------------+
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>|gender|race/ethnicity|parental level of education|       lunch|test preparation course|math score|reading score|writing score|
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>+------+--------------+---------------------------+------------+-----------------------+----------+-------------+-------------+
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>|female|       group B|          bachelor&#39;s degree|    standard|                   none|        72|           72|           74|
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>|female|       group C|               some college|    standard|              completed|        69|           90|           88|
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>|female|       group B|            master&#39;s degree|    standard|                   none|        90|           95|           93|
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>|  male|       group A|         associate&#39;s degree|free/reduced|                   none|        47|           57|           44|
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>|  male|       group C|               some college|    standard|                   none|        76|           78|           75|
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>|female|       group B|         associate&#39;s degree|    standard|                   none|        71|           83|           78|
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>|female|       group B|               some college|    standard|              completed|        88|           95|           92|
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>|  male|       group B|               some college|free/reduced|                   none|        40|           43|           39|
+<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a>|  male|       group D|                high school|free/reduced|              completed|        64|           64|           67|
+<a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a>|female|       group B|                high school|free/reduced|                   none|        38|           60|           50|
+<a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a>|  male|       group C|         associate&#39;s degree|    standard|                   none|        58|           54|           52|
+<a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a>|  male|       group D|         associate&#39;s degree|    standard|                   none|        40|           52|           43|
+<a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a>|female|       group B|                high school|    standard|                   none|        65|           81|           73|
+<a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a>|  male|       group A|               some college|    standard|              completed|        78|           72|           70|
+<a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a>|female|       group A|            master&#39;s degree|    standard|                   none|        50|           53|           58|
+<a id="__codelineno-17-19" name="__codelineno-17-19" href="#__codelineno-17-19"></a>|female|       group C|           some high school|    standard|                   none|        69|           75|           78|
+<a id="__codelineno-17-20" name="__codelineno-17-20" href="#__codelineno-17-20"></a>|  male|       group C|                high school|    standard|                   none|        88|           89|           86|
+<a id="__codelineno-17-21" name="__codelineno-17-21" href="#__codelineno-17-21"></a>|female|       group B|           some high school|free/reduced|                   none|        18|           32|           28|
+<a id="__codelineno-17-22" name="__codelineno-17-22" href="#__codelineno-17-22"></a>|  male|       group C|            master&#39;s degree|free/reduced|              completed|        46|           42|           46|
+<a id="__codelineno-17-23" name="__codelineno-17-23" href="#__codelineno-17-23"></a>|female|       group C|         associate&#39;s degree|free/reduced|                   none|        54|           58|           61|
+<a id="__codelineno-17-24" name="__codelineno-17-24" href="#__codelineno-17-24"></a>+------+--------------+---------------------------+------------+-----------------------+----------+-------------+-------------+
+<a id="__codelineno-17-25" name="__codelineno-17-25" href="#__codelineno-17-25"></a>only showing top 20 rows
+</code></pre></div></p>
+<h2 id="afficher-le-schema">Afficher le schéma</h2>
+<p>Le schéma d'un DataFrame en PySpark est une représentation tabulaire qui expose la structure des données, incluant les noms des colonnes, les types de données associés à chaque colonne, et d'autres informations pertinentes. La méthode <code>printSchema</code> permet d'afficher le schéma.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">df</span><span class="o">.</span><span class="n">printSchema</span><span class="p">()</span>
+</code></pre></div>
+<div class="highlight"><span class="filename">Output</span><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>root
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a> |-- gender: string (nullable = true)
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a> |-- race/ethnicity: string (nullable = true)
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a> |-- parental level of education: string (nullable = true)
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a> |-- lunch: string (nullable = true)
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a> |-- test preparation course: string (nullable = true)
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a> |-- math score: integer (nullable = true)
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a> |-- reading score: integer (nullable = true)
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a> |-- writing score: integer (nullable = true)
+</code></pre></div></p>
+<h2 id="exporter-vers-un-fichier-csv">Exporter vers un fichier CSV</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="n">df</span><span class="o">.</span><span class="n">printSchema</span><span class="p">()</span>
+</code></pre></div>
+<h2 id="exorter-vers-un-fichier-parquet">Exorter vers un fichier Parquet</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="n">df</span><span class="o">.</span><span class="n">printSchema</span><span class="p">()</span>
+</code></pre></div>
+<h2 id="fermer-la-session-spark">Fermer la session Spark</h2>
+<p>Une fois notre travail terminé, nous devons fermer la session. <code>spark.stop</code>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="n">spark</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+</code></pre></div></p>
+<h2 id="references">Références</h2>
+<ul>
+<li><a href="https://spark.apache.org/docs/latest/index.html">Apache Spark - A Unified engine for large-scale data analytics</a></li>
+<li><a href="https://spark.apache.org/docs/latest/api/python/index.html">PySpark Overview — PySpark Documentation</a></li>
+</ul>
 
 	<!-- Last update of source file -->
 	
