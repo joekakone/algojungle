@@ -13410,63 +13410,72 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-from-join" class="md-nav__link">
+  <a href="#1-from" class="md-nav__link">
     <span class="md-ellipsis">
-      1. FROM &amp; JOIN
+      1. FROM
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-where" class="md-nav__link">
+  <a href="#2-join" class="md-nav__link">
     <span class="md-ellipsis">
-      2. WHERE
+      2. JOIN
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-group-by" class="md-nav__link">
+  <a href="#3-where" class="md-nav__link">
     <span class="md-ellipsis">
-      3. GROUP BY
+      3. WHERE
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-having" class="md-nav__link">
+  <a href="#4-group-by" class="md-nav__link">
     <span class="md-ellipsis">
-      4. HAVING
+      4. GROUP BY
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-select" class="md-nav__link">
+  <a href="#5-having" class="md-nav__link">
     <span class="md-ellipsis">
-      5 SELECT
+      5. HAVING
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#6-order-by" class="md-nav__link">
+  <a href="#6-select" class="md-nav__link">
     <span class="md-ellipsis">
-      6. ORDER BY
+      6. SELECT
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#7-limit" class="md-nav__link">
+  <a href="#7-order-by" class="md-nav__link">
     <span class="md-ellipsis">
-      7. LIMIT
+      7. ORDER BY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-limit" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. LIMIT
     </span>
   </a>
   
@@ -13522,20 +13531,22 @@ Cette requête retourne l'ensemble des lignes de la table <code>Produits</code> 
 </code></pre></div></p>
 <p>Ça fait beaucoup, je sais mais pas d'inquiétez pas, nous allons y revenir plus en détails. Regardons un peu l'ordre d'exécution des différentes clauses de cette requête.</p>
 <h2 id="ordre-dexecution">Ordre d'exécution</h2>
-<h3 id="1-from-join">1. FROM &amp; JOIN</h3>
-<p>La première chose que fait le système est de récupérer les données dans une table virtuelle en memoire.</p>
-<h3 id="2-where">2. WHERE</h3>
-<p>Ensuite les lignes sont filtrées suivant les conditions spécifiées</p>
-<h3 id="3-group-by">3. GROUP BY</h3>
-<p>Les lignes sont régroupées suivant les colonnes indiquées</p>
-<h3 id="4-having">4. HAVING</h3>
-<p>Les groupes (et non les lignes) sont filtrées suivant les conditions spécifiées</p>
-<h3 id="5-select">5 SELECT</h3>
-<p>Les colonnes à retourner sont sélectionnées avec les calculs d'aggrégation</p>
-<h3 id="6-order-by">6. ORDER BY</h3>
-<p>Les lignes sont triés suivant les colonnes indiquées</p>
-<h3 id="7-limit">7. LIMIT</h3>
-<p>Le nombre de lignes en sortie est limité à la valeur indiquée</p>
+<h3 id="1-from">1. FROM</h3>
+<p>La première étape consiste à extraire les données des tables spécifiées dans la clause FROM, créant une table virtuelle en mémoire.</p>
+<h3 id="2-join">2. JOIN</h3>
+<p>Les données sont ensuite combinées en utilisant les clauses JOIN pour former une table résultante consolidée.</p>
+<h3 id="3-where">3. WHERE</h3>
+<p>Les lignes de la table résultante sont filtrées en fonction des conditions spécifiées dans la clause WHERE.</p>
+<h3 id="4-group-by">4. GROUP BY</h3>
+<p>Si la requête inclut une clause GROUP BY, les lignes sont regroupées en fonction des colonnes spécifiées.</p>
+<h3 id="5-having">5. HAVING</h3>
+<p>Les groupes (et non les lignes individuelles) sont filtrés en fonction des conditions spécifiées dans la clause HAVING.</p>
+<h3 id="6-select">6. SELECT</h3>
+<p>Les colonnes à retourner sont sélectionnées, et des calculs d'agrégation peuvent être appliqués aux groupes formés.</p>
+<h3 id="7-order-by">7. ORDER BY</h3>
+<p>Si une clause ORDER BY est présente, les lignes résultantes sont triées en fonction des colonnes spécifiées.</p>
+<h3 id="8-limit">8. LIMIT</h3>
+<p>Enfin, le nombre de lignes en sortie est limité à la valeur spécifiée dans la clause LIMIT.</p>
 <h2 id="les-alias">Les alias</h2>
 <p>Les alias sont des synonymes que l'on donne aux tables, colonnes et sous-requêtes pour éviter d'écrire des no très long (des tables surtout). Cela facilite l'écriture des requêtes et améliore également leur lisibilité.</p>
 <p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">idProduit</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">nomProduit</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">np</span><span class="p">,</span><span class="w"> </span><span class="n">prixUnitaire</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">pu</span>

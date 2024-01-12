@@ -13509,22 +13509,31 @@
 
 
 <h1 id="operations-entre-plusieurs-tables">Opérations entre plusieurs tables</h1>
+<p><img alt="" src="/algojungle/images/sql/covers/data-query-language.png" /></p>
 <p>On peut effectuer quelques opération algébriques sur les tables à condition que celles-ci aient la même structure.</p>
 <h2 id="union">Union</h2>
-<p>SELECT *
-FROM <table1>
-UNION
-SELECT *
-FROM <table2>;</p>
-<p>L'opération retire les doublons</p>
-<p>SELECT *
-FROM <table1>
-UNION ALL
-SELECT *
-FROM <table2>;</p>
+<p>L'opération <code>UNION</code> combine les résultats de deux requêtes SQL et élimine les doublons.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">FROM</span><span class="w"> </span><span class="o">&lt;</span><span class="n">table1</span><span class="o">&gt;</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="k">UNION</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="k">FROM</span><span class="w"> </span><span class="o">&lt;</span><span class="n">table2</span><span class="o">&gt;</span><span class="p">;</span>
+</code></pre></div>
+<p>Si vous souhaitez inclure les doublons, utilisez <code>UNION ALL</code> :</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">FROM</span><span class="w"> </span><span class="o">&lt;</span><span class="n">table1</span><span class="o">&gt;</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">UNION</span><span class="w"> </span><span class="k">ALL</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="k">FROM</span><span class="w"> </span><span class="o">&lt;</span><span class="n">table2</span><span class="o">&gt;</span><span class="p">;</span>
+</code></pre></div>
 <h2 id="intersection">Intersection</h2>
+<p>L'opération d'intersection retourne les lignes communes aux deux résultats de requêtes.</p>
 <h2 id="difference-symetrique">Différence symétrique</h2>
+<p>La différence symétrique renvoie les lignes qui sont exclusives à chaque résultat de requête.</p>
 <h2 id="difference">Différence</h2>
+<p>La différence, ou opération de complément, renvoie les lignes qui sont présentes dans le premier résultat de requête mais pas dans le deuxième.</p>
+<hr />
+<p><em>Les requêtes de type SELECT sont les plu utilisées par le Data Analysst pour récupérer les données. Dans les section nous découvrirons plus en détails les différentes mainères d'écrire des requêtes SELECT.</em></p>
 
 
 
