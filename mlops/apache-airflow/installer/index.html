@@ -8493,6 +8493,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#arreter-apache-airflow" class="md-nav__link">
+    Arrêter Apache Airflow
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -8843,6 +8850,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#arreter-apache-airflow" class="md-nav__link">
+    Arrêter Apache Airflow
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -8902,73 +8916,80 @@ Un utilisateur <code>airflow</code> est également créé avec le mot de passe <
 <a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>69979805360b   redis:latest           &quot;docker-entrypoint.s…&quot;   3 hours ago    Up 3 hours (healthy)   6379/tcp                 apache-airflow-redis-1
 <a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>dfb0b452a8f0   postgres:13            &quot;docker-entrypoint.s…&quot;   3 hours ago    Up 3 hours (healthy)   5432/tcp                 apache-airflow-postgres-1
 </code></pre></div></p>
-<p><strong>Arrêter Apache Airflow</strong>
-<div class="highlight"><span class="filename">Output</span><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>PS C:\Users\Administrateur\Documents\dev\apache-airflow&gt; docker compose down
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>time=&quot;2023-06-17T23:25:55Z&quot; level=warning msg=&quot;The \&quot;AIRFLOW_UID\&quot; variable is not set. Defaulting to a blank string.&quot;
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>time=&quot;2023-06-17T23:25:55Z&quot; level=warning msg=&quot;The \&quot;AIRFLOW_UID\&quot; variable is not set. Defaulting to a blank string.&quot;
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>[+] Running 8/8
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a> - Container apache-airflow-airflow-worker-1     Removed                                                          11.3s
-<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a> - Container apache-airflow-airflow-webserver-1  Removed                                                          12.0s
-<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a> - Container apache-airflow-airflow-triggerer-1  Removed                                                           5.5s
-<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a> - Container apache-airflow-airflow-scheduler-1  Removed                                                           9.1s
-<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a> - Container apache-airflow-airflow-init-1       Removed                                                           0.7s
-<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a> - Container apache-airflow-postgres-1           Removed                                                           0.8s
-<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a> - Container apache-airflow-redis-1              Removed                                                           0.6s
-<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a> - Network apache-airflow_default                Removed                                                           0.7s
-</code></pre></div></p>
 <p>Docs Apache Airflow : <a href="https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html">Running Airflow in Docker</a></p>
 <h2 id="connexion">Connexion</h2>
-<p>Rendez-vous à l'adresse <a href="http://localhost:8080/">http://localhost:8080/</a>. Vous serez redirigé vers la page de connexion</p>
-<p><img alt="" src="/algojungle/images/apache-airflow/apache-airflow-login-2.png" /></p>
-<p>Connectez-vous avec l'utilisateur <code>airflow</code> avec le mot de passe <code>airflow</code></p>
-<p><img alt="" src="/algojungle/images/apache-airflow/apache-airflow-home-page.png" /></p>
-<!-- ## Install Ubuntu
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>upgrade
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>python3-pip
+<p>Rendez-vous à l'adresse <a href="http://localhost:8080/">http://localhost:8080/</a>. Vous serez redirigé vers la page de connexion<br>
+<img alt="" src="/algojungle/images/apache-airflow/apache-airflow-login-2.png" /></p>
+<p>Connectez-vous avec l'utilisateur <code>airflow</code> avec le mot de passe <code>airflow</code><br>
+<img alt="" src="/algojungle/images/apache-airflow/apache-airflow-home-page.png" /></p>
+<!-- Modifier le mot de passe -->
+
+<!-- 
+## Install Ubuntu
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>upgrade
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>python3-pip
 </code></pre></div>
 
 ## Install pip
 
 
 ## Install
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>mkdir<span class="w"> </span>airflow
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="nb">cd</span><span class="w"> </span>airflow/
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>mkdir<span class="w"> </span>airflow
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nb">cd</span><span class="w"> </span>airflow/
 </code></pre></div>
 
 ## Activate Virtual Environment
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>python3.10-venv
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>env
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="nb">source</span><span class="w"> </span>env/bin/activate
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>python3.10-venv
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>env
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="nb">source</span><span class="w"> </span>env/bin/activate
 </code></pre></div>
 
 ## Packages
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>pip<span class="w"> </span>install<span class="w"> </span>snscrape<span class="w"> </span>pandas
-<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>pip<span class="w"> </span>install<span class="w"> </span>psycopg2-binary
-<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>pip<span class="w"> </span>install<span class="w"> </span>apache-airflow-providers-postgres
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>pip<span class="w"> </span>install<span class="w"> </span>snscrape<span class="w"> </span>pandas
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>pip<span class="w"> </span>install<span class="w"> </span>psycopg2-binary
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>pip<span class="w"> </span>install<span class="w"> </span>apache-airflow-providers-postgres
 </code></pre></div>
 
 ## Create a user account
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>airflow<span class="w"> </span>users<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">    </span>--username<span class="w"> </span>admin<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">    </span>--firstname<span class="w"> </span>Joseph<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">    </span>--lastname<span class="w"> </span>Konka<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">    </span>--role<span class="w"> </span>Admin<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">    </span>--email<span class="w"> </span>joseph.kakone@gmail.com<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="w">    </span>--password<span class="w"> </span>admin
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>airflow<span class="w"> </span>users<span class="w"> </span>create<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="w">    </span>--username<span class="w"> </span>admin<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">    </span>--firstname<span class="w"> </span>Joseph<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">    </span>--lastname<span class="w"> </span>Konka<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">    </span>--role<span class="w"> </span>Admin<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">    </span>--email<span class="w"> </span>joseph.kakone@gmail.com<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">    </span>--password<span class="w"> </span>admin
 </code></pre></div>
 
 ## Launch scheduler
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>screen<span class="w"> </span>-S<span class="w"> </span>scheduler
-<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>airflow<span class="w"> </span>scheduler
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>screen<span class="w"> </span>-S<span class="w"> </span>scheduler
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>airflow<span class="w"> </span>scheduler
 </code></pre></div>
 
 ## Launch server
-```sh
-sudo screen -S server
-airflow webserver
-``` -->
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>sudo<span class="w"> </span>screen<span class="w"> </span>-S<span class="w"> </span>server
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>airflow<span class="w"> </span>webserver
+</code></pre></div>
+-->
 
+<h2 id="arreter-apache-airflow">Arrêter Apache Airflow</h2>
+<p>Pour arrêter Apache Airflow, depuis le dossier d'Apache Airflow, lancez la commande suivante<br>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>docker<span class="w"> </span>compose<span class="w"> </span>down
+</code></pre></div>
+<div class="highlight"><span class="filename">Output</span><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>PS C:\Users\Administrateur\Documents\dev\apache-airflow&gt; docker compose down
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>time=&quot;2023-06-17T23:25:55Z&quot; level=warning msg=&quot;The \&quot;AIRFLOW_UID\&quot; variable is not set. Defaulting to a blank string.&quot;
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>time=&quot;2023-06-17T23:25:55Z&quot; level=warning msg=&quot;The \&quot;AIRFLOW_UID\&quot; variable is not set. Defaulting to a blank string.&quot;
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>[+] Running 8/8
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a> - Container apache-airflow-airflow-worker-1     Removed                                                          11.3s
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a> - Container apache-airflow-airflow-webserver-1  Removed                                                          12.0s
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a> - Container apache-airflow-airflow-triggerer-1  Removed                                                           5.5s
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a> - Container apache-airflow-airflow-scheduler-1  Removed                                                           9.1s
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a> - Container apache-airflow-airflow-init-1       Removed                                                           0.7s
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a> - Container apache-airflow-postgres-1           Removed                                                           0.8s
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a> - Container apache-airflow-redis-1              Removed                                                           0.6s
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a> - Network apache-airflow_default                Removed                                                           0.7s
+</code></pre></div>
+NB : Docker arrête simplement les contenuers, vos données ne seront pas perdues. Vous pourrez redémarrer à tout moment.</p>
 <hr />
 <p><em>Bravo, tout est prêt maintenant. Dans la prochaine section, vous découvrirez les composants d'Apache Airflow.</em></p>
 
