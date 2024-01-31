@@ -6392,20 +6392,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#rmsprop" class="md-nav__link">
-    RMSProp
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#adam-adaptive-momentum-estimation" class="md-nav__link">
-    ADAM (Adaptive Momentum Estimation)
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -10051,20 +10037,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#rmsprop" class="md-nav__link">
-    RMSProp
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#adam-adaptive-momentum-estimation" class="md-nav__link">
-    ADAM (Adaptive Momentum Estimation)
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -10121,7 +10093,7 @@
 <ol>
 <li>Un problème</li>
 <li>Des données</li>
-<li>Un modèle (SVM par exemple)</li>
+<li>Un modèle</li>
 <li>La fonction de coût ou de perte</li>
 <li>Une méthode d’optimisation</li>
 </ol>
@@ -10129,32 +10101,46 @@
 <p>Ces règles ici, sont les paramètres du modèle dont nous devons déterminer les valeurs optimales.</p>
 <p>Au bout d’un processus itératif (entraînement), on trouve les valeurs optimales des paramètres du modèle.</p>
 <h2 id="1-probleme-ou-objectif">1. Problème ou Objectif</h2>
-<p><img alt="" src="https://miro.medium.com/max/1400/1*ByrMP-15TUtkkUazLIk0ZQ.jpeg" /></p>
-<p>Dans notre cas d'étude, l’objectif est de prédire le diagnostic du cancer de 
-prostate.</p>
+<p>Dans notre cas d'étude, l’objectif est de prédire le diagnostic du cancer de prostate.</p>
+<p><img alt="" src="https://www.neuillysurmarne.fr/wp-content/uploads/2015/10/TIR-A-LARC.jpg" /></p>
 <h2 id="2-donnees">2. Données</h2>
+<p>Les données constituent le nerf de la guerre, pas de données pas d'apprentissage. </p>
+<p><img alt="" src="https://www.largus.fr/images/images/prix_carburant_2014_baisse.jpg" /></p>
+<table border="1">
+    <tr>
+        <th>Caractéristiques</th>
+        <th>Étiquettes</th>
+    </tr>
+    <tr>
+        <td>Les caractéristiques, également appelées entrées ou prédicteurs, représentent les données d'entrée fournies au modèle lors du processus d'apprentissage. Elles sont utilisées par le modèle pour effectuer des prédictions ou pour apprendre à partir des données. On note généralement <code>X</code>.</td>
+        <td>Les étiquettes, également appelées sorties, sont les valeurs cibles associées à chaque exemple de données. Elles représentent ce que le modèle doit prédire ou apprendre à estimer à partir des caractéristiques fournies. Les étiquettes sont souvent utilisées pour évaluer les performances du modèle et pour guider le processus d'apprentissage. On note généralement <code>y</code>.</td>
+    </tr>
+</table>
+
 <h2 id="3-modele">3. Modèle</h2>
-<p><img alt="" src="https://cdn-images-1.medium.com/max/1600/1*03J8EfjypEnzi2DenQcCdg.png" /></p>
 <p>Un modèle est une fonction mathématique ou un ensemble de règles permettant d’attribuer une étiquette à une donnée nouvelle.</p>
+<p><img alt="" src="https://static.euronews.com/articles/341805/1200x675_341805.jpg" /></p>
 <h2 id="4-fonction-de-cout">4. Fonction de coût</h2>
 <p><img alt="" src="https://miro.medium.com/max/919/1*ETtY7KCrzAlOmLeyDWE4Xg.png" /></p>
 <p>Pour estimer les valeurs optimales des paramètres du modèle, on associe une fonction coût aux erreurs des prédictions faites qu’elle fait.</p>
 <p>C’est cette fonction de coût encore appelé fonction de perte qui nous indique sur les performances du modèle. L’objectif de l’entraînement consistera à optimiser la valeur de la fonction de coût.</p>
 <p>L’entropie binaire croisée est un exemple de fonction de coût.</p>
 <h2 id="5-methode-doptimisation">5. Méthode d’optimisation</h2>
-<p><img alt="" src="https://miro.medium.com/max/1005/1*_6TVU8yGpXNYDkkpOfnJ6Q.png" /></p>
 <p>L’objectif de la fonction de coût est d’optimiser la valeur de la fonction de coût. Il existe différents types de méthodes d’optimisation:</p>
+<p><img alt="" src="https://www.insidescience.org/sites/default/files/2021-06/cave-torch_cropped.jpg" /></p>
+<!-- ![](https://miro.medium.com/max/1005/1*_6TVU8yGpXNYDkkpOfnJ6Q.png) -->
+
 <ul>
 <li>les méthodes exactes</li>
 <li>les méthodes itératives</li>
 <li>les méthodes stochastiques</li>
 </ul>
 <h3 id="descente-de-gadient">Déscente de Gadient</h3>
+<p><img alt="" src="https://miro.medium.com/max/1005/1*_6TVU8yGpXNYDkkpOfnJ6Q.png" /></p>
 <h3 id="descente-de-gadient-stochastique">Déscente de Gadient Stochastique</h3>
-<h3 id="rmsprop">RMSProp</h3>
-<h3 id="adam-adaptive-momentum-estimation">ADAM (Adaptive Momentum Estimation)</h3>
+<p><img alt="" src="https://miro.medium.com/max/1005/1*_6TVU8yGpXNYDkkpOfnJ6Q.png" /></p>
 <hr />
-<p><em>Dans la prochaine section, nous verrons comment est-ce que tout cela estv orchestré dans un workflow.</em></p>
+<p><em><a href="https://learn.microsoft.com/fr-fr/training/modules/introduction-to-machine-learning/4-understand-training">https://learn.microsoft.com/fr-fr/training/modules/introduction-to-machine-learning/4-understand-training</a>. Dans la prochaine section, nous verrons comment est-ce que tout cela est orchestré dans un workflow.</em></p>
 
 	<!-- Last update of source file -->
 	

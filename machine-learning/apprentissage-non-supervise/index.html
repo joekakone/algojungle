@@ -9886,49 +9886,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-probleme-ou-objectif" class="md-nav__link">
-    1. Problème ou Objectif
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-donnees" class="md-nav__link">
-    2. Données
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-modele" class="md-nav__link">
-    3. Modèle
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-fonction-de-cout" class="md-nav__link">
-    4. Fonction de coût
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-methode-doptimisation" class="md-nav__link">
-    5. Méthode d’optimisation
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -9946,37 +9903,18 @@
 
 
 <h1 id="apprentissage-non-supervise">Apprentissage non supervisé</h1>
+<p>Dans le cadre de l'appprentissage non-supervisé, les données ne sont pas étiquettées. Les algorithmes ont pour objectif de trouver les modèles dans les données.</p>
 <p><img alt="" src="/algojungle/images/ml/covers/unsupervised-learning.png" /></p>
 <!-- ![](https://miro.medium.com/max/1400/1*3a8G_Cu4IzfDoxe80xnNfQ.png) -->
 
 <p>L'apprentissage ou l'entraînement fait intervenir cinq (5) éléments à savoir:</p>
 <ol>
-<li>Un problème</li>
-<li>Des données</li>
-<li>Un modèle (SVM par exemple)</li>
-<li>La fonction de coût ou de perte</li>
-<li>Une méthode d’optimisation</li>
+<li>Analyse en Composantes Principales</li>
+<li>Clustering</li>
+<li>Règles d'association</li>
 </ol>
-<p>Apprendre, c’est trouver le meilleur ensemble de règles qui rendent compte des données. Du point de vue mathématique, il s'agit plus précisément de minimiser la fonction de perte.</p>
-<p>Ces règles ici, sont les paramètres du modèle dont nous devons déterminer les valeurs optimales.</p>
-<p>Au bout d’un processus itératif (entraînement), on trouve les valeurs optimales des paramètres du modèle.</p>
-<h2 id="1-probleme-ou-objectif">1. Problème ou Objectif</h2>
-<p>Dans notre cas d'étude, l’objectif est de prédire le diagnostic du cancer de 
-prostate.</p>
-<h2 id="2-donnees">2. Données</h2>
-<h2 id="3-modele">3. Modèle</h2>
-<p>Un modèle est une fonction mathématique ou un ensemble de règles permettant d’attribuer une étiquette à une donnée nouvelle.</p>
-<h2 id="4-fonction-de-cout">4. Fonction de coût</h2>
-<p>Pour estimer les valeurs optimales des paramètres du modèle, on associe une fonction coût aux erreurs des prédictions faites qu’elle fait.</p>
-<p>C’est cette fonction de coût encore appelé fonction de perte qui nous indique sur les performances du modèle. L’objectif de l’entraînement consistera à optimiser la valeur de la fonction de coût.</p>
-<p>L’entropie binaire croisée est un exemple de fonction de coût.</p>
-<h2 id="5-methode-doptimisation">5. Méthode d’optimisation</h2>
-<p>L’objectif de la fonction de coût est d’optimiser la valeur de la fonction de coût. Il existe différents types de méthodes d’optimisation:</p>
-<ul>
-<li>les méthodes exactes</li>
-<li>les méthodes itératives</li>
-<li>les méthodes stochastiques</li>
-</ul>
+<hr />
+<p><em>Dans la prochaine section, nous verrons comment mettre en oeuvre l'analyse en composantes principales.</em></p>
 
 
   
