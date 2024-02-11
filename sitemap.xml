@@ -976,6 +976,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://joekakone.github.io/algojungle/blog/ms-learn/</loc>
+         <lastmod>2024-02-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://joekakone.github.io/algojungle/blog/parlons-informatique/</loc>
          <lastmod>2024-02-11</lastmod>
          <changefreq>daily</changefreq>
