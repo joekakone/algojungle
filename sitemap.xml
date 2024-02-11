@@ -1671,7 +1671,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://joekakone.github.io/algojungle/mlops/mlflow/demarrer/</loc>
+         <lastmod>2024-02-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://joekakone.github.io/algojungle/mlops/mlflow/installer/</loc>
+         <lastmod>2024-02-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://joekakone.github.io/algojungle/mlops/mlflow/resources/</loc>
          <lastmod>2024-02-11</lastmod>
          <changefreq>daily</changefreq>
     </url>
