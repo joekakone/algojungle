@@ -3931,8 +3931,22 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#projection" class="md-nav__link">
+    Projection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#restriction-et-filtrage" class="md-nav__link">
     Restriction et Filtrage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trier-les-donnees" class="md-nav__link">
+    Trier les données
   </a>
   
 </li>
@@ -3968,6 +3982,13 @@
         <li class="md-nav__item">
   <a href="#tableau-croise" class="md-nav__link">
     Tableau croisé
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remplacer-les-valeurs-manquantes" class="md-nav__link">
+    Remplacer les valeurs manquantes
   </a>
   
 </li>
@@ -10322,8 +10343,22 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#projection" class="md-nav__link">
+    Projection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#restriction-et-filtrage" class="md-nav__link">
     Restriction et Filtrage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trier-les-donnees" class="md-nav__link">
+    Trier les données
   </a>
   
 </li>
@@ -10359,6 +10394,13 @@
         <li class="md-nav__item">
   <a href="#tableau-croise" class="md-nav__link">
     Tableau croisé
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remplacer-les-valeurs-manquantes" class="md-nav__link">
+    Remplacer les valeurs manquantes
   </a>
   
 </li>
@@ -11054,11 +11096,22 @@ Retrouvez l'ensemble du projet sur github (https://github.com/joekakone/Get-data
 </table>
 <h2 id="selection">Sélection</h2>
 <p>Il s'agit de </p>
-<p>Projection
-La projection est similaire à la sélection, il s'agit de sélectionner quelques colonnes, on projette ainsi les données sur un colonne. Imaginez que vos colonnes représentent les coordonnées, alors cette notion de projection prend tout son sens.</p>
+<h2 id="projection">Projection</h2>
+<p>La projection est similaire à la sélection, il s'agit de sélectionner quelques colonnes, on projette ainsi les données sur un colonne. Imaginez que vos colonnes représentent les coordonnées, alors cette notion de projection prend tout son sens.</p>
 <h2 id="restriction-et-filtrage">Restriction et Filtrage</h2>
 <p>Je vous propose de voir cela avec un exemple. Nous voulons voir seulement les lignes dont la note en mathématiques est supérieure à 10 par exemple. Alors nous procédons à une restriction avec la condition. Vous l'aurez compris Restriction -&gt; Condition.
 Pour le besoin de certains traitements, l'on désire avoir</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">df_students</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df_students</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Aisha&#39;</span><span class="p">]</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="n">df_students</span><span class="p">[</span><span class="n">df_students</span><span class="p">[</span><span class="s1">&#39;Name&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Aisha&#39;</span><span class="p">]</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="n">df_students</span><span class="p">[</span><span class="n">df_students</span><span class="o">.</span><span class="n">Name</span> <span class="o">==</span> <span class="s1">&#39;Aisha&#39;</span><span class="p">]</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="n">df_students</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;Name==&quot;Aisha&quot;&#39;</span><span class="p">)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">df_students</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">&#39;Name==&quot;Aisha&quot;&#39;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="trier-les-donnees">Trier les données</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">df_students</span> <span class="o">=</span> <span class="n">df_students</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Grade&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="n">df_students</span>
+</code></pre></div>
 <h2 id="tableau-des-effectifs">Tableau des effectifs</h2>
 <p>Nous attaquons ici, la statistique descriptive. </p>
 <h2 id="aggregation">Aggrégation</h2>
@@ -11068,8 +11121,20 @@ Pour le besoin de certains traitements, l'on désire avoir</p>
 <p>Une jointure de tables </p>
 <h2 id="tableau-croise">Tableau croisé</h2>
 <p>Si vous êtes un utilisateur de Microsoft Excel alors vous connaissez très bien les tableaux croisés dynamiques. Pandas implémente également cette fonctionnalité.</p>
+<h2 id="remplacer-les-valeurs-manquantes">Remplacer les valeurs manquantes</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">df_students</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">df_students</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">df_students</span><span class="p">[</span><span class="n">df_students</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">any</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)]</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="n">df_students</span><span class="o">.</span><span class="n">StudyHours</span> <span class="o">=</span> <span class="n">df_students</span><span class="o">.</span><span class="n">StudyHours</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">df_students</span><span class="o">.</span><span class="n">StudyHours</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="n">df_students</span>
+</code></pre></div>
 <h2 id="8-visualisation">8. Visualisation</h2>
 <p>Pandas permet également de construire des visuels. Pour cela Pandas utilise Matplotlib en arrière-plan.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="n">df_students</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Name&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;StudyHours&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;teal&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>
+</code></pre></div>
 
 	<!-- Last update of source file -->
 	
