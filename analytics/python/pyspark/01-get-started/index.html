@@ -13879,9 +13879,8 @@
 <pre>
 <code>Setting default log level to "WARN".
 To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
-24/05/12 15:59:20 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-24/05/12 15:59:21 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
-24/05/12 15:59:21 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+24/05/12 17:51:07 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/05/12 17:51:07 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
 </code>
 </pre>
 </div>
@@ -14037,14 +14036,6 @@ To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLeve
 <div class="output_wrapper">
 <div class="output">
 <div class="output_area">
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>
-<code>[Stage 6:======================&gt;                                    (3 + 5) / 8]
-</code>
-</pre>
-</div>
-</div>
-<div class="output_area">
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
 <code>+---+------------+----------------+------+--------+
@@ -14057,14 +14048,6 @@ To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLeve
 |123|    Product1|       Category1| 45.67|       8|
 +---+------------+----------------+------+--------+
 
-</code>
-</pre>
-</div>
-</div>
-<div class="output_area">
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>
-<code>                                                                                
 </code>
 </pre>
 </div>
@@ -14119,6 +14102,24 @@ To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLeve
 </code></pre></div>
 
 </div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+<code>+---+------------+----------------+------+--------+
+| id|product_name|product_category|amount|quantity|
++---+------------+----------------+------+--------+
+|123|    Product1|       Category1| 45.67|       8|
+|126|    Product4|       Category1| 91.12|       5|
++---+------------+----------------+------+--------+
+
+</code>
+</pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
@@ -14130,9 +14131,30 @@ To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLeve
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">df</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;product_category&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Category1&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">agg_df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&quot;product_category&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;count&quot;</span><span class="p">,</span> <span class="s2">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;sum&quot;</span><span class="p">,</span> <span class="s2">&quot;quantity&quot;</span><span class="p">:</span> <span class="s2">&quot;sum&quot;</span><span class="p">})</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="n">agg_df</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+<code>+----------------+------------------+-------------+---------+
+|product_category|       sum(amount)|sum(quantity)|count(id)|
++----------------+------------------+-------------+---------+
+|       Category1|136.79000000000002|           13|        2|
+|       Category2|            143.01|           10|        2|
+|       Category3|             32.45|            6|        1|
++----------------+------------------+-------------+---------+
+
+</code>
+</pre>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">

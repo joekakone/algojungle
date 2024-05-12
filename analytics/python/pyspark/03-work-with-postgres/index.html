@@ -13863,8 +13863,8 @@
 <pre>
 <code>Setting default log level to "WARN".
 To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
-24/05/12 17:06:22 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-24/05/12 17:06:23 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+24/05/12 17:32:19 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/05/12 17:32:20 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
 </code>
 </pre>
 </div>
@@ -14154,53 +14154,11 @@ only showing top 20 rows
 </code></pre></div>
 
 </div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">AnalysisException</span>                         Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[10], line 17</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> destination_table <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">public.saprk_table</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span> colums_types <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">"""</span>
-<span class="ansi-green-intense-fg ansi-bold">      4</span> <span style="color: rgb(175,0,0)">dt            date,</span>
-<span class="ansi-green-intense-fg ansi-bold">      5</span> <span style="color: rgb(175,0,0)">country       varchar(200),</span>
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">     12</span> <span style="color: rgb(175,0,0)">load_datetime timestamp</span>
-<span class="ansi-green-intense-fg ansi-bold">     13</span> <span style="color: rgb(175,0,0)">"""</span>
-<span class="ansi-green-intense-fg ansi-bold">     15</span> <span class="ansi-yellow-bg">df</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">write</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">\</span>
-<span class="ansi-green-intense-fg ansi-bold">     16</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">option</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">createTableColumnTypes</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">colums_types</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">\</span>
-<span class="ansi-green-fg">---&gt; 17</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">jdbc</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">postgresql_long_url</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">destination_table</span><span class="ansi-yellow-bg">)</span>
-
-File <span class="ansi-green-fg">~/spark/env/lib/python3.10/site-packages/pyspark/sql/readwriter.py:1984</span>, in <span class="ansi-cyan-fg">DataFrameWriter.jdbc</span><span class="ansi-blue-fg">(self, url, table, mode, properties)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1982</span> <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> k <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> properties:
-<span class="ansi-green-intense-fg ansi-bold">   1983</span>     jprop<span style="color: rgb(98,98,98)">.</span>setProperty(k, properties[k])
-<span class="ansi-green-fg">-&gt; 1984</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">mode</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">mode</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_jwrite</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">jdbc</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">url</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">table</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">jprop</span><span class="ansi-yellow-bg">)</span>
-
-File <span class="ansi-green-fg">~/spark/env/lib/python3.10/site-packages/py4j/java_gateway.py:1322</span>, in <span class="ansi-cyan-fg">JavaMember.__call__</span><span class="ansi-blue-fg">(self, *args)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1316</span> command <span style="color: rgb(98,98,98)">=</span> proto<span style="color: rgb(98,98,98)">.</span>CALL_COMMAND_NAME <span style="color: rgb(98,98,98)">+</span>\
-<span class="ansi-green-intense-fg ansi-bold">   1317</span>     <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>command_header <span style="color: rgb(98,98,98)">+</span>\
-<span class="ansi-green-intense-fg ansi-bold">   1318</span>     args_command <span style="color: rgb(98,98,98)">+</span>\
-<span class="ansi-green-intense-fg ansi-bold">   1319</span>     proto<span style="color: rgb(98,98,98)">.</span>END_COMMAND_PART
-<span class="ansi-green-intense-fg ansi-bold">   1321</span> answer <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>gateway_client<span style="color: rgb(98,98,98)">.</span>send_command(command)
-<span class="ansi-green-fg">-&gt; 1322</span> return_value <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">get_return_value</span><span class="ansi-yellow-bg">(</span>
-<span class="ansi-green-intense-fg ansi-bold">   1323</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg">answer</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">gateway_client</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">target_id</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">name</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1325</span> <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> temp_arg <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> temp_args:
-<span class="ansi-green-intense-fg ansi-bold">   1326</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">hasattr</span>(temp_arg, <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">_detach</span><span style="color: rgb(175,0,0)">"</span>):
-
-File <span class="ansi-green-fg">~/spark/env/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py:185</span>, in <span class="ansi-cyan-fg">capture_sql_exception.&lt;locals&gt;.deco</span><span class="ansi-blue-fg">(*a, **kw)</span>
-<span class="ansi-green-intense-fg ansi-bold">    181</span> converted <span style="color: rgb(98,98,98)">=</span> convert_exception(e<span style="color: rgb(98,98,98)">.</span>java_exception)
-<span class="ansi-green-intense-fg ansi-bold">    182</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">isinstance</span>(converted, UnknownException):
-<span class="ansi-green-intense-fg ansi-bold">    183</span>     <span style="color: rgb(95,135,135)"># Hide where the exception came from that shows a non-Pythonic</span>
-<span class="ansi-green-intense-fg ansi-bold">    184</span>     <span style="color: rgb(95,135,135)"># JVM exception message.</span>
-<span class="ansi-green-fg">--&gt; 185</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> converted <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>
-<span class="ansi-green-intense-fg ansi-bold">    186</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-<span class="ansi-green-intense-fg ansi-bold">    187</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span>
-
-<span class="ansi-red-fg">AnalysisException</span>: Table or view 'public.saprk_table' already exists. SaveMode: ErrorIfExists.</pre>
 </div>
-</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pour vérifier que l'exportation a été bien effectuée, on va importer la table</p>
 </div>
 </div>
 </div>
@@ -14215,6 +14173,43 @@ File <span class="ansi-green-fg">~/spark/env/lib/python3.10/site-packages/pyspar
 <a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="n">df</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+<code>+----------+-------------+--------+---------+---------+------+---------+------+--------------------+
+|        dt|      country|latitude|longitude|confirmed|deaths|recovered|active|       load_datetime|
++----------+-------------+--------+---------+---------+------+---------+------+--------------------+
+|2021-06-18|        Benin|       9|        2|     8140|   103|     7979|    58|2023-06-18 22:56:...|
+|2021-06-18| Burkina Faso|      12|       -2|    13460|   167|    13287|     6|2023-06-18 22:56:...|
+|2021-06-18|   Cabo Verde|      17|      -23|    31858|   280|    30796|   782|2023-06-18 22:56:...|
+|2021-06-18|Cote d'Ivoire|       8|       -6|    47973|   306|    47346|   321|2023-06-18 22:56:...|
+|2021-06-18|       Gambia|      13|      -15|     6024|   181|     5827|    16|2023-06-18 22:56:...|
+|2021-06-18|        Ghana|       8|       -1|    94824|   790|    92806|  1228|2023-06-18 22:56:...|
+|2021-06-18|       Guinea|      10|      -10|    23431|   167|    21488|  1776|2023-06-18 22:56:...|
+|2021-06-18|Guinea-Bissau|      12|      -15|     3819|    69|     3553|   197|2023-06-18 22:56:...|
+|2021-06-18|      Liberia|       6|       -9|     2729|    95|     2105|   529|2023-06-18 22:56:...|
+|2021-06-18|         Mali|      18|       -4|    14364|   523|    10001|  3840|2023-06-18 22:56:...|
+|2021-06-18|        Niger|      18|        8|     5457|   193|     5178|    86|2023-06-18 22:56:...|
+|2021-06-18|      Nigeria|       9|        9|   167142|  2117|   163535|  1490|2023-06-18 22:56:...|
+|2021-06-18|      Senegal|      14|      -14|    42206|  1158|    40707|   341|2023-06-18 22:56:...|
+|2021-06-18| Sierra Leone|       8|      -12|     4553|    82|     3208|  1263|2023-06-18 22:56:...|
+|2021-06-18|         Togo|       9|        1|    13682|   127|    13334|   221|2023-06-18 22:56:...|
+|2021-06-21|        Benin|       9|        2|     8140|   103|     7979|    58|2023-06-21 04:42:...|
+|2021-06-21| Burkina Faso|      12|       -2|    13469|   167|    13293|     9|2023-06-21 04:42:...|
+|2021-06-21|   Cabo Verde|      17|      -23|    32002|   283|    30988|   731|2023-06-21 04:42:...|
+|2021-06-21|Cote d'Ivoire|       8|       -6|    48044|   308|    47445|   291|2023-06-21 04:42:...|
+|2021-06-21|       Gambia|      13|      -15|     6024|   181|     5827|    16|2023-06-21 04:42:...|
++----------+-------------+--------+---------+---------+------+---------+------+--------------------+
+only showing top 20 rows
+
+</code>
+</pre>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
