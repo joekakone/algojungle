@@ -5192,54 +5192,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#importer-une-table_1" class="md-nav__link">
+  <a href="#a-partir-dune-requete-sql" class="md-nav__link">
     <span class="md-ellipsis">
-      Importer une table
+      A partir d'une requête SQL
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#creer-un-dataframe" class="md-nav__link">
+  <a href="#exporter-vers-une-base-de-donnees" class="md-nav__link">
     <span class="md-ellipsis">
-      Créer un Dataframe
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#afficher-le-dataframe" class="md-nav__link">
-    <span class="md-ellipsis">
-      Afficher le DataFrame
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#selection" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sélection
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tri" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tri
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#filtrage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Filtrage
+      Exporter vers une base de données
     </span>
   </a>
   
@@ -13723,54 +13687,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#importer-une-table_1" class="md-nav__link">
+  <a href="#a-partir-dune-requete-sql" class="md-nav__link">
     <span class="md-ellipsis">
-      Importer une table
+      A partir d'une requête SQL
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#creer-un-dataframe" class="md-nav__link">
+  <a href="#exporter-vers-une-base-de-donnees" class="md-nav__link">
     <span class="md-ellipsis">
-      Créer un Dataframe
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#afficher-le-dataframe" class="md-nav__link">
-    <span class="md-ellipsis">
-      Afficher le DataFrame
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#selection" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sélection
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tri" class="md-nav__link">
-    <span class="md-ellipsis">
-      Tri
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#filtrage" class="md-nav__link">
-    <span class="md-ellipsis">
-      Filtrage
+      Exporter vers une base de données
     </span>
   </a>
   
@@ -13861,7 +13789,7 @@
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Afin d'accéder à la base de données Postgres, nous aurons besoin du driver Postgres. Rendez-vous sur la page de téléchargement <a href="https://jdbc.postgresql.org/download/">Download pgJDBC</a>.</p>
+<p>Afin d'accéder à la base de données Postgres, nous aurons besoin du driver Postgres. Rendez-vous sur la page de téléchargement <a href="https://jdbc.postgresql.org/download/">Download pgJDBC</a>. Une fois le téléchargement terminé, placer-le dans un dossier de votre choix facile d'accès depuis le notebook.</p>
 </div>
 </div>
 </div>
@@ -13920,16 +13848,11 @@
 <div class="input">
 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Créer une session Spark</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="c1"># spark = SparkSession.builder \</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="c1">#     .appName(&quot;Work with PostgreSQL&quot;) \</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1">#     .config(&quot;spark.driver.extraClassPath&quot;, &quot;/home/joekakone/spark/drivers/postgresql-42.7.3.jar&quot;) \</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1">#     .config(&quot;spark.executor.extraClassPath&quot;, &quot;/home/joekakone/spark/drivers/postgresql-42.7.3.jar&quot;) \</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="c1">#     .getOrCreate()</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="c1"># Créer une session Spark</span>
-<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="o">.</span><span class="n">builder</span> \
-<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="o">.</span><span class="n">appName</span><span class="p">(</span><span class="s2">&quot;Work with PostgreSQL&quot;</span><span class="p">)</span> \
-<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    <span class="o">.</span><span class="n">getOrCreate</span><span class="p">()</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="o">.</span><span class="n">builder</span> \
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="o">.</span><span class="n">appName</span><span class="p">(</span><span class="s2">&quot;Work with PostgreSQL&quot;</span><span class="p">)</span> \
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="s2">&quot;spark.driver.extraClassPath&quot;</span><span class="p">,</span> <span class="s2">&quot;/home/joekakone/spark/drivers/postgresql-42.7.3.jar&quot;</span><span class="p">)</span> \
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="s2">&quot;spark.executor.extraClassPath&quot;</span><span class="p">,</span> <span class="s2">&quot;/home/joekakone/spark/drivers/postgresql-42.7.3.jar&quot;</span><span class="p">)</span> \
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="o">.</span><span class="n">getOrCreate</span><span class="p">()</span>
 </code></pre></div>
 
 </div>
@@ -13938,7 +13861,10 @@
 <div class="output_area">
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>
-<code>24/05/12 15:06:08 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+<code>Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+24/05/12 17:06:22 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/05/12 17:06:23 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
 </code>
 </pre>
 </div>
@@ -13984,12 +13910,13 @@
 <div class="input">
 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">postgresql_url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;jdbc:postgresql://</span><span class="si">{</span><span class="n">HOST</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">PORT</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">DATABASE</span><span class="si">}</span><span class="s2">&quot;</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">connection_properties</span> <span class="o">=</span> <span class="p">{</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="n">USERNAME</span><span class="p">,</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="s2">&quot;password&quot;</span><span class="p">:</span> <span class="n">PASSWORD</span><span class="p">,</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="s2">&quot;driver&quot;</span><span class="p">:</span> <span class="s2">&quot;org.postgresql.Driver&quot;</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="p">}</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">postgresql_url</span><span class="p">)</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">postgresql_long_url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;jdbc:postgresql://</span><span class="si">{</span><span class="n">HOST</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">PORT</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">DATABASE</span><span class="si">}</span><span class="s2">?user=</span><span class="si">{</span><span class="n">USERNAME</span><span class="si">}</span><span class="s2">&amp;amp;password=</span><span class="si">{</span><span class="n">PASSWORD</span><span class="si">}</span><span class="s2">&quot;</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">connection_properties</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="c1"># &quot;user&quot;: USERNAME,</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="c1"># &quot;password&quot;: PASSWORD,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="s2">&quot;driver&quot;</span><span class="p">:</span> <span class="s2">&quot;org.postgresql.Driver&quot;</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="p">}</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">postgresql_url</span><span class="p">)</span>
 </code></pre></div>
 
 </div>
@@ -14025,8 +13952,69 @@
 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">table_name</span> <span class="o">=</span> <span class="s2">&quot;public.covid19_daily_kpi&quot;</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="n">jdbc</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">postgresql_url</span><span class="p">,</span> <span class="n">table</span><span class="o">=</span><span class="n">table_name</span><span class="p">,</span> <span class="n">properties</span><span class="o">=</span><span class="n">connection_properties</span><span class="p">)</span>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">df</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="n">jdbc</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">postgresql_long_url</span><span class="p">,</span> <span class="n">table</span><span class="o">=</span><span class="n">table_name</span><span class="p">,</span> <span class="n">properties</span><span class="o">=</span><span class="n">connection_properties</span><span class="p">)</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="n">df</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>
+<code>                                                                                
+</code>
+</pre>
+</div>
+</div>
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+<code>+----------+-------------+--------------------+--------------------+---------+------+---------+------+--------------------+
+|        dt|      country|            latitude|           longitude|confirmed|deaths|recovered|active|       load_datetime|
++----------+-------------+--------------------+--------------------+---------+------+---------+------+--------------------+
+|2021-06-18|        Benin|9.307700000000000000|2.315800000000000000|     8140|   103|     7979|    58|2023-06-18 22:56:...|
+|2021-06-18| Burkina Faso|12.23830000000000...|-1.56160000000000...|    13460|   167|    13287|     6|2023-06-18 22:56:...|
+|2021-06-18|   Cabo Verde|16.53880000000000...|-23.0418000000000...|    31858|   280|    30796|   782|2023-06-18 22:56:...|
+|2021-06-18|Cote d'Ivoire|7.540000000000000000|-5.54710000000000...|    47973|   306|    47346|   321|2023-06-18 22:56:...|
+|2021-06-18|       Gambia|13.44320000000000...|-15.3101000000000...|     6024|   181|     5827|    16|2023-06-18 22:56:...|
+|2021-06-18|        Ghana|7.946500000000000000|-1.02320000000000...|    94824|   790|    92806|  1228|2023-06-18 22:56:...|
+|2021-06-18|       Guinea|9.945600000000000000|-9.69660000000000...|    23431|   167|    21488|  1776|2023-06-18 22:56:...|
+|2021-06-18|Guinea-Bissau|11.80370000000000...|-15.1804000000000...|     3819|    69|     3553|   197|2023-06-18 22:56:...|
+|2021-06-18|      Liberia|6.428055000000000500|-9.42949900000000...|     2729|    95|     2105|   529|2023-06-18 22:56:...|
+|2021-06-18|         Mali|17.57069200000000...|-3.99616600000000...|    14364|   523|    10001|  3840|2023-06-18 22:56:...|
+|2021-06-18|        Niger|17.60778900000000...|8.081666000000000000|     5457|   193|     5178|    86|2023-06-18 22:56:...|
+|2021-06-18|      Nigeria|9.082000000000000000|8.675300000000000000|   167142|  2117|   163535|  1490|2023-06-18 22:56:...|
+|2021-06-18|      Senegal|14.49740000000000...|-14.4524000000000...|    42206|  1158|    40707|   341|2023-06-18 22:56:...|
+|2021-06-18| Sierra Leone|8.460555000000001000|-11.7798890000000...|     4553|    82|     3208|  1263|2023-06-18 22:56:...|
+|2021-06-18|         Togo|8.619500000000000000|0.824800000000000000|    13682|   127|    13334|   221|2023-06-18 22:56:...|
+|2021-06-21|        Benin|9.307700000000000000|2.315800000000000000|     8140|   103|     7979|    58|2023-06-21 04:42:...|
+|2021-06-21| Burkina Faso|12.23830000000000...|-1.56160000000000...|    13469|   167|    13293|     9|2023-06-21 04:42:...|
+|2021-06-21|   Cabo Verde|16.53880000000000...|-23.0418000000000...|    32002|   283|    30988|   731|2023-06-21 04:42:...|
+|2021-06-21|Cote d'Ivoire|7.540000000000000000|-5.54710000000000...|    48044|   308|    47445|   291|2023-06-21 04:42:...|
+|2021-06-21|       Gambia|13.44320000000000...|-15.3101000000000...|     6024|   181|     5827|    16|2023-06-21 04:42:...|
++----------+-------------+--------------------+--------------------+---------+------+---------+------+--------------------+
+only showing top 20 rows
+
+</code>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">table_name</span> <span class="o">=</span> <span class="s2">&quot;public.covid19_daily_kpi&quot;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;jdbc&quot;</span><span class="p">)</span> \
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;url&quot;</span><span class="p">,</span> <span class="n">postgresql_long_url</span><span class="p">)</span> \
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;dbtable&quot;</span><span class="p">,</span> <span class="n">table_name</span><span class="p">)</span> \
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>    <span class="o">.</span><span class="n">load</span><span class="p">()</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="n">df</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
 </div>
@@ -14071,19 +14059,98 @@ only showing top 20 rows
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="importer-une-table_1">Importer une table</h2>
+<h2 id="a-partir-dune-requete-sql">A partir d'une requête SQL</h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">sql_query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="s2">select * from public.covid19_daily_kpi where /*dt between &#39;2021-01-01&#39; and &#39;2021-01-31&#39; and*/ country in (&#39;Benin&#39;, &#39;Ghana&#39;, &#39;Togo&#39;);</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="s2">&quot;&quot;&quot;</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="n">jdbc</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">postgresql_url</span><span class="p">,</span> <span class="n">table</span><span class="o">=</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">properties</span><span class="o">=</span><span class="n">connection_properties</span><span class="p">)</span>
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="n">df</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">sql_query</span> <span class="o">=</span> <span class="s2">&quot;(select * from public.covid19_daily_kpi) as sq&quot;</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;jdbc&quot;</span><span class="p">)</span> \
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;url&quot;</span><span class="p">,</span> <span class="n">postgresql_url</span><span class="p">)</span> \
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;dbtable&quot;</span><span class="p">,</span> <span class="n">sql_query</span><span class="p">)</span> \
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>    <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="n">USERNAME</span><span class="p">)</span> \
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>    <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;password&quot;</span><span class="p">,</span> <span class="n">PASSWORD</span><span class="p">)</span> \
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>    <span class="o">.</span><span class="n">load</span><span class="p">()</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="n">df</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+<code>+----------+-------------+--------------------+--------------------+---------+------+---------+------+--------------------+
+|        dt|      country|            latitude|           longitude|confirmed|deaths|recovered|active|       load_datetime|
++----------+-------------+--------------------+--------------------+---------+------+---------+------+--------------------+
+|2021-06-18|        Benin|9.307700000000000000|2.315800000000000000|     8140|   103|     7979|    58|2023-06-18 22:56:...|
+|2021-06-18| Burkina Faso|12.23830000000000...|-1.56160000000000...|    13460|   167|    13287|     6|2023-06-18 22:56:...|
+|2021-06-18|   Cabo Verde|16.53880000000000...|-23.0418000000000...|    31858|   280|    30796|   782|2023-06-18 22:56:...|
+|2021-06-18|Cote d'Ivoire|7.540000000000000000|-5.54710000000000...|    47973|   306|    47346|   321|2023-06-18 22:56:...|
+|2021-06-18|       Gambia|13.44320000000000...|-15.3101000000000...|     6024|   181|     5827|    16|2023-06-18 22:56:...|
+|2021-06-18|        Ghana|7.946500000000000000|-1.02320000000000...|    94824|   790|    92806|  1228|2023-06-18 22:56:...|
+|2021-06-18|       Guinea|9.945600000000000000|-9.69660000000000...|    23431|   167|    21488|  1776|2023-06-18 22:56:...|
+|2021-06-18|Guinea-Bissau|11.80370000000000...|-15.1804000000000...|     3819|    69|     3553|   197|2023-06-18 22:56:...|
+|2021-06-18|      Liberia|6.428055000000000500|-9.42949900000000...|     2729|    95|     2105|   529|2023-06-18 22:56:...|
+|2021-06-18|         Mali|17.57069200000000...|-3.99616600000000...|    14364|   523|    10001|  3840|2023-06-18 22:56:...|
+|2021-06-18|        Niger|17.60778900000000...|8.081666000000000000|     5457|   193|     5178|    86|2023-06-18 22:56:...|
+|2021-06-18|      Nigeria|9.082000000000000000|8.675300000000000000|   167142|  2117|   163535|  1490|2023-06-18 22:56:...|
+|2021-06-18|      Senegal|14.49740000000000...|-14.4524000000000...|    42206|  1158|    40707|   341|2023-06-18 22:56:...|
+|2021-06-18| Sierra Leone|8.460555000000001000|-11.7798890000000...|     4553|    82|     3208|  1263|2023-06-18 22:56:...|
+|2021-06-18|         Togo|8.619500000000000000|0.824800000000000000|    13682|   127|    13334|   221|2023-06-18 22:56:...|
+|2021-06-21|        Benin|9.307700000000000000|2.315800000000000000|     8140|   103|     7979|    58|2023-06-21 04:42:...|
+|2021-06-21| Burkina Faso|12.23830000000000...|-1.56160000000000...|    13469|   167|    13293|     9|2023-06-21 04:42:...|
+|2021-06-21|   Cabo Verde|16.53880000000000...|-23.0418000000000...|    32002|   283|    30988|   731|2023-06-21 04:42:...|
+|2021-06-21|Cote d'Ivoire|7.540000000000000000|-5.54710000000000...|    48044|   308|    47445|   291|2023-06-21 04:42:...|
+|2021-06-21|       Gambia|13.44320000000000...|-15.3101000000000...|     6024|   181|     5827|    16|2023-06-21 04:42:...|
++----------+-------------+--------------------+--------------------+---------+------+---------+------+--------------------+
+only showing top 20 rows
+
+</code>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="exporter-vers-une-base-de-donnees">Exporter vers une base de données</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Uen fois vos mainupulations terminées, Spark offre la possibilité d'exporter les données dans une table dans la base de données pour un usage ultérieur.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">destination_table</span> <span class="o">=</span> <span class="s2">&quot;public.saprk_table&quot;</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="n">colums_types</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="s2">dt            date,</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="s2">country       varchar(200),</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="s2">latitude      numeric,</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="s2">longitude     numeric,</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="s2">confirmed     integer,</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="s2">deaths        integer,</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="s2">recovered     integer,</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="s2">active        integer,</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="s2">load_datetime timestamp</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="s2">&quot;&quot;&quot;</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="n">df</span><span class="o">.</span><span class="n">write</span> \
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>    <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;createTableColumnTypes&quot;</span><span class="p">,</span> <span class="n">colums_types</span><span class="p">)</span> \
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>    <span class="o">.</span><span class="n">jdbc</span><span class="p">(</span><span class="n">postgresql_long_url</span><span class="p">,</span> <span class="n">destination_table</span><span class="p">)</span>
 </code></pre></div>
 
 </div>
@@ -14093,18 +14160,23 @@ only showing top 20 rows
 <div class="output_subarea output_text output_error">
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">Py4JJavaError</span>                             Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[22], line 5</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> sql_query <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">"""</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span> <span style="color: rgb(175,0,0)">select * from public.covid19_daily_kpi where /*dt between </span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">2021-01-01</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)"> and </span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">2021-01-31</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)"> and*/ country in (</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">Benin</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">, </span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">Ghana</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">, </span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">Togo</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">);</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span> <span style="color: rgb(175,0,0)">"""</span>
-<span class="ansi-green-fg">----&gt; 5</span> df <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">spark</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">read</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">jdbc</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">url</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">postgresql_url</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">table</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">sql_query</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">properties</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">connection_properties</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      6</span> df<span style="color: rgb(98,98,98)">.</span>show()
+<span class="ansi-red-fg">AnalysisException</span>                         Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In[10], line 17</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> destination_table <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">public.saprk_table</span><span style="color: rgb(175,0,0)">"</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> colums_types <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">"""</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span> <span style="color: rgb(175,0,0)">dt            date,</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span> <span style="color: rgb(175,0,0)">country       varchar(200),</span>
+<span class="ansi-green-fg">   (...)</span>
+<span class="ansi-green-intense-fg ansi-bold">     12</span> <span style="color: rgb(175,0,0)">load_datetime timestamp</span>
+<span class="ansi-green-intense-fg ansi-bold">     13</span> <span style="color: rgb(175,0,0)">"""</span>
+<span class="ansi-green-intense-fg ansi-bold">     15</span> <span class="ansi-yellow-bg">df</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">write</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">\</span>
+<span class="ansi-green-intense-fg ansi-bold">     16</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">option</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">createTableColumnTypes</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">"</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">colums_types</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">\</span>
+<span class="ansi-green-fg">---&gt; 17</span> <span class="ansi-yellow-bg">    </span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">jdbc</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">postgresql_long_url</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">destination_table</span><span class="ansi-yellow-bg">)</span>
 
-File <span class="ansi-green-fg">~/spark/env/lib/python3.10/site-packages/pyspark/sql/readwriter.py:946</span>, in <span class="ansi-cyan-fg">DataFrameReader.jdbc</span><span class="ansi-blue-fg">(self, url, table, column, lowerBound, upperBound, numPartitions, predicates, properties)</span>
-<span class="ansi-green-intense-fg ansi-bold">    944</span>     jpredicates <span style="color: rgb(98,98,98)">=</span> utils<span style="color: rgb(98,98,98)">.</span>toJArray(gateway, gateway<span style="color: rgb(98,98,98)">.</span>jvm<span style="color: rgb(98,98,98)">.</span>java<span style="color: rgb(98,98,98)">.</span>lang<span style="color: rgb(98,98,98)">.</span>String, predicates)
-<span class="ansi-green-intense-fg ansi-bold">    945</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_df(<span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_jreader<span style="color: rgb(98,98,98)">.</span>jdbc(url, table, jpredicates, jprop))
-<span class="ansi-green-fg">--&gt; 946</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_df(<span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_jreader</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">jdbc</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">url</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">table</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">jprop</span><span class="ansi-yellow-bg">)</span>)
+File <span class="ansi-green-fg">~/spark/env/lib/python3.10/site-packages/pyspark/sql/readwriter.py:1984</span>, in <span class="ansi-cyan-fg">DataFrameWriter.jdbc</span><span class="ansi-blue-fg">(self, url, table, mode, properties)</span>
+<span class="ansi-green-intense-fg ansi-bold">   1982</span> <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> k <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> properties:
+<span class="ansi-green-intense-fg ansi-bold">   1983</span>     jprop<span style="color: rgb(98,98,98)">.</span>setProperty(k, properties[k])
+<span class="ansi-green-fg">-&gt; 1984</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">mode</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">mode</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_jwrite</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">jdbc</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">url</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">table</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">jprop</span><span class="ansi-yellow-bg">)</span>
 
 File <span class="ansi-green-fg">~/spark/env/lib/python3.10/site-packages/py4j/java_gateway.py:1322</span>, in <span class="ansi-cyan-fg">JavaMember.__call__</span><span class="ansi-blue-fg">(self, *args)</span>
 <span class="ansi-green-intense-fg ansi-bold">   1316</span> command <span style="color: rgb(98,98,98)">=</span> proto<span style="color: rgb(98,98,98)">.</span>CALL_COMMAND_NAME <span style="color: rgb(98,98,98)">+</span>\
@@ -14117,269 +14189,32 @@ File <span class="ansi-green-fg">~/spark/env/lib/python3.10/site-packages/py4j/j
 <span class="ansi-green-intense-fg ansi-bold">   1325</span> <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> temp_arg <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> temp_args:
 <span class="ansi-green-intense-fg ansi-bold">   1326</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">hasattr</span>(temp_arg, <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">_detach</span><span style="color: rgb(175,0,0)">"</span>):
 
-File <span class="ansi-green-fg">~/spark/env/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py:179</span>, in <span class="ansi-cyan-fg">capture_sql_exception.&lt;locals&gt;.deco</span><span class="ansi-blue-fg">(*a, **kw)</span>
-<span class="ansi-green-intense-fg ansi-bold">    177</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">deco</span>(<span style="color: rgb(98,98,98)">*</span>a: Any, <span style="color: rgb(98,98,98)">*</span><span style="color: rgb(98,98,98)">*</span>kw: Any) <span style="color: rgb(98,98,98)">-</span><span style="color: rgb(98,98,98)">&gt;</span> Any:
-<span class="ansi-green-intense-fg ansi-bold">    178</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">try</span>:
-<span class="ansi-green-fg">--&gt; 179</span>         <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg">f</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg">a</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg">kw</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">    180</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">except</span> Py4JJavaError <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> e:
-<span class="ansi-green-intense-fg ansi-bold">    181</span>         converted <span style="color: rgb(98,98,98)">=</span> convert_exception(e<span style="color: rgb(98,98,98)">.</span>java_exception)
+File <span class="ansi-green-fg">~/spark/env/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py:185</span>, in <span class="ansi-cyan-fg">capture_sql_exception.&lt;locals&gt;.deco</span><span class="ansi-blue-fg">(*a, **kw)</span>
+<span class="ansi-green-intense-fg ansi-bold">    181</span> converted <span style="color: rgb(98,98,98)">=</span> convert_exception(e<span style="color: rgb(98,98,98)">.</span>java_exception)
+<span class="ansi-green-intense-fg ansi-bold">    182</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span style="color: rgb(0,135,0)">isinstance</span>(converted, UnknownException):
+<span class="ansi-green-intense-fg ansi-bold">    183</span>     <span style="color: rgb(95,135,135)"># Hide where the exception came from that shows a non-Pythonic</span>
+<span class="ansi-green-intense-fg ansi-bold">    184</span>     <span style="color: rgb(95,135,135)"># JVM exception message.</span>
+<span class="ansi-green-fg">--&gt; 185</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> converted <span class="ansi-bold" style="color: rgb(0,135,0)">from</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>
+<span class="ansi-green-intense-fg ansi-bold">    186</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
+<span class="ansi-green-intense-fg ansi-bold">    187</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span>
 
-File <span class="ansi-green-fg">~/spark/env/lib/python3.10/site-packages/py4j/protocol.py:326</span>, in <span class="ansi-cyan-fg">get_return_value</span><span class="ansi-blue-fg">(answer, gateway_client, target_id, name)</span>
-<span class="ansi-green-intense-fg ansi-bold">    324</span> value <span style="color: rgb(98,98,98)">=</span> OUTPUT_CONVERTER[<span style="color: rgb(0,135,0)">type</span>](answer[<span style="color: rgb(98,98,98)">2</span>:], gateway_client)
-<span class="ansi-green-intense-fg ansi-bold">    325</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> answer[<span style="color: rgb(98,98,98)">1</span>] <span style="color: rgb(98,98,98)">==</span> REFERENCE_TYPE:
-<span class="ansi-green-fg">--&gt; 326</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> Py4JJavaError(
-<span class="ansi-green-intense-fg ansi-bold">    327</span>         <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">An error occurred while calling </span><span class="ansi-bold" style="color: rgb(175,95,135)">{0}</span><span class="ansi-bold" style="color: rgb(175,95,135)">{1}</span><span class="ansi-bold" style="color: rgb(175,95,135)">{2}</span><span style="color: rgb(175,0,0)">.</span><span class="ansi-bold" style="color: rgb(175,95,0)">\n</span><span style="color: rgb(175,0,0)">"</span><span style="color: rgb(98,98,98)">.</span>
-<span class="ansi-green-intense-fg ansi-bold">    328</span>         <span style="color: rgb(0,135,0)">format</span>(target_id, <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">.</span><span style="color: rgb(175,0,0)">"</span>, name), value)
-<span class="ansi-green-intense-fg ansi-bold">    329</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-<span class="ansi-green-intense-fg ansi-bold">    330</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> Py4JError(
-<span class="ansi-green-intense-fg ansi-bold">    331</span>         <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">An error occurred while calling </span><span class="ansi-bold" style="color: rgb(175,95,135)">{0}</span><span class="ansi-bold" style="color: rgb(175,95,135)">{1}</span><span class="ansi-bold" style="color: rgb(175,95,135)">{2}</span><span style="color: rgb(175,0,0)">. Trace:</span><span class="ansi-bold" style="color: rgb(175,95,0)">\n</span><span class="ansi-bold" style="color: rgb(175,95,135)">{3}</span><span class="ansi-bold" style="color: rgb(175,95,0)">\n</span><span style="color: rgb(175,0,0)">"</span><span style="color: rgb(98,98,98)">.</span>
-<span class="ansi-green-intense-fg ansi-bold">    332</span>         <span style="color: rgb(0,135,0)">format</span>(target_id, <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">.</span><span style="color: rgb(175,0,0)">"</span>, name, value))
-
-<span class="ansi-red-fg">Py4JJavaError</span>: An error occurred while calling o102.jdbc.
-: org.postgresql.util.PSQLException: ERREUR: erreur de syntaxe sur ou près de « select »
-  Position: 15
-    at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
-    at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
-    at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
-    at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
-    at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
-    at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
-    at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:137)
-    at org.apache.spark.sql.execution.datasources.jdbc.JDBCRDD$.getQueryOutputSchema(JDBCRDD.scala:68)
-    at org.apache.spark.sql.execution.datasources.jdbc.JDBCRDD$.resolveTable(JDBCRDD.scala:58)
-    at org.apache.spark.sql.execution.datasources.jdbc.JDBCRelation$.getSchema(JDBCRelation.scala:241)
-    at org.apache.spark.sql.execution.datasources.jdbc.JdbcRelationProvider.createRelation(JdbcRelationProvider.scala:37)
-    at org.apache.spark.sql.execution.datasources.DataSource.resolveRelation(DataSource.scala:346)
-    at org.apache.spark.sql.DataFrameReader.loadV1Source(DataFrameReader.scala:229)
-    at org.apache.spark.sql.DataFrameReader.$anonfun$load$2(DataFrameReader.scala:211)
-    at scala.Option.getOrElse(Option.scala:189)
-    at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:211)
-    at org.apache.spark.sql.DataFrameReader.load(DataFrameReader.scala:172)
-    at org.apache.spark.sql.DataFrameReader.jdbc(DataFrameReader.scala:249)
-    at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-    at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-    at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-    at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-    at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
-    at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
-    at py4j.Gateway.invoke(Gateway.java:282)
-    at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
-    at py4j.commands.CallCommand.execute(CallCommand.java:79)
-    at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
-    at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
-    at java.base/java.lang.Thread.run(Thread.java:829)
-</pre>
+<span class="ansi-red-fg">AnalysisException</span>: Table or view 'public.saprk_table' already exists. SaveMode: ErrorIfExists.</pre>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="creer-un-dataframe">Créer un Dataframe</h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Nous allons préparer une petit dataset, la liste des colonnes et les enregistrements comme liste de tuples</p>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;product_name&quot;</span><span class="p">,</span> <span class="s2">&quot;product_category&quot;</span><span class="p">,</span> <span class="s2">&quot;amount&quot;</span><span class="p">,</span> <span class="s2">&quot;quantity&quot;</span><span class="p">]</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">data</span> <span class="o">=</span> <span class="p">[</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    <span class="p">(</span><span class="mi">123</span><span class="p">,</span> <span class="s2">&quot;Product1&quot;</span><span class="p">,</span> <span class="s2">&quot;Category1&quot;</span><span class="p">,</span> <span class="mf">45.67</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="p">(</span><span class="mi">124</span><span class="p">,</span> <span class="s2">&quot;Product2&quot;</span><span class="p">,</span> <span class="s2">&quot;Category2&quot;</span><span class="p">,</span> <span class="mf">78.23</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span>
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    <span class="p">(</span><span class="mi">125</span><span class="p">,</span> <span class="s2">&quot;Product3&quot;</span><span class="p">,</span> <span class="s2">&quot;Category3&quot;</span><span class="p">,</span> <span class="mf">32.45</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span>
-<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>    <span class="p">(</span><span class="mi">126</span><span class="p">,</span> <span class="s2">&quot;Product4&quot;</span><span class="p">,</span> <span class="s2">&quot;Category1&quot;</span><span class="p">,</span> <span class="mf">91.12</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
-<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>    <span class="p">(</span><span class="mi">127</span><span class="p">,</span> <span class="s2">&quot;Product5&quot;</span><span class="p">,</span> <span class="s2">&quot;Category2&quot;</span><span class="p">,</span> <span class="mf">64.78</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
-<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="p">]</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;jdbc&quot;</span><span class="p">)</span> \
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>    <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;url&quot;</span><span class="p">,</span> <span class="n">postgresql_long_url</span><span class="p">)</span> \
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;dbtable&quot;</span><span class="p">,</span> <span class="n">destination_table</span><span class="p">)</span> \
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    <span class="o">.</span><span class="n">load</span><span class="p">()</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="n">df</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Nous allons créer le dataframe à partir du dataset</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">createDataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">schema</span><span class="o">=</span><span class="n">columns</span><span class="p">)</span>
-</code></pre></div>
-
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="afficher-le-dataframe">Afficher le DataFrame</h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>On fait appel à la méthode <code>.show()</code> pour afficher le dataframe.</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">df</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</code></pre></div>
-
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>
-<code>                                                                                
-</code>
-</pre>
-</div>
-</div>
-<div class="output_area">
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>
-<code>+---+------------+----------------+------+--------+
-| id|product_name|product_category|amount|quantity|
-+---+------------+----------------+------+--------+
-|123|    Product1|       Category1| 45.67|       8|
-|124|    Product2|       Category2| 78.23|       3|
-|125|    Product3|       Category3| 32.45|       6|
-|126|    Product4|       Category1| 91.12|       5|
-|127|    Product5|       Category2| 64.78|       7|
-+---+------------+----------------+------+--------+
-
-</code>
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="selection">Sélection</h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">df</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</code></pre></div>
-
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>
-<code>+---+
-| id|
-+---+
-|123|
-|124|
-|125|
-|126|
-|127|
-+---+
-
-</code>
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="tri">Tri</h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">df</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s2">&quot;quantity&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</code></pre></div>
-
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>
-<code>                                                                                
-</code>
-</pre>
-</div>
-</div>
-<div class="output_area">
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>
-<code>+---+------------+----------------+------+--------+
-| id|product_name|product_category|amount|quantity|
-+---+------------+----------------+------+--------+
-|124|    Product2|       Category2| 78.23|       3|
-|126|    Product4|       Category1| 91.12|       5|
-|125|    Product3|       Category3| 32.45|       6|
-|127|    Product5|       Category2| 64.78|       7|
-|123|    Product1|       Category1| 45.67|       8|
-+---+------------+----------------+------+--------+
-
-</code>
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="filtrage">Filtrage</h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">df</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="s2">&quot;product_category = &#39;Category1&#39;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</code></pre></div>
-
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>
-<code>+---+------------+----------------+------+--------+
-| id|product_name|product_category|amount|quantity|
-+---+------------+----------------+------+--------+
-|123|    Product1|       Category1| 45.67|       8|
-|126|    Product4|       Category1| 91.12|       5|
-+---+------------+----------------+------+--------+
-
-</code>
-</pre>
-</div>
-</div>
-</div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
@@ -14399,7 +14234,7 @@ File <span class="ansi-green-fg">~/spark/env/lib/python3.10/site-packages/py4j/p
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># spark.stop()</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">spark</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
 </code></pre></div>
 
 </div>

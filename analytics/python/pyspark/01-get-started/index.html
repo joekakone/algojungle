@@ -5159,6 +5159,24 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#agregation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agrégation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manipulation-avec-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manipulation avec SQL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#fermer-la-session-spark" class="md-nav__link">
     <span class="md-ellipsis">
       Fermer la session Spark
@@ -13687,6 +13705,24 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#agregation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Agrégation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manipulation-avec-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manipulation avec SQL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#fermer-la-session-spark" class="md-nav__link">
     <span class="md-ellipsis">
       Fermer la session Spark
@@ -13843,8 +13879,9 @@
 <pre>
 <code>Setting default log level to "WARN".
 To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
-24/05/11 20:16:48 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-24/05/11 20:16:50 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+24/05/12 15:59:20 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/05/12 15:59:21 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+24/05/12 15:59:21 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
 </code>
 </pre>
 </div>
@@ -14002,7 +14039,7 @@ To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLeve
 <div class="output_area">
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>
-<code>[Stage 6:===================================================&gt;       (7 + 1) / 8]
+<code>[Stage 6:======================&gt;                                    (3 + 5) / 8]
 </code>
 </pre>
 </div>
@@ -14065,10 +14102,77 @@ To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLeve
 </pre>
 </div>
 </div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Il existe cette synthaxe</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">df</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;product_category&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Category1&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="agregation">Agrégation</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">df</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;product_category&quot;</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Category1&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="manipulation-avec-sql">Manipulation avec SQL</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Spark offre la possibilité de manipuler les données avec SQL, c'est l'une de ses forces. Les professionnels des données qui utilisent SQL au quotidien s'y retrouvent assez facilement.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">df</span><span class="o">.</span><span class="n">createOrReplaceTempView</span><span class="p">(</span><span class="s2">&quot;lu_products&quot;</span><span class="p">)</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="n">sql_query</span> <span class="o">=</span> <span class="s2">&quot;SELECT * FROM lu_products WHERE id &amp;gt; 125&quot;</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="n">result_df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="n">sql_query</span><span class="p">)</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="n">result_df</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+</div>
+<div class="output_wrapper">
+<div class="output">
 <div class="output_area">
-<div class="output_subarea output_stream output_stderr output_text">
+<div class="output_subarea output_stream output_stdout output_text">
 <pre>
-<code>                                                                                
+<code>+---+------------+----------------+------+--------+
+| id|product_name|product_category|amount|quantity|
++---+------------+----------------+------+--------+
+|126|    Product4|       Category1| 91.12|       5|
+|127|    Product5|       Category2| 64.78|       7|
++---+------------+----------------+------+--------+
+
 </code>
 </pre>
 </div>
@@ -14093,7 +14197,7 @@ To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLeve
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">spark</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">spark</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
 </code></pre></div>
 
 </div>

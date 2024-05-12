@@ -5089,24 +5089,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configurer-les-variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configurer les variables
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installer-winutilsexe" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installer Winutils.exe
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#demarrer-spark" class="md-nav__link">
     <span class="md-ellipsis">
       Démarrer Spark
@@ -13654,24 +13636,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configurer-les-variables" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configurer les variables
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#installer-winutilsexe" class="md-nav__link">
-    <span class="md-ellipsis">
-      Installer Winutils.exe
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#demarrer-spark" class="md-nav__link">
     <span class="md-ellipsis">
       Démarrer Spark
@@ -13781,6 +13745,8 @@ Installer Java<br>
 </code></pre></div></p>
 <h2 id="installer-apache-spark">Installer Apache Spark</h2>
 <p>Installer Java<br>
+Rendez-vous à la page de télechargement <a href="https://spark.apache.org/downloads.html">Download Apache Spark™</a><br>
+<img alt="" src="/algojungle/images/python-data-stack/spark/install/downalod-spark-01.png" />
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>wget<span class="w"> </span>https://dlcdn.apache.org/spark/spark-3.5.1/spark-3.5.1-bin-hadoop3.tgz
 </code></pre></div></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>tar<span class="w"> </span>xvf<span class="w"> </span>spark-3.5.1-bin-hadoop3.tgz
@@ -13789,68 +13755,100 @@ Installer Java<br>
 <p>Définir la variable d'environnement<br>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">JAVA_HOME</span><span class="o">=</span>/usr/lib/jvm/java-1.11.0-openjdk-amd64
 </code></pre></div></p>
-<p>Rendez-vous à la page de télechargement <a href="https://spark.apache.org/downloads.html">Download Apache Spark™</a><br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/downalod-spark-01.png" /></p>
-<p>Vous serez redirigé vers cette page, cliquez sur le lien pour lancer le téléchargement<br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/downalod-spark-02.png" /></p>
-<p>Une fois le téléchargement terminé, rendez-vous dans le dossier de téléchargement<br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/install-spark-01.png" /></p>
-<p>Faites clique-droit sur l'archive puis choisissez l'option <strong>Extraire</strong><br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/install-spark-02.png" /></p>
-<p>Je vous propose de déplacer le dossier <code>spark-3.5.0-bin-hadoop3</code> dans un autre dossier. Moi je le mets dans mon dossier personnel <code>C:\Users\Administrateur\spark-3.5.0-bin-hadoop3</code>.<br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/install-spark-03.png" /></p>
-<h2 id="configurer-les-variables">Configurer les variables</h2>
-<p>À présent nous allons créer certaines variables d'environnement. Dans la barre de recherche, tapez <strong>Variables d'environnement</strong><br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-01.png" /></p>
-<p>Sélectionnez <strong>Variables d'environnement</strong><br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-02.png" /></p>
-<p>Sélecionnez la variable <strong>Path</strong> et cliquez sur le bouton <strong>Modifier</strong><br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-03.png" /></p>
-<p>Cliquez ensuite sur le bouton <strong>Parcourir</strong> à gauche<br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-04.png" /></p>
-<p>Allez au dossier de Spark et sélection le sous-dossier <code>bin</code> puis cliquez sur le bouton <strong>OK</strong><br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-05.png" /></p>
-<p>Parfait ! La nouvelle variable est ajoutée. Cliquez sur le bouton <strong>OK</strong> pour valider<br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-06.png" /></p>
-<p>Dans la section <strong>Variable systèmes</strong>, cliquez sur le bouton <strong>Nouvelle</strong><br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-07.png" /></p>
-<p>Entrez <code>SPARK_HOME</code> dans le champ <strong>Variable systèmes</strong>, cliquez sur le bouton <strong>Nouvelle</strong><br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-08.png" /></p>
-<p>Dans la section <strong>Variable systèmes</strong>, cliquez sur le bouton <strong>Nouvelle</strong><br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-09.png" /></p>
-<p>Dans la section <strong>Variable systèmes</strong>, cliquez sur le bouton <strong>Nouvelle</strong><br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-10.png" /></p>
-<p>Dans la section <strong>Variable systèmes</strong>, cliquez sur le bouton <strong>Nouvelle</strong><br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-11.png" /></p>
-<p>Dans la section <strong>Variable systèmes</strong>, cliquez sur le bouton <strong>Nouvelle</strong><br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-12.png" /></p>
-<p>Cliquez sur le bouton <strong>OK</strong><br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-13.png" /></p>
-<p>Cliquez une dernière dernière fois sur le bouton <strong>OK</strong><br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/define-env-variables-14.png" /></p>
-<h2 id="installer-winutilsexe">Installer Winutils.exe</h2>
-<p>Rendez-vous sur le repo <a href="https://github.com/steveloughran/winutils/blob/master/hadoop-3.0.0/bin/winutils.exe"></a><br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/install-winutils-01.png" /></p>
-<p>Dans le dossier racine du disque <code>C:</code>, créez le dossier <code>C:\winutils</code><br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/install-winutils-02.png" /></p>
-<p>Créez le dossier <code>C:\winutils\bin</code> puis déplacez le fichier <code>winutils.exe</code> à l'intérieur<br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/install-winutils-03.png" /></p>
-<p>Retournez dans la fenêtre des variables d'environnement<br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/install-winutils-04.png" /></p>
-<p><br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/install-winutils-05.png" /></p>
-<p><br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/install-winutils-06.png" /></p>
-<p><br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/install-winutils-07.png" /></p>
-<p><br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/install-winutils-08.png" /></p>
-<p><br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/install-winutils-09.png" /></p>
-<p><br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/install-winutils-10.png" /></p>
-<p><br>
-<img alt="" src="/algojungle/images/python-data-stack/spark/install/install-winutils-11.png" /></p>
+<!--
+Rendez-vous à la page de télechargement [Download Apache Spark™](https://spark.apache.org/downloads.html)<br>
+![](/algojungle/images/python-data-stack/spark/install/downalod-spark-01.png)
+
+Vous serez redirigé vers cette page, cliquez sur le lien pour lancer le téléchargement<br>
+![](/algojungle/images/python-data-stack/spark/install/downalod-spark-02.png)
+
+Une fois le téléchargement terminé, rendez-vous dans le dossier de téléchargement<br>
+![](/algojungle/images/python-data-stack/spark/install/install-spark-01.png)
+
+Faites clique-droit sur l'archive puis choisissez l'option **Extraire**<br>
+![](/algojungle/images/python-data-stack/spark/install/install-spark-02.png)
+
+Je vous propose de déplacer le dossier `spark-3.5.0-bin-hadoop3` dans un autre dossier. Moi je le mets dans mon dossier personnel `C:\Users\Administrateur\spark-3.5.0-bin-hadoop3`.<br>
+![](/algojungle/images/python-data-stack/spark/install/install-spark-03.png)
+
+## Configurer les variables
+À présent nous allons créer certaines variables d'environnement. Dans la barre de recherche, tapez **Variables d'environnement**<br>
+![](/algojungle/images/python-data-stack/spark/install/define-env-variables-01.png)
+
+Sélectionnez **Variables d'environnement**<br>
+![](/algojungle/images/python-data-stack/spark/install/define-env-variables-02.png)
+
+Sélecionnez la variable **Path** et cliquez sur le bouton **Modifier**<br>
+![](/algojungle/images/python-data-stack/spark/install/define-env-variables-03.png)
+
+Cliquez ensuite sur le bouton **Parcourir** à gauche<br>
+![](/algojungle/images/python-data-stack/spark/install/define-env-variables-04.png)
+
+Allez au dossier de Spark et sélection le sous-dossier `bin` puis cliquez sur le bouton **OK**<br>
+![](/algojungle/images/python-data-stack/spark/install/define-env-variables-05.png)
+
+Parfait ! La nouvelle variable est ajoutée. Cliquez sur le bouton **OK** pour valider<br>
+![](/algojungle/images/python-data-stack/spark/install/define-env-variables-06.png)
+
+Dans la section **Variable systèmes**, cliquez sur le bouton **Nouvelle**<br>
+![](/algojungle/images/python-data-stack/spark/install/define-env-variables-07.png)
+
+Entrez `SPARK_HOME` dans le champ **Variable systèmes**, cliquez sur le bouton **Nouvelle**<br>
+![](/algojungle/images/python-data-stack/spark/install/define-env-variables-08.png)
+
+Dans la section **Variable systèmes**, cliquez sur le bouton **Nouvelle**<br>
+![](/algojungle/images/python-data-stack/spark/install/define-env-variables-09.png)
+
+Dans la section **Variable systèmes**, cliquez sur le bouton **Nouvelle**<br>
+![](/algojungle/images/python-data-stack/spark/install/define-env-variables-10.png)
+
+Dans la section **Variable systèmes**, cliquez sur le bouton **Nouvelle**<br>
+![](/algojungle/images/python-data-stack/spark/install/define-env-variables-11.png)
+
+Dans la section **Variable systèmes**, cliquez sur le bouton **Nouvelle**<br>
+![](/algojungle/images/python-data-stack/spark/install/define-env-variables-12.png)
+
+Cliquez sur le bouton **OK**<br>
+![](/algojungle/images/python-data-stack/spark/install/define-env-variables-13.png)
+
+Cliquez une dernière dernière fois sur le bouton **OK**<br>
+![](/algojungle/images/python-data-stack/spark/install/define-env-variables-14.png)
+
+## Installer Winutils.exe
+Rendez-vous sur le repo [](https://github.com/steveloughran/winutils/blob/master/hadoop-3.0.0/bin/winutils.exe)<br>
+![](/algojungle/images/python-data-stack/spark/install/install-winutils-01.png)
+
+Dans le dossier racine du disque `C:`, créez le dossier `C:\winutils`<br>
+![](/algojungle/images/python-data-stack/spark/install/install-winutils-02.png)
+
+Créez le dossier `C:\winutils\bin` puis déplacez le fichier `winutils.exe` à l'intérieur<br>
+![](/algojungle/images/python-data-stack/spark/install/install-winutils-03.png)
+
+Retournez dans la fenêtre des variables d'environnement<br>
+![](/algojungle/images/python-data-stack/spark/install/install-winutils-04.png)
+
+<br>
+![](/algojungle/images/python-data-stack/spark/install/install-winutils-05.png)
+
+<br>
+![](/algojungle/images/python-data-stack/spark/install/install-winutils-06.png)
+
+<br>
+![](/algojungle/images/python-data-stack/spark/install/install-winutils-07.png)
+
+<br>
+![](/algojungle/images/python-data-stack/spark/install/install-winutils-08.png)
+
+<br>
+![](/algojungle/images/python-data-stack/spark/install/install-winutils-09.png)
+
+<br>
+![](/algojungle/images/python-data-stack/spark/install/install-winutils-10.png)
+
+<br>
+![](/algojungle/images/python-data-stack/spark/install/install-winutils-11.png)
+ -->
+
 <h2 id="demarrer-spark">Démarrer Spark</h2>
 <p>Ouvrez le terminal et lancez la commande suivante <code>pyspark</code><br>
 <img alt="" src="/algojungle/images/python-data-stack/spark/install/start-spark-01.png" /></p>
