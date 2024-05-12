@@ -5192,6 +5192,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#importer-une-table_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importer une table
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#creer-un-dataframe" class="md-nav__link">
     <span class="md-ellipsis">
       Créer un Dataframe
@@ -13714,6 +13723,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#importer-une-table_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importer une table
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#creer-un-dataframe" class="md-nav__link">
     <span class="md-ellipsis">
       Créer un Dataframe
@@ -13902,11 +13920,16 @@
 <div class="input">
 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Créer une session Spark</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="o">.</span><span class="n">builder</span> \
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="o">.</span><span class="n">appName</span><span class="p">(</span><span class="s2">&quot;Work with PostgreSQL&quot;</span><span class="p">)</span> \
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="s2">&quot;spark.driver.extraClassPath&quot;</span><span class="p">,</span> <span class="s2">&quot;/home/joekakone/spark/drivers/postgresql-42.7.3.jar&quot;</span><span class="p">)</span> \
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="s2">&quot;spark.executor.extraClassPath&quot;</span><span class="p">,</span> <span class="s2">&quot;/home/joekakone/spark/drivers/postgresql-42.7.3.jar&quot;</span><span class="p">)</span> \
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="o">.</span><span class="n">getOrCreate</span><span class="p">()</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="c1"># spark = SparkSession.builder \</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="c1">#     .appName(&quot;Work with PostgreSQL&quot;) \</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1">#     .config(&quot;spark.driver.extraClassPath&quot;, &quot;/home/joekakone/spark/drivers/postgresql-42.7.3.jar&quot;) \</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="c1">#     .config(&quot;spark.executor.extraClassPath&quot;, &quot;/home/joekakone/spark/drivers/postgresql-42.7.3.jar&quot;) \</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="c1">#     .getOrCreate()</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="c1"># Créer une session Spark</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="o">.</span><span class="n">builder</span> \
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="o">.</span><span class="n">appName</span><span class="p">(</span><span class="s2">&quot;Work with PostgreSQL&quot;</span><span class="p">)</span> \
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    <span class="o">.</span><span class="n">getOrCreate</span><span class="p">()</span>
 </code></pre></div>
 
 </div>
@@ -13915,9 +13938,7 @@
 <div class="output_area">
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>
-<code>Setting default log level to "WARN".
-To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
-24/05/12 05:48:01 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+<code>24/05/12 15:06:08 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
 </code>
 </pre>
 </div>
@@ -13932,11 +13953,18 @@ To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLeve
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Faites <code>ip route</code> dans le terminal pour obtenir l'adresse</p>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">## Database Infos &amp;amp; Credentials</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">HOST</span> <span class="o">=</span> <span class="s2">&quot;localhost&quot;</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">HOST</span> <span class="o">=</span> <span class="s2">&quot;172.31.16.1&quot;</span> <span class="c1"># Windows localhost (Ubuntu WSL)</span>
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">PORT</span> <span class="o">=</span> <span class="s2">&quot;5432&quot;</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">DATABASE</span> <span class="o">=</span> <span class="s2">&quot;postgres&quot;</span>
 <a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">USERNAME</span> <span class="o">=</span> <span class="s2">&quot;postgres&quot;</span>
@@ -13970,7 +13998,7 @@ To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLeve
 <div class="output_area">
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>
-<code>jdbc:postgresql://127.0.0.1:5432/postgres
+<code>jdbc:postgresql://172.31.16.1:5432/postgres
 </code>
 </pre>
 </div>
@@ -13995,10 +14023,67 @@ To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLeve
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">table_name</span> <span class="o">=</span> <span class="s2">&quot;transactions&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">table_name</span> <span class="o">=</span> <span class="s2">&quot;public.covid19_daily_kpi&quot;</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
 <a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="n">jdbc</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">postgresql_url</span><span class="p">,</span> <span class="n">table</span><span class="o">=</span><span class="n">table_name</span><span class="p">,</span> <span class="n">properties</span><span class="o">=</span><span class="n">connection_properties</span><span class="p">)</span>
 <a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">df</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
+
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+<code>+----------+-------------+--------------------+--------------------+---------+------+---------+------+--------------------+
+|        dt|      country|            latitude|           longitude|confirmed|deaths|recovered|active|       load_datetime|
++----------+-------------+--------------------+--------------------+---------+------+---------+------+--------------------+
+|2021-06-18|        Benin|9.307700000000000000|2.315800000000000000|     8140|   103|     7979|    58|2023-06-18 22:56:...|
+|2021-06-18| Burkina Faso|12.23830000000000...|-1.56160000000000...|    13460|   167|    13287|     6|2023-06-18 22:56:...|
+|2021-06-18|   Cabo Verde|16.53880000000000...|-23.0418000000000...|    31858|   280|    30796|   782|2023-06-18 22:56:...|
+|2021-06-18|Cote d'Ivoire|7.540000000000000000|-5.54710000000000...|    47973|   306|    47346|   321|2023-06-18 22:56:...|
+|2021-06-18|       Gambia|13.44320000000000...|-15.3101000000000...|     6024|   181|     5827|    16|2023-06-18 22:56:...|
+|2021-06-18|        Ghana|7.946500000000000000|-1.02320000000000...|    94824|   790|    92806|  1228|2023-06-18 22:56:...|
+|2021-06-18|       Guinea|9.945600000000000000|-9.69660000000000...|    23431|   167|    21488|  1776|2023-06-18 22:56:...|
+|2021-06-18|Guinea-Bissau|11.80370000000000...|-15.1804000000000...|     3819|    69|     3553|   197|2023-06-18 22:56:...|
+|2021-06-18|      Liberia|6.428055000000000500|-9.42949900000000...|     2729|    95|     2105|   529|2023-06-18 22:56:...|
+|2021-06-18|         Mali|17.57069200000000...|-3.99616600000000...|    14364|   523|    10001|  3840|2023-06-18 22:56:...|
+|2021-06-18|        Niger|17.60778900000000...|8.081666000000000000|     5457|   193|     5178|    86|2023-06-18 22:56:...|
+|2021-06-18|      Nigeria|9.082000000000000000|8.675300000000000000|   167142|  2117|   163535|  1490|2023-06-18 22:56:...|
+|2021-06-18|      Senegal|14.49740000000000...|-14.4524000000000...|    42206|  1158|    40707|   341|2023-06-18 22:56:...|
+|2021-06-18| Sierra Leone|8.460555000000001000|-11.7798890000000...|     4553|    82|     3208|  1263|2023-06-18 22:56:...|
+|2021-06-18|         Togo|8.619500000000000000|0.824800000000000000|    13682|   127|    13334|   221|2023-06-18 22:56:...|
+|2021-06-21|        Benin|9.307700000000000000|2.315800000000000000|     8140|   103|     7979|    58|2023-06-21 04:42:...|
+|2021-06-21| Burkina Faso|12.23830000000000...|-1.56160000000000...|    13469|   167|    13293|     9|2023-06-21 04:42:...|
+|2021-06-21|   Cabo Verde|16.53880000000000...|-23.0418000000000...|    32002|   283|    30988|   731|2023-06-21 04:42:...|
+|2021-06-21|Cote d'Ivoire|7.540000000000000000|-5.54710000000000...|    48044|   308|    47445|   291|2023-06-21 04:42:...|
+|2021-06-21|       Gambia|13.44320000000000...|-15.3101000000000...|     6024|   181|     5827|    16|2023-06-21 04:42:...|
++----------+-------------+--------------------+--------------------+---------+------+---------+------+--------------------+
+only showing top 20 rows
+
+</code>
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="importer-une-table_1">Importer une table</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">sql_query</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="s2">select * from public.covid19_daily_kpi where /*dt between &#39;2021-01-01&#39; and &#39;2021-01-31&#39; and*/ country in (&#39;Benin&#39;, &#39;Ghana&#39;, &#39;Togo&#39;);</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="s2">&quot;&quot;&quot;</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="n">jdbc</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">postgresql_url</span><span class="p">,</span> <span class="n">table</span><span class="o">=</span><span class="n">sql_query</span><span class="p">,</span> <span class="n">properties</span><span class="o">=</span><span class="n">connection_properties</span><span class="p">)</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="n">df</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
 </div>
@@ -14009,10 +14094,12 @@ To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLeve
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">Py4JJavaError</span>                             Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[10], line 3</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> table_name <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">transactions</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-fg">----&gt; 3</span> df <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">spark</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">read</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">jdbc</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">url</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">postgresql_url</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">table</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">table_name</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">properties</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">connection_properties</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      4</span> df<span style="color: rgb(98,98,98)">.</span>show()
+Cell <span class="ansi-green-fg">In[22], line 5</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> sql_query <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">"""</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> <span style="color: rgb(175,0,0)">select * from public.covid19_daily_kpi where /*dt between </span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">2021-01-01</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)"> and </span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">2021-01-31</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)"> and*/ country in (</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">Benin</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">, </span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">Ghana</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">, </span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">Togo</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">);</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> <span style="color: rgb(175,0,0)">"""</span>
+<span class="ansi-green-fg">----&gt; 5</span> df <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">spark</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">read</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">jdbc</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">url</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">postgresql_url</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">table</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">sql_query</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">properties</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">connection_properties</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">      6</span> df<span style="color: rgb(98,98,98)">.</span>show()
 
 File <span class="ansi-green-fg">~/spark/env/lib/python3.10/site-packages/pyspark/sql/readwriter.py:946</span>, in <span class="ansi-cyan-fg">DataFrameReader.jdbc</span><span class="ansi-blue-fg">(self, url, table, column, lowerBound, upperBound, numPartitions, predicates, properties)</span>
 <span class="ansi-green-intense-fg ansi-bold">    944</span>     jpredicates <span style="color: rgb(98,98,98)">=</span> utils<span style="color: rgb(98,98,98)">.</span>toJArray(gateway, gateway<span style="color: rgb(98,98,98)">.</span>jvm<span style="color: rgb(98,98,98)">.</span>java<span style="color: rgb(98,98,98)">.</span>lang<span style="color: rgb(98,98,98)">.</span>String, predicates)
@@ -14048,18 +14135,17 @@ File <span class="ansi-green-fg">~/spark/env/lib/python3.10/site-packages/py4j/p
 <span class="ansi-green-intense-fg ansi-bold">    331</span>         <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">An error occurred while calling </span><span class="ansi-bold" style="color: rgb(175,95,135)">{0}</span><span class="ansi-bold" style="color: rgb(175,95,135)">{1}</span><span class="ansi-bold" style="color: rgb(175,95,135)">{2}</span><span style="color: rgb(175,0,0)">. Trace:</span><span class="ansi-bold" style="color: rgb(175,95,0)">\n</span><span class="ansi-bold" style="color: rgb(175,95,135)">{3}</span><span class="ansi-bold" style="color: rgb(175,95,0)">\n</span><span style="color: rgb(175,0,0)">"</span><span style="color: rgb(98,98,98)">.</span>
 <span class="ansi-green-intense-fg ansi-bold">    332</span>         <span style="color: rgb(0,135,0)">format</span>(target_id, <span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">.</span><span style="color: rgb(175,0,0)">"</span>, name, value))
 
-<span class="ansi-red-fg">Py4JJavaError</span>: An error occurred while calling o33.jdbc.
-: org.postgresql.util.PSQLException: Connection to 127.0.0.1:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
-    at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:346)
-    at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
-    at org.postgresql.jdbc.PgConnection.&lt;init&gt;(PgConnection.java:273)
-    at org.postgresql.Driver.makeConnection(Driver.java:446)
-    at org.postgresql.Driver.connect(Driver.java:298)
-    at org.apache.spark.sql.execution.datasources.jdbc.connection.BasicConnectionProvider.getConnection(BasicConnectionProvider.scala:49)
-    at org.apache.spark.sql.execution.datasources.jdbc.connection.ConnectionProviderBase.create(ConnectionProvider.scala:102)
-    at org.apache.spark.sql.jdbc.JdbcDialect.$anonfun$createConnectionFactory$1(JdbcDialects.scala:160)
-    at org.apache.spark.sql.jdbc.JdbcDialect.$anonfun$createConnectionFactory$1$adapted(JdbcDialects.scala:156)
-    at org.apache.spark.sql.execution.datasources.jdbc.JDBCRDD$.getQueryOutputSchema(JDBCRDD.scala:63)
+<span class="ansi-red-fg">Py4JJavaError</span>: An error occurred while calling o102.jdbc.
+: org.postgresql.util.PSQLException: ERREUR: erreur de syntaxe sur ou près de « select »
+  Position: 15
+    at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2725)
+    at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2412)
+    at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:371)
+    at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:502)
+    at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:419)
+    at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:194)
+    at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:137)
+    at org.apache.spark.sql.execution.datasources.jdbc.JDBCRDD$.getQueryOutputSchema(JDBCRDD.scala:68)
     at org.apache.spark.sql.execution.datasources.jdbc.JDBCRDD$.resolveTable(JDBCRDD.scala:58)
     at org.apache.spark.sql.execution.datasources.jdbc.JDBCRelation$.getSchema(JDBCRelation.scala:241)
     at org.apache.spark.sql.execution.datasources.jdbc.JdbcRelationProvider.createRelation(JdbcRelationProvider.scala:37)
@@ -14082,18 +14168,6 @@ File <span class="ansi-green-fg">~/spark/env/lib/python3.10/site-packages/py4j/p
     at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
     at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
     at java.base/java.lang.Thread.run(Thread.java:829)
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-    at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
-    at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:412)
-    at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:255)
-    at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:237)
-    at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-    at java.base/java.net.Socket.connect(Socket.java:609)
-    at org.postgresql.core.PGStream.createSocket(PGStream.java:243)
-    at org.postgresql.core.PGStream.&lt;init&gt;(PGStream.java:98)
-    at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:136)
-    at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:262)
-    ... 31 more
 </pre>
 </div>
 </div>
@@ -14117,14 +14191,14 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;product_name&quot;</span><span class="p">,</span> <span class="s2">&quot;product_category&quot;</span><span class="p">,</span> <span class="s2">&quot;amount&quot;</span><span class="p">,</span> <span class="s2">&quot;quantity&quot;</span><span class="p">]</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">data</span> <span class="o">=</span> <span class="p">[</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    <span class="p">(</span><span class="mi">123</span><span class="p">,</span> <span class="s2">&quot;Product1&quot;</span><span class="p">,</span> <span class="s2">&quot;Category1&quot;</span><span class="p">,</span> <span class="mf">45.67</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    <span class="p">(</span><span class="mi">124</span><span class="p">,</span> <span class="s2">&quot;Product2&quot;</span><span class="p">,</span> <span class="s2">&quot;Category2&quot;</span><span class="p">,</span> <span class="mf">78.23</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span>
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    <span class="p">(</span><span class="mi">125</span><span class="p">,</span> <span class="s2">&quot;Product3&quot;</span><span class="p">,</span> <span class="s2">&quot;Category3&quot;</span><span class="p">,</span> <span class="mf">32.45</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span>
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>    <span class="p">(</span><span class="mi">126</span><span class="p">,</span> <span class="s2">&quot;Product4&quot;</span><span class="p">,</span> <span class="s2">&quot;Category1&quot;</span><span class="p">,</span> <span class="mf">91.12</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
-<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>    <span class="p">(</span><span class="mi">127</span><span class="p">,</span> <span class="s2">&quot;Product5&quot;</span><span class="p">,</span> <span class="s2">&quot;Category2&quot;</span><span class="p">,</span> <span class="mf">64.78</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
-<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="p">]</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;product_name&quot;</span><span class="p">,</span> <span class="s2">&quot;product_category&quot;</span><span class="p">,</span> <span class="s2">&quot;amount&quot;</span><span class="p">,</span> <span class="s2">&quot;quantity&quot;</span><span class="p">]</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">data</span> <span class="o">=</span> <span class="p">[</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    <span class="p">(</span><span class="mi">123</span><span class="p">,</span> <span class="s2">&quot;Product1&quot;</span><span class="p">,</span> <span class="s2">&quot;Category1&quot;</span><span class="p">,</span> <span class="mf">45.67</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="p">(</span><span class="mi">124</span><span class="p">,</span> <span class="s2">&quot;Product2&quot;</span><span class="p">,</span> <span class="s2">&quot;Category2&quot;</span><span class="p">,</span> <span class="mf">78.23</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    <span class="p">(</span><span class="mi">125</span><span class="p">,</span> <span class="s2">&quot;Product3&quot;</span><span class="p">,</span> <span class="s2">&quot;Category3&quot;</span><span class="p">,</span> <span class="mf">32.45</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>    <span class="p">(</span><span class="mi">126</span><span class="p">,</span> <span class="s2">&quot;Product4&quot;</span><span class="p">,</span> <span class="s2">&quot;Category1&quot;</span><span class="p">,</span> <span class="mf">91.12</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>    <span class="p">(</span><span class="mi">127</span><span class="p">,</span> <span class="s2">&quot;Product5&quot;</span><span class="p">,</span> <span class="s2">&quot;Category2&quot;</span><span class="p">,</span> <span class="mf">64.78</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="p">]</span>
 </code></pre></div>
 
 </div>
@@ -14139,7 +14213,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">createDataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">schema</span><span class="o">=</span><span class="n">columns</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">df</span> <span class="o">=</span> <span class="n">spark</span><span class="o">.</span><span class="n">createDataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">schema</span><span class="o">=</span><span class="n">columns</span><span class="p">)</span>
 </code></pre></div>
 
 </div>
@@ -14161,9 +14235,38 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">df</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">df</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>
+<code>                                                                                
+</code>
+</pre>
+</div>
+</div>
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+<code>+---+------------+----------------+------+--------+
+| id|product_name|product_category|amount|quantity|
++---+------------+----------------+------+--------+
+|123|    Product1|       Category1| 45.67|       8|
+|124|    Product2|       Category2| 78.23|       3|
+|125|    Product3|       Category3| 32.45|       6|
+|126|    Product4|       Category1| 91.12|       5|
+|127|    Product5|       Category2| 64.78|       7|
++---+------------+----------------+------+--------+
+
+</code>
+</pre>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
@@ -14176,9 +14279,30 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">df</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">df</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+<code>+---+
+| id|
++---+
+|123|
+|124|
+|125|
+|126|
+|127|
++---+
+
+</code>
+</pre>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
@@ -14191,9 +14315,38 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">df</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s2">&quot;quantity&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">df</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s2">&quot;quantity&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_subarea output_stream output_stderr output_text">
+<pre>
+<code>                                                                                
+</code>
+</pre>
+</div>
+</div>
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+<code>+---+------------+----------------+------+--------+
+| id|product_name|product_category|amount|quantity|
++---+------------+----------------+------+--------+
+|124|    Product2|       Category2| 78.23|       3|
+|126|    Product4|       Category1| 91.12|       5|
+|125|    Product3|       Category3| 32.45|       6|
+|127|    Product5|       Category2| 64.78|       7|
+|123|    Product1|       Category1| 45.67|       8|
++---+------------+----------------+------+--------+
+
+</code>
+</pre>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
@@ -14206,9 +14359,27 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">df</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="s2">&quot;product_category = &#39;Category1&#39;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">df</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="s2">&quot;product_category = &#39;Category1&#39;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 
+</div>
+<div class="output_wrapper">
+<div class="output">
+<div class="output_area">
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+<code>+---+------------+----------------+------+--------+
+| id|product_name|product_category|amount|quantity|
++---+------------+----------------+------+--------+
+|123|    Product1|       Category1| 45.67|       8|
+|126|    Product4|       Category1| 91.12|       5|
++---+------------+----------------+------+--------+
+
+</code>
+</pre>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered">
@@ -14228,7 +14399,7 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">spark</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># spark.stop()</span>
 </code></pre></div>
 
 </div>
