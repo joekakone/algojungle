@@ -26,7 +26,7 @@
     
     
       
-        <title>Les bases de l'algorithmique - Algo Jungle</title>
+        <title>Les tableaux - Algo Jungle</title>
       
     
     
@@ -83,7 +83,7 @@
     
     
     
-<meta property="og:title" content="Les bases de l'algorithmique">
+<meta property="og:title" content="Les tableaux">
 
 <meta property="og:description" content="Algo Junle - Learn Python and Data for free">
 
@@ -112,7 +112,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#les-bases-de-lalgorithmique" class="md-skip">
+        <a href="#les-tableaux" class="md-skip">
           Aller au contenu
         </a>
       
@@ -146,7 +146,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Les bases de l'algorithmique
+              Les tableaux
             
           </span>
         </div>
@@ -893,7 +893,7 @@
         
   
   <span class="md-ellipsis">
-    Tableaux
+    Tableaux à une dimension
   </span>
   
 
@@ -914,7 +914,7 @@
         
   
   <span class="md-ellipsis">
-    Tableaux bidimensionnelles
+    Tableaux à deux dimension
   </span>
   
 
@@ -935,7 +935,7 @@
         
   
   <span class="md-ellipsis">
-    Tableaux multidimensionnelles
+    Tableaux à n dimension
   </span>
   
 
@@ -13773,6 +13773,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problematique" class="md-nav__link">
+    <span class="md-ellipsis">
+      Problématique
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Définition
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -13786,7 +13812,22 @@
                   
 
 
-<h1 id="les-bases-de-lalgorithmique">Les bases de l'algorithmique</h1>
+<h1 id="les-tableaux">Les tableaux</h1>
+<p>Dans la partie 1, nous avons vu qu'une variable permettait de représenter une valeur unique. Par exemple, une variable peut contenir un nombre entier, un caractère, une chaîne de caractères, etc. Cependant, cette capacité à stocker une seule valeur peut rapidement devenir une limitation lorsque nous avons besoin de gérer un grand nombre de données similaires. Les tableaux apportent une solution à ce problème de limitation et c'est ce quenous allons explorer dans cette deuxième partie de la formation.</p>
+<p><img alt="" src="/algojungle/images/algorithmique/covers/les-tableaux.png" /></p>
+<h2 id="problematique">Problématique</h2>
+<p>Imaginez que vous devez représenter les notes de 30 étudiants. Créer 30 variables individuelles pour chaque note serait fastidieux et peu pratique. C'est ici que les tableaux entrent en jeu.</p>
+<p>Vous l'aurez compris, stocker chaque donnée dans une variable séparée peut rapidement devenir impraticable et difficile à gérer lorsque le nombre de données augmente. Les tableaux permettent de regrouper plusieurs valeurs similaires en une seule structure, facilitant ainsi la gestion, l'accès et la manipulation des données.</p>
+<h2 id="definition">Définition</h2>
+<p>Un tableau est une structure de données qui permet de stocker plusieurs valeurs du même type dans une seule entité. Chaque valeur dans un tableau est appelée un élément, et chaque élément peut être accédé en utilisant un indice (ou index). L'indice d'un tableau commence à 1 (généralement à 0 dans les langages de programmation, confer <a href="/algojungle/programmation/">Programmation</a>).</p>
+<p><img alt="" src="https://www.9raytifclick.com/wp-content/uploads/2021/10/tableau_suppression2.png" /></p>
+<p><strong>Exemple de tableau</strong><br>
+Imaginons un tableau Notes pour stocker les notes de 5 étudiants :
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Notes &lt;- [12, 15, 9, 14, 8]
+</code></pre></div>
+Dans cet exemple, Notes est un tableau de taille 5, où chaque élément du tableau représente la note d'un étudiant. Les indices de ce tableau vont de 1 à 5.</p>
+<hr />
+<p><em>Dans la prochaine section, nous allons aborder les tableaux à une dimension.</em></p>
 
 
 
@@ -13841,13 +13882,13 @@
         
         
           
-          <a href="les-tableaux-a-une-dimension/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Tableaux">
+          <a href="les-tableaux-a-une-dimension/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Tableaux à une dimension">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Suivant
               </span>
               <div class="md-ellipsis">
-                Tableaux
+                Tableaux à une dimension
               </div>
             </div>
             <div class="md-footer__button md-icon">
